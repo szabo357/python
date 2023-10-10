@@ -4,8 +4,8 @@ Python es un lenguaje de programación de alto nivel y de propósito general cre
 
 Python se puede utilizar para crear software de: Inteligencia Artificial, Ciencia de Datos, Ingeniería de Datos, Ciberseguridad, Desarrollo de Videojuegos, Desarrollo Web, Internet de las cosas, Robótica, Etc.No importa si estás dando tus primeros pasos o si eres un programador experimentado. Python es el lenguaje que deberías aprender.
 
-## Hola Mundo en Python. Nuestro primer programa.
+### Hola Mundo en Python. Nuestro primer programa.
 ---
 
-`# Hola Mundo en Python : Este es un comentario `
-`Print('Hola Mundo!')  # Nuestra primera línea de código`
+`# Hola Mundo en Python : Este es un comentario 
+Print('Hola Mundo!')  # Nuestra primera línea de código`
