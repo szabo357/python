@@ -6,5 +6,6 @@ Python se puede utilizar para crear software de: Inteligencia Artificial, Cienci
 
 ## Hola Mundo en Python. Nuestro primer programa.
 ---
+
 `# Hola Mundo en Python : Este es un comentario `
 `Print('Hola Mundo!')  # Nuestra primera línea de código`
