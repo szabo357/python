@@ -11,7 +11,9 @@ Python se puede utilizar para crear software de: Inteligencia Artificial, Cienci
 ```py 
 Print('Hola Mundo!')  # Imprime en la consola: "Hola Mundo!"
 ```
-  :nerd: [Accede al Hola Mundo](./Codigo/holamundo.py)
+
+ :nerd_face: [Accede al Hola Mundo](./Codigo/holamundo.py)
+
 ---
 
 
