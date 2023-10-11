@@ -15,9 +15,10 @@ Print('Hola Mundo!')  # Nuestra primera línea de código`
 
 #### Dictionary
 
-A Python dictionary object is an unordered collection of data in a key value pair format.
+:green_book
+Un diccionario en Python es un objeto parecido a una lista que almacena datos en la forma llave, valor.
 
-**Example:**
+**Ejemplo:**
 
 ```py
 {
@@ -28,7 +29,7 @@ A Python dictionary object is an unordered collection of data in a key value pai
 ```
 
 ---
-[### Ejercicios](./Ejercicios/Ejercicios.md)
+### Ejercicios
 ---
 
 Aqui encontrarás ejercicios donde podrás practicar Lógica de programación y mejorar tus habilidades de resolución de problemas.
