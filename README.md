@@ -12,9 +12,9 @@ Python se puede utilizar para crear software de: Inteligencia Artificial, Cienci
 Print('Hola Mundo!')  # Imprime en la consola: "Hola Mundo!"
 ```
 
-#### Dictionary
+#### Dictionario
 
-:green_book
+:green_book:
 Un diccionario en Python es un objeto parecido a una lista que almacena datos en la forma llave, valor.
 
 **Ejemplo:**
@@ -32,4 +32,4 @@ Un diccionario en Python es un objeto parecido a una lista que almacena datos en
 ---
 
 Aqui encontrarás ejercicios donde podrás practicar Lógica de programación y mejorar tus habilidades de resolución de problemas.
-Cada ejercicio propuesto tendrá una solución escrita en Python ->[Ejercicios](./Ejercicios/Ejercicios.md)
+Cada ejercicio propuesto tendrá una solución escrita en Python -> :computer: [Ejercicios](./Ejercicios/Ejercicios.md)
