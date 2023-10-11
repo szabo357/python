@@ -1,7 +1,7 @@
 # Ejercicios para practicar Lógica de Programación
 
 Aqui encontrarás ejercicios donde podrás practicar Lógica de programación y mejorar tus habilidades de resolución de problemas.
-Cada ejercicio propuesto tendrá una solución. Si tu encuentrás
+Cada ejercicio propuesto tendrá una solución escrita en Python. Si tu encuentrás una manera distinta de resolver el problema por favor compartela.
 
 ---
 
@@ -12,4 +12,4 @@ Cada ejercicio propuesto tendrá una solución. Si tu encuentrás
   - Múltiplos de 3 por la palabra "fizz".
   - Múltiplos de 5 por la palabra "buzz".
   - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
-
+ 

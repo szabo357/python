@@ -4,8 +4,32 @@ Python es un lenguaje de programación de alto nivel y de propósito general cre
 
 Python se puede utilizar para crear software de: Inteligencia Artificial, Ciencia de Datos, Ingeniería de Datos, Ciberseguridad, Desarrollo de Videojuegos, Desarrollo Web, Internet de las cosas, Robótica, Etc.No importa si estás dando tus primeros pasos o si eres un programador experimentado. Python es el lenguaje que deberías aprender.
 
-### Hola Mundo en Python. Nuestro primer programa.
 ---
 
-`# Hola Mundo en Python : Este es un comentario 
+### Nuestro primer programa.
+---
+```py
+# Hola Mundo en Python : Este es un comentario 
 Print('Hola Mundo!')  # Nuestra primera línea de código`
+```
+
+#### Dictionary
+
+A Python dictionary object is an unordered collection of data in a key value pair format.
+
+**Example:**
+
+```py
+{
+'nombre':'Miklos',
+'apellido':'Szabo',
+'pais':'Honduras'
+}
+```
+
+---
+[### Ejercicios](./Ejercicios/Ejercicios.md)
+---
+
+Aqui encontrarás ejercicios donde podrás practicar Lógica de programación y mejorar tus habilidades de resolución de problemas.
+Cada ejercicio propuesto tendrá una solución escrita en Python ->[Ejercicios](./Ejercicios/Ejercicios.md)
