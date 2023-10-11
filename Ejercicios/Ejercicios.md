@@ -17,7 +17,7 @@ Cada ejercicio propuesto tendrá una solución escrita en Python. Si tu encuentr
 
 ---
 
-### 2 
+### 2 Factorial
 
   Escribe un programa donde al ingresar un número natural "n" calcule el factorial del número y lo imprima en pantalla.
   - En Matemáticas la función factorial se representa con un signo de exclamación “!” detrás de un número. 
