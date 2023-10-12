@@ -1,2 +1,1 @@
-# Hola mundo en Python.
-print('Hola Mundo!!')
+print('Hola Mundo!') # Imprime en consola el mensaje "Hola Mundo!"
