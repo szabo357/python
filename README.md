@@ -8,7 +8,8 @@ Python se puede utilizar para crear software de: Inteligencia Artificial, Cienci
 ---
 #### Configura tu equipo
 ---
-1- Debes revisar si tienes instalado Python en tu equipo: escribe el siguiente comando en la interfaz de linea de comandos(Simbolo del Sistema en Windows).
+1- Debes revisar si tienes instalado Python en tu equipo. 
+Escribe el siguiente comando en la interfaz de linea de comandos(Simbolo del Sistema en Windows):
 
 ```shell
 python --version
@@ -22,6 +23,7 @@ Como puedes ver de la interfaz de linea de comandos, estoy usando la versión de
 
 
 3- Para programar debes instalar un editor de texto o un IDE en tu computadora, en este caso te recomiendo que uses  [Visual Studio Code](https://code.visualstudio.com/)
+
 
 
 ---
