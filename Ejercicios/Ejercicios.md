@@ -31,3 +31,11 @@ Si tu encuentrás una manera distinta de resolver el problema por favor comparte
   Solución: :hash: :two:  -> [Factorial](./2-Factorial.py)
 
   ---
+
+### 3 Conversión de tiempo
+
+  Crea una función que reciba días, horas, minutos y segundos (como enteros) y retorne su resultado en milisegundos.
+
+  Solución: :hash: :three:  -> [Conversion a milisegundos](./2-Factorial.py)
+
+  ---

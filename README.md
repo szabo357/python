@@ -5,6 +5,21 @@
 Python se puede utilizar para crear software de: Inteligencia Artificial, Ciencia de Datos, Ingeniería de Datos, Ciberseguridad, Desarrollo de Videojuegos, Desarrollo Web, Internet de las cosas, Robótica, Etc.No importa si estás dando tus primeros pasos o si eres un programador experimentado. Python es el lenguaje que deberías aprender.
 
 ---
+#### Configura tu equipo
+---
+1- Debes revisar si ya tienes instalado Python en tu equipo o sino lo puedes [descargar](https://www.python.org/downloads/) e instalar.
+ - Para revisar 
+
+
+2- Para programar debes instalar un editor de texto o un IDE en tu computadora, en este caso te recomiendo que uses  [Visual Studio Code](https://code.visualstudio.com/)
+
+
+---
+#### ¿Qué es programación ?
+---
+
+... Agregar explicacion aqui. 
+
 
 #### Nuestro primer programa.
 ---
@@ -13,25 +28,7 @@ Print('Hola Mundo!')  # Imprime en la consola: "Hola Mundo!"
 ```
 
  :nerd_face: [Accede al Hola Mundo](./Codigo/holamundo.py)
-
----
-
-
-#### Dictionario
-
-:green_book:
-Un diccionario en Python es un objeto parecido a una lista que almacena datos en la forma llave, valor.
-
-**Ejemplo:**
-
-```py
-{
-'nombre':'Miklos',
-'apellido':'Szabo',
-'pais':'Honduras'
-}
-```
-
+ 
 ---
 ### Ejercicios
 ---
