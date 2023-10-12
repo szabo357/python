@@ -1,7 +1,9 @@
 # Ejercicios para practicar Lógica de Programación
 
 Aqui encontrarás ejercicios donde podrás practicar Lógica de programación y mejorar tus habilidades de resolución de problemas.
-Cada ejercicio propuesto tendrá una solución escrita en Python. Si tu encuentrás una manera distinta de resolver el problema por favor compartela.
+Cada ejercicio propuesto tendrá una solución escrita en Python. 
+
+Si tu encuentrás una manera distinta de resolver el problema por favor compartela.
 
 ---
 
@@ -13,7 +15,7 @@ Cada ejercicio propuesto tendrá una solución escrita en Python. Si tu encuentr
   - Múltiplos de 5 por la palabra "buzz".
   - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
   
-  Solución: :hash: :one:  -> [Fizzbuzz](.1-FizzBuzz.py)
+  Solución: :hash: :one:  -> [Fizzbuzz](./Ejercicios/1-FizzBuzz.py)
 
 ---
 
@@ -26,6 +28,6 @@ Cada ejercicio propuesto tendrá una solución escrita en Python. Si tu encuentr
   - 1 factorial es, lógicamente, 1, ya que multiplicamos 1 x 1
   - por convención 0 factorial es, 1.
 
-  Solución: :hash: :two:  -> [Factorial](.2-Factorial.py)
+  Solución: :hash: :two:  -> [Factorial](./Ejercicios/2-Factorial.py)
 
   ---
