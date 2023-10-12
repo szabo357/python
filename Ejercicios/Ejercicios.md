@@ -15,7 +15,7 @@ Si tu encuentrás una manera distinta de resolver el problema por favor comparte
   - Múltiplos de 5 por la palabra "buzz".
   - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
   
-  Solución: :hash: :one:  -> [Fizzbuzz](./Ejercicios/1-FizzBuzz.py)
+  Solución: :hash: :one:  -> [Fizzbuzz](./1-FizzBuzz.py)
 
 ---
 
@@ -28,6 +28,6 @@ Si tu encuentrás una manera distinta de resolver el problema por favor comparte
   - 1 factorial es, lógicamente, 1, ya que multiplicamos 1 x 1
   - por convención 0 factorial es, 1.
 
-  Solución: :hash: :two:  -> [Factorial](./Ejercicios/2-Factorial.py)
+  Solución: :hash: :two:  -> [Factorial](./2-Factorial.py)
 
   ---
