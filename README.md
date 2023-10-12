@@ -4,31 +4,41 @@
 
 Python se puede utilizar para crear software de: Inteligencia Artificial, Ciencia de Datos, Ingeniería de Datos, Ciberseguridad, Desarrollo de Videojuegos, Desarrollo Web, Internet de las cosas, Robótica, Etc.No importa si estás dando tus primeros pasos o si eres un programador experimentado. Python es el lenguaje que deberías aprender.
 
+
 ---
 #### Configura tu equipo
 ---
-1- Debes revisar si ya tienes instalado Python en tu equipo o sino lo puedes [descargar](https://www.python.org/downloads/) e instalar.
- - Para revisar 
+1- Debes revisar si tienes instalado Python en tu equipo: escribe el siguiente comando en la interfaz de linea de comandos(Simbolo del Sistema en Windows).
+
+```shell
+python --version
+```
+
+![Version de Python](./Imagenes/Readme/python-version.png)
+
+Como puedes ver de la interfaz de linea de comandos, estoy usando la versión de Python 3.11.1 en este momemnto. Esto quiere decir que python está instalado en mi computadora. Puede ser que en tu caso muestre una versión diferente o no te muestre nada. Sino logras ver nada entonces debes instalar python.
+
+2- Descarga de  [descargar](https://www.python.org/downloads/)
 
 
-2- Para programar debes instalar un editor de texto o un IDE en tu computadora, en este caso te recomiendo que uses  [Visual Studio Code](https://code.visualstudio.com/)
+3- Para programar debes instalar un editor de texto o un IDE en tu computadora, en este caso te recomiendo que uses  [Visual Studio Code](https://code.visualstudio.com/)
 
 
 ---
 #### ¿Qué es programación ?
 ---
+La programación es el proceso de escribir un conjunto de instrucciones en un orden lógico que le dicen a una computadora cómo realizar una tarea. Escribir programas o programar es una actividad creativa y muy gratificante. Puedes escribir programas por muchas razones: diversión, porque deseas crear un videojuego, necesitas ayuda al hacer una tarea repetitiva.
 
-... Agregar explicacion aqui. 
-
-
+---
 #### Nuestro primer programa.
 ---
+
 ```py 
 Print('Hola Mundo!')  # Imprime en la consola: "Hola Mundo!"
 ```
 
  :nerd_face: [Accede al Hola Mundo](./Codigo/holamundo.py)
- 
+
 ---
 ### Ejercicios
 ---

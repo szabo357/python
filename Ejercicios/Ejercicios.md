@@ -15,7 +15,7 @@ Si tu encuentrás una manera distinta de resolver el problema por favor comparte
   - Múltiplos de 5 por la palabra "buzz".
   - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
   
-  Solución: :hash: :one:  -> [Fizzbuzz](./1-FizzBuzz.py)
+  Solución: :hash: :one:  -> [Fizzbuzz](./1-Fizzbuzz.py)
 
 ---
 
@@ -32,10 +32,18 @@ Si tu encuentrás una manera distinta de resolver el problema por favor comparte
 
   ---
 
-### 3 Conversión de tiempo
+### 3 Conversión a milisegundos
 
   Crea una función que reciba días, horas, minutos y segundos (como enteros) y retorne su resultado en milisegundos.
 
-  Solución: :hash: :three:  -> [Conversion a milisegundos](./2-Factorial.py)
+  Solución: :hash: :three:  -> [Conversion a milisegundos](./3-Conversion_Milisegundos.py)
+
+  ---
+
+### 4 Nombre Ejercicio  
+  
+  Enunciado
+
+  Solución: :hash: :four:  -> [Nombre Ejercicio](./4-Factorial.py)
 
   ---
