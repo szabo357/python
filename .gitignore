@@ -17,10 +17,10 @@
 
 
 # Visual Studio Code related
-.classpath
-.project
-.settings/
-.vscode/*
+#.classpath
+#.project
+#.settings/
+#.vscode/*
 
 
 # Byte-compiled / optimized / DLL files
