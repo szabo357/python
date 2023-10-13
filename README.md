@@ -9,15 +9,15 @@ Python se puede utilizar para crear software de: Inteligencia Artificial, Cienci
 #### Configura tu equipo
 ---
 1- Debes revisar si tienes instalado Python en tu equipo. 
-Escribe el siguiente comando en la interfaz de linea de comandos(Simbolo del Sistema en Windows):
+Escribe el siguiente comando en la interfaz de línea de comandos(Símbolo del Sistema en Windows):
 
 ```shell
 python --version
 ```
 
-![Version de Python](./Imagenes/Readme/python-version.png)
+![Versión de Python](./Imagenes/Readme/python-version.png)
 
-Como puedes ver de la interfaz de linea de comandos, estoy usando la versión de Python 3.11.1 en este momemnto. Esto quiere decir que python está instalado en mi computadora. Puede ser que en tu caso muestre una versión diferente o no te muestre nada. Sino logras ver nada entonces debes instalar python.
+Como puedes ver de la interfaz de línea de comandos, estoy usando la versión de Python 3.11.1 en este momemnto. Esto quiere decir que python está instalado en mi computadora. Puede ser que en tu caso muestre una versión diferente o no te muestre nada. Sino logras ver nada entonces debes instalar python.
 
 2- Descarga de  [descargar](https://www.python.org/downloads/)
 
