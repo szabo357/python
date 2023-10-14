@@ -93,7 +93,7 @@ class TodoApp(ft.UserControl):
         self.tasks.controls.remove(task)
         self.update()
 
-def to_do(page: ft.Page):
+def main(page: ft.Page):
     page.title = "ToDo App"
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
     page.update()
@@ -105,7 +105,7 @@ def to_do(page: ft.Page):
     page.add(todo)
 
 
-ft.app(target=to_do)
+ft.app(target=main)
 #ft.app(target=to_do,view=ft.AppView.WEB_BROWSER)
 
 #Theres work in progress
