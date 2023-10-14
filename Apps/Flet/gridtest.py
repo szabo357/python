@@ -36,5 +36,5 @@ def my_app(page: ft.Page):
                 border_radius=ft.border_radius.all(10),
             )
         ) """
-    
+#ft.app(target=my_app)    
 ft.app(target=my_app,view=ft.AppView.WEB_BROWSER)
