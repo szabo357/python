@@ -125,11 +125,12 @@ class TodoApp(ft.UserControl):
         )   
     
     def add_clicked(self,e):
-        task = Task(self.new_task.value,self.task_status_change,self.task_delete)
-       # task = Task(self.new_task.value,self.task_delete)
-        self.tasks.controls.append(task)
-        self.new_task.value =""
-        self.update() 
+        #validates that Textbox is not empty
+        if  ( self.new_task.value != "" ) :
+            task = Task(self.new_task.value,self.task_status_change,self.task_delete)
+            self.tasks.controls.append(task)
+            self.new_task.value =""
+            self.update()
     
     def task_status_change(self,task):
         self.update()
