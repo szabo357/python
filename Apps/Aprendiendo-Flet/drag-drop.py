@@ -1,5 +1,5 @@
 import flet as ft
-
+     
 def main(page = ft.Page):
     page.title= "Drag and Drop"
     
@@ -11,7 +11,7 @@ def main(page = ft.Page):
         # update text inside drag target control
         e.control.content.content.value = "1"
         page.update()
-
+    
     page.add(
         ft.Row(
             [
@@ -34,14 +34,15 @@ def main(page = ft.Page):
                         height=50,
                         bgcolor=ft.colors.PINK_200,
                         border_radius=5,
-                        content=ft.Text("0", size=20),
-                        alignment=ft.alignment.center,
-                    ),
+                        content=ft.Text("0",size=20),
+                        alignment=ft.alignment.center
+                    ),                    
                     on_accept=drag_accept,
                 ),
             ]
-        )
+        ),
     )
+    
 
 ft.app(target=main)
 #ft.app(target=main,view=ft.AppView.WEB_BROWSER)
