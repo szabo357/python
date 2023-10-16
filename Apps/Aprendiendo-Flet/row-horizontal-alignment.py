@@ -3,7 +3,7 @@ import flet as ft
 def main(page: ft.Page):
     def items(count):
         items = []
-        for i in range(1+ count + 1):
+        for i in range(1, count + 1):
             items.append(
                 ft.Container(
                     content=ft.Text(value=str(i)),
