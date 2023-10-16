@@ -29,7 +29,7 @@ def main(page: ft.Page):
         on_change=gap_slider_change,
     )
 
-    row = ft.Row(spacing=1, controls=items(10))  
+    row = ft.Row(spacing=1, controls=items(10),)  
     page.add(ft.Column(controls=[ft.Text("Espacio entre cuadrados"),gap_slider]),row)
 
 ft.app(target=main)
