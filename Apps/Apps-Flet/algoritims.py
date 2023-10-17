@@ -12,12 +12,16 @@ def main(page: ft.Page):
         for _  in range(count):
             items.append(    
                 ft.Container(
-                    content=ft.Text( value=random.randint(1,200)),
+                    content=ft.Text( value=random.randint(1,200),
+                        size=20,
+                        weight=ft.FontWeight.BOLD,
+                        font_family="Roboto"
+                    ),
                     alignment=ft.alignment.center,
-                    width=50,
-                    height=50,
+                    width=80,
+                    height=80,
                     bgcolor=ft.colors.ORANGE,
-                    border_radius=25,
+                    border_radius=40,
                 )
             )
         return items
