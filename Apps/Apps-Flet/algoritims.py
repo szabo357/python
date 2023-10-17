@@ -164,13 +164,12 @@ def main(page: ft.Page):
     page.add(fila_lista,
         ft.Divider(thickness=5,color=ft.colors.BLUE),
         ft.Row(
-            [
-            ft.ElevatedButton("Iniciar Ordenamiento",on_click=iniciar_click),
-            ft.ElevatedButton("Reiniciar Ordenamiento",on_click=reiniciar_click)
+            [algoritmos, dd_bgcolor, list_size,
+            ft.OutlinedButton("Iniciar Ordenamiento",on_click=iniciar_click,icon=ft.icons.PLAY_CIRCLE_OUTLINED),
+            ft.OutlinedButton("Reiniciar Ordenamiento",on_click=reiniciar_click,icon=ft.icons.LOCK_RESET)
             ]
         ,alignment= ft.MainAxisAlignment.CENTER
-        ),
-        ft.Row([ algoritmos, dd_bgcolor, list_size], ft.MainAxisAlignment.CENTER)
+        )
     )
 
 ft.app(target=main)
