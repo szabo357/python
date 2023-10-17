@@ -3,21 +3,8 @@ import random
 import time
 
 def main(page: ft.Page):
-    page.title = "Algoritmo de ordenamiento {algoritmos.value}"
+    page.title = "Algoritmo de ordenamiento"
     page.bgcolor = ft.colors.BLUE_100
-
-    page.add(ft.Row(
-               [ ft.Text(
-                    value="Algoritmo de Ordenamiento de Burbujas", 
-                    weight=ft.FontWeight.BOLD,
-                    font_family="Roboto",
-                    style=ft.TextThemeStyle.HEADLINE_MEDIUM
-                 ),
-               ],
-            alignment=ft.MainAxisAlignment.CENTER
-        ),
-        ft.Divider(thickness=5,color=ft.colors.BLUE),
-    )
 
     def contenedores(count):
         items= []
@@ -53,6 +40,11 @@ def main(page: ft.Page):
             arr[n-i-1].bgcolor=ft.colors.GREEN
         page.update()
 
+    def SelectionSort(arr):
+        n = len(arr)
+        
+
+
     def list_size_change(e):
         #list_size.value = list_size.value
         fila_lista.clean()
@@ -61,7 +53,8 @@ def main(page: ft.Page):
         page.update()
 
     def algoritmos_change(e):
-        pass
+        titulo.value = "Algoritmo de ordenamiento: "  + algoritmos.value
+        page.update()
 
     list_size = ft.Dropdown(
         on_change=list_size_change,
@@ -77,20 +70,6 @@ def main(page: ft.Page):
         value="6"
     )
 
-    algoritmos = ft.Dropdown(
-        label= "Algoritmo de Ordenamiento: ",
-        on_change= algoritmos_change,
-        options= [
-            ft.dropdown.Option("Bubble Sort"),
-            ft.dropdown.Option("Quick Sort"),
-            ft.dropdown.Option("Double Sort"),
-            ft.dropdown.Option("Merge Sort"),
-            ft.dropdown.Option("Insertion Sort"),
-        ],
-        width=200,
-        value="Bubble Sort"
-    )
-
     pelotas = contenedores(int(list_size.value))
     fila_lista = ft.Row(pelotas,alignment=ft.MainAxisAlignment.CENTER)
 
@@ -102,7 +81,11 @@ def main(page: ft.Page):
 
     def iniciar_click(e):
         pelotas = fila_lista.controls
-        OrdenamientoBurbuja(pelotas)
+        # if para elegir algoritmo de ordenamiento
+        if algoritmos.value == "Bubble Sort":
+            OrdenamientoBurbuja(pelotas)
+        elif algoritmos.value == "Selection Sort":
+            SelectionSort(pelotas)
         page.update()
 
     def dropdown_change(e):
@@ -118,6 +101,21 @@ def main(page: ft.Page):
             page.bgcolor = ft.colors.AMBER_100
         page.update()
     
+    algoritmos = ft.Dropdown(
+        label= "Algoritmo de Ordenamiento: ",
+        on_change= algoritmos_change,
+        options= [
+            ft.dropdown.Option("Bubble Sort"),
+            ft.dropdown.Option("Selection Sort"),
+            ft.dropdown.Option("Quick Sort"),
+            ft.dropdown.Option("Double Sort"),
+            ft.dropdown.Option("Merge Sort"),
+            ft.dropdown.Option("Insertion Sort"),
+        ],
+        width=200,
+        value="Bubble Sort"
+    )    
+
     dd_bgcolor = ft.Dropdown(
         on_change=dropdown_change,
         options=[
@@ -131,6 +129,22 @@ def main(page: ft.Page):
         width=200,
     )
 
+    print(type(algoritmos.value))
+    print(algoritmos.value)
+    
+    titulo =ft.Text(
+            value = "Algoritmo de ordenamiento: "+ algoritmos.value , 
+            weight=ft.FontWeight.BOLD,
+            font_family="Roboto",
+            style=ft.TextThemeStyle.HEADLINE_MEDIUM
+          )
+    
+    page.add(ft.Row([ titulo],
+            alignment=ft.MainAxisAlignment.CENTER
+        ),
+        ft.Divider(thickness=5,color=ft.colors.BLUE),
+    )
+
     page.add(fila_lista,
         ft.Divider(thickness=5,color=ft.colors.BLUE),
         ft.Row(
@@ -140,7 +154,7 @@ def main(page: ft.Page):
             ]
         ,alignment= ft.MainAxisAlignment.CENTER
         ),
-        ft.Row([algoritmos,dd_bgcolor,list_size], ft.MainAxisAlignment.CENTER)
+        ft.Row([ algoritmos, dd_bgcolor, list_size], ft.MainAxisAlignment.CENTER)
     )
 
 ft.app(target=main)
