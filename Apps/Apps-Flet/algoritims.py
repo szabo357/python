@@ -41,10 +41,10 @@ def main(page: ft.Page):
     fila_lista = ft.Row(pelotas)
 
     def reiniciar_click(e):
+       # fila_lista.clean()
         fila_lista.clean()
-        for i in range( len(fila_lista.controls)):
-            fila_lista.controls.value= random.randint(1,200)
-        
+        pelotas = contenedores(10)
+        fila_lista.controls = pelotas 
         page.update()
 
     def iniciar_click(e):
