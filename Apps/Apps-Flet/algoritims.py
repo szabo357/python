@@ -33,7 +33,11 @@ def main(page: ft.Page):
                 arr[j + 1].bgcolor=ft.colors.ORANGE
             arr[n-i-1].bgcolor=ft.colors.GREEN
         page.update()
-
-    OrdenamientoBurbuja(page.add(ft.Row(contenedores)))
     
+    pelotas = contenedores(10)
+    
+    page.add(ft.Row(pelotas))
+
+    OrdenamientoBurbuja(pelotas)
+
 ft.app(target=main)
