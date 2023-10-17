@@ -41,12 +41,12 @@ def main(page: ft.Page):
     fila_lista = ft.Row(pelotas)
 
     def reiniciar_click(e):
-        fila_lista.clean()
-        fila_lista = fila_lista.value(contenedores(10))
+        fila_lista.value = ft.Row.clean()
+        fila_lista.value = fila_lista.value(contenedores(10))
         page.update()
 
     def iniciar_click(e):
-        OrdenamientoBurbuja(e)
+        OrdenamientoBurbuja(pelotas.value)
         page.update()
 
     page.add(fila_lista,
