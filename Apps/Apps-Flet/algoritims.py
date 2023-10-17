@@ -3,8 +3,18 @@ import random
 import time
 
 def main(page: ft.Page):
-
-    page.add(ft.Text("Algoritmo de Ordenamiento de Burbujas", size=16, weight=ft.FontWeight.BOLD,font_family="Roboto"))
+    page.title = "Algoritmos"
+    page.add(
+        ft.Container(
+            controls=[
+                ft.Text("Algoritmo de Ordenamiento de Burbujas", 
+                        size=16, 
+                        weight=ft.FontWeight.BOLD,
+                        font_family="Roboto"
+            )],
+            alignment=ft.MainAxisAlignment.CENTER
+        ),
+    )
     page.add(ft.Divider(thickness=5,color=ft.colors.BLUE))
 
     def contenedores(count):
