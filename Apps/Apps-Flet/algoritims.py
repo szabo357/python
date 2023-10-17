@@ -3,7 +3,7 @@ import random
 import time
 
 def main(page: ft.Page):
-    page.title = "Algoritmos"
+    page.title = "Algoritmo de ordenamiento {algoritmos.value}"
     page.bgcolor = ft.colors.BLUE_100
 
     page.add(ft.Row(
@@ -60,6 +60,9 @@ def main(page: ft.Page):
         fila_lista.controls = pelotas 
         page.update()
 
+    def algoritmos_change(e):
+        pass
+
     list_size = ft.Dropdown(
         on_change=list_size_change,
         
@@ -72,6 +75,20 @@ def main(page: ft.Page):
         ],
         width=200,
         value="6"
+    )
+
+    algoritmos = ft.Dropdown(
+        label= "Algoritmo de Ordenamiento: ",
+        on_change= algoritmos_change,
+        options= [
+            ft.dropdown.Option("Bubble Sort"),
+            ft.dropdown.Option("Quick Sort"),
+            ft.dropdown.Option("Double Sort"),
+            ft.dropdown.Option("Merge Sort"),
+            ft.dropdown.Option("Insertion Sort"),
+        ],
+        width=200,
+        value="Bubble Sort"
     )
 
     pelotas = contenedores(int(list_size.value))
@@ -123,7 +140,7 @@ def main(page: ft.Page):
             ]
         ,alignment= ft.MainAxisAlignment.CENTER
         ),
-        ft.Row([dd_bgcolor,list_size], ft.MainAxisAlignment.CENTER)
+        ft.Row([algoritmos,dd_bgcolor,list_size], ft.MainAxisAlignment.CENTER)
     )
 
 ft.app(target=main)
