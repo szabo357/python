@@ -1,14 +1,16 @@
+import time
 def ordenamiento_seleccion(arr):
     n = len(arr)
-    for i in range(n-1):
+    for i in range(n - 1):
         menor = i
         for j in range(i + 1, n):
             if arr[j] < arr[menor]:
                 menor = j
         if menor != i:
-            arr[menor], arr[i] = arr[i], arr[menor]
-    return arr
+            arr[menor], arr[i] = (arr[i], arr[menor])
+    print(arr)
+
 
 lista = [25,10,15,14,1,2,5,8]
 
-print(ordenamiento_seleccion(lista))
+ordenamiento_seleccion(lista)

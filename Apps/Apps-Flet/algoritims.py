@@ -45,19 +45,21 @@ def main(page: ft.Page):
         for i in range( n - 1):
             menor = i
             for j in range(i + 1, n):
-                arr[j].bgcolor = ft.colors.YELLOW
-                arr[menor].bgcolor = ft.colors.YELLOW
-                time.sleep(2)
-                page.update()
                 if arr[j].content.value < arr[menor].content.value:
                     menor = j
+                    arr[j].bgcolor = ft.colors.YELLOW
+                    arr[menor].bgcolor = ft.colors.YELLOW
+                    time.sleep(2)
+                    page.update()
             if menor != i:
-                arr[menor], arr[i] = arr[i], arr[menor]
-            arr[menor].bgcolor = ft.colors.ORANGE
-            arr[i].bgcolor = ft.colors.ORANGE
-        arr[n-1].bgcolor = ft.colors.GREEN
-
-        page.update()    
+                arr[menor], arr[i] = (arr[i], arr[menor])
+                arr[menor].bgcolor = ft.colors.ORANGE
+                arr[i].bgcolor = ft.colors.ORANGE
+                time.sleep(2)
+                page.update()
+        arr[i].bgcolor = ft.colors.GREEN
+        page.update()
+        time.sleep(2)    
 
 
     def list_size_change(e):
@@ -143,9 +145,6 @@ def main(page: ft.Page):
         value = "Blue",
         width=200,
     )
-
-    print(type(algoritmos.value))
-    print(algoritmos.value)
     
     titulo =ft.Text(
             value = "Algoritmo de ordenamiento: "+ algoritmos.value , 
