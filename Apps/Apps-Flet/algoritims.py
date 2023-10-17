@@ -34,13 +34,13 @@ def main(page: ft.Page):
             arr[n-i-1].bgcolor=ft.colors.GREEN
         page.update()
 
-    def reiniciar_click(e,value):
-        value.clean()
-        value = contenedores(10)
+    def reiniciar_click(e):
+        e.clean()
+        e = contenedores(10)
         page.update()
 
-    def iniciar_click(e,value):
-        OrdenamientoBurbuja(value)
+    def iniciar_click(e):
+        OrdenamientoBurbuja(e)
         page.update()
 
     page.add(ft.Text("Algoritmo de Ordenamiento de Burbujas", size=16, weight=ft.FontWeight.BOLD,font_family="Roboto"))
