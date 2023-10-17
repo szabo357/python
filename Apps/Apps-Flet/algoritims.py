@@ -42,7 +42,7 @@ def main(page: ft.Page):
 
     def reiniciar_click(e):
         fila_lista.clean()
-        fila_lista.value = fila_lista.value(contenedores(10))
+        fila_lista = contenedores(10)
         page.update()
 
     def iniciar_click(e):
