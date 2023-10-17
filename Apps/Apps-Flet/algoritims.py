@@ -41,7 +41,7 @@ def main(page: ft.Page):
     fila_lista = ft.Row(pelotas)
 
     def reiniciar_click(e):
-        fila_lista.value = ft.Row.clean()
+        fila_lista.clean()
         fila_lista.value = fila_lista.value(contenedores(10))
         page.update()
 
