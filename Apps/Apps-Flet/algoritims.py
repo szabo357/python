@@ -4,20 +4,19 @@ import time
 
 def main(page: ft.Page):
     page.title = "Algoritmos"
-    page.add(
-        ft.Container(
-           content=
-                ft.Text("Algoritmo de Ordenamiento de Burbujas", 
-                        size=16, 
-                        weight=ft.FontWeight.BOLD,
-                        font_family="Roboto",
-                )
-            ,
-            alignment=ft.MainAxisAlignment.CENTER,
-            height=25
-        )
+    page.add(ft.Row(
+               [ ft.Text(
+                    value="Algoritmo de Ordenamiento de Burbujas", 
+                    weight=ft.FontWeight.BOLD,
+                    font_family="Roboto",
+                    style=ft.TextThemeStyle.HEADLINE_MEDIUM
+                 ),
+               ],
+            alignment=ft.MainAxisAlignment.CENTER
+        ),
+        ft.Divider(thickness=5,color=ft.colors.BLUE),
     )
-    page.add(ft.Divider(thickness=5,color=ft.colors.BLUE))
+   # page.add(ft.Divider(thickness=5,color=ft.colors.BLUE))
 
     def contenedores(count):
         items= []
@@ -54,10 +53,9 @@ def main(page: ft.Page):
         page.update()
 
     pelotas = contenedores(10)
-    fila_lista = ft.Row(pelotas)
+    fila_lista = ft.Row(pelotas,alignment=ft.MainAxisAlignment.CENTER)
 
     def reiniciar_click(e):
-       # fila_lista.clean()
         fila_lista.clean()
         pelotas = contenedores(10)
         fila_lista.controls = pelotas 
@@ -74,7 +72,9 @@ def main(page: ft.Page):
             ft.ElevatedButton("Iniciar Ordenamiento",on_click=iniciar_click),
             ft.ElevatedButton("Reiniciar Ordenamiento",on_click=reiniciar_click)
             ]
+        ,alignment= ft.MainAxisAlignment.CENTER
         ),
+        
     )
 
 ft.app(target=main)
