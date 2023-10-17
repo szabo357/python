@@ -4,6 +4,9 @@ import time
 
 def main(page: ft.Page):
 
+    page.add(ft.Text("Algoritmo de Ordenamiento de Burbujas", size=16, weight=ft.FontWeight.BOLD,font_family="Roboto"))
+    page.add(ft.Divider(thickness=5,color=ft.colors.BLUE))
+
     def contenedores(count):
         items= []
         for _  in range(count):
@@ -34,6 +37,9 @@ def main(page: ft.Page):
             arr[n-i-1].bgcolor=ft.colors.GREEN
         page.update()
 
+    pelotas = contenedores(10)
+    fila_lista = ft.Row(pelotas)
+
     def reiniciar_click(e):
         e.clean()
         e = contenedores(10)
@@ -43,14 +49,7 @@ def main(page: ft.Page):
         OrdenamientoBurbuja(e)
         page.update()
 
-    page.add(ft.Text("Algoritmo de Ordenamiento de Burbujas", size=16, weight=ft.FontWeight.BOLD,font_family="Roboto"))
-    page.add(ft.Divider(thickness=5,color=ft.colors.BLUE))
-
-    pelotas = contenedores(10)
-    fila_lista = ft.Row(pelotas)
-    
-    page.add(fila_lista)
-    page.add(
+    page.add(fila_lista,
         ft.Row(
             [
             ft.ElevatedButton("Iniciar Ordenamiento",on_click=iniciar_click(pelotas)),
