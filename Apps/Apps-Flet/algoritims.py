@@ -52,7 +52,8 @@ def main(page: ft.Page):
             arr[n-i-1].bgcolor=ft.colors.GREEN
         page.update()
 
-    pelotas = contenedores(10)
+
+    pelotas = contenedores(14)
     fila_lista = ft.Row(pelotas,alignment=ft.MainAxisAlignment.CENTER)
 
     def reiniciar_click(e):
@@ -66,7 +67,25 @@ def main(page: ft.Page):
         OrdenamientoBurbuja(pelotas)
         page.update()
 
+    def dropdown_change(e):
+        page.bgcolor= dd.value
+        page.update()
+    
+
+    dd = ft.Dropdown(
+        on_change=dropdown_change,
+        options=[
+            ft.dropdown.Option("Blue"),
+            ft.dropdown.Option("Green"),
+            ft.dropdown.Option("Purple"),
+            ft.dropdown.Option("Orange"),
+            ft.dropdown.Option("Amber"),
+        ],
+        width=200,
+    )
+
     page.add(fila_lista,
+        ft.Divider(thickness=5,color=ft.colors.BLUE),
         ft.Row(
             [
             ft.ElevatedButton("Iniciar Ordenamiento",on_click=iniciar_click),
@@ -74,7 +93,7 @@ def main(page: ft.Page):
             ]
         ,alignment= ft.MainAxisAlignment.CENTER
         ),
-        
+        ft.Row([dd], ft.MainAxisAlignment.CENTER)
     )
 
 ft.app(target=main)
