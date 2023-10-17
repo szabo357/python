@@ -19,9 +19,6 @@ def main(page: ft.Page):
             )
         return items
 
-#    def ordenar_click(e,contenedores):
-#        OrdenamientoBurbuja(contenedores)
-
     def OrdenamientoBurbuja(arr):
         n = len(arr)
         for i in range(n):
@@ -36,23 +33,31 @@ def main(page: ft.Page):
                 arr[j + 1].bgcolor=ft.colors.ORANGE
             arr[n-i-1].bgcolor=ft.colors.GREEN
         page.update()
+
+    def reiniciar_click(e):
+        fila_lista.clean()
+        fila_lista = contenedores(10)
+        page.update()
+
+    def iniciar_click(e):
+        pass
     
     pelotas = contenedores(10)
+    fila_lista = ft.Row(pelotas)
 
+    page.add(ft.Text("Algoritmo de Ordenamiento de Burbujas", size=16, weight=ft.FontWeight.BOLD,font_family="Roboto"))
+    page.add(ft.Divider(thickness=5,color=ft.colors.BLUE))
+
+    page.add(fila_lista)
     page.add(
         ft.Row(
-            ft.Text(
-                "Algoritmo de Ordenamiento de Burbujas", 
-                size=16, 
-                weight=ft.FontWeight.BOLD,
-                font_family="Roboto"
-            ),
-            alignment=ft.MainAxisAlignment.CENTER
-        )
+            [
+            ft.ElevatedButton("Iniciar Ordenamiento",on_click=iniciar_click),
+            ft.ElevatedButton("Reiniciar Ordenamiento",on_click=reiniciar_click)
+            ]
+        ),
     )
-    page.add(ft.Divider(thickness=5,color=ft.colors.BLUE))
-    page.add(ft.Row(pelotas,))
- #   page.add(ft.Row(ft.TextButton("Iniciar Ordenamiento",on_click=ordenar_click)))
+    
     OrdenamientoBurbuja(pelotas)
 
 ft.app(target=main)
