@@ -65,7 +65,6 @@ def main(page: ft.Page):
 
 
     def list_size_change(e):
-        #list_size.value = list_size.value
         fila_lista.clean()
         pelotas = contenedores(int(list_size.value))
         fila_lista.controls = pelotas 
@@ -165,8 +164,10 @@ def main(page: ft.Page):
         ft.Divider(thickness=5,color=ft.colors.BLUE),
         ft.Row(
             [algoritmos, dd_bgcolor, list_size,
-            ft.OutlinedButton("Iniciar Ordenamiento",on_click=iniciar_click,icon=ft.icons.PLAY_CIRCLE_OUTLINED),
-            ft.OutlinedButton("Reiniciar Ordenamiento",on_click=reiniciar_click,icon=ft.icons.LOCK_RESET)
+                ft.OutlinedButton("Iniciar Ordenamiento",on_click=iniciar_click,icon=ft.icons.PLAY_CIRCLE_OUTLINED,
+                              style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=10))),
+            ft.OutlinedButton("Reiniciar Ordenamiento",on_click=reiniciar_click,icon=ft.icons.LOCK_RESET,
+                              style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=10))),
             ]
         ,alignment= ft.MainAxisAlignment.CENTER
         )
