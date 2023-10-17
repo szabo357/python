@@ -48,6 +48,7 @@ def main(page: ft.Page):
         page.update()
 
     def iniciar_click(e):
+        pelotas = fila_lista.controls
         OrdenamientoBurbuja(pelotas)
         page.update()
 
