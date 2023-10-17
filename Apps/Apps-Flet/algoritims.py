@@ -25,7 +25,7 @@ def main(page: ft.Page):
             )
         return items
 
-    def OrdenamientoBurbuja(arr):
+    def ordenamiento_burbuja(arr):
         n = len(arr)
         for i in range(n):
             for j in range(0, n-i-1 ):
@@ -40,9 +40,24 @@ def main(page: ft.Page):
             arr[n-i-1].bgcolor=ft.colors.GREEN
         page.update()
 
-    def SelectionSort(arr):
+    def ordenamiento_seleccion(arr):
         n = len(arr)
-        
+        for i in range( n - 1):
+            menor = i
+            for j in range(i + 1, n):
+                arr[j].bgcolor = ft.colors.YELLOW
+                arr[menor].bgcolor = ft.colors.YELLOW
+                time.sleep(2)
+                page.update()
+                if arr[j].content.value < arr[menor].content.value:
+                    menor = j
+            if menor != i:
+                arr[menor], arr[i] = arr[i], arr[menor]
+            arr[menor].bgcolor = ft.colors.ORANGE
+            arr[i].bgcolor = ft.colors.ORANGE
+        arr[n-1].bgcolor = ft.colors.GREEN
+
+        page.update()    
 
 
     def list_size_change(e):
@@ -75,7 +90,7 @@ def main(page: ft.Page):
 
     def reiniciar_click(e):
         fila_lista.clean()
-        pelotas = contenedores(list_size.value)
+        pelotas = contenedores(int(list_size.value))
         fila_lista.controls = pelotas 
         page.update()
 
@@ -83,9 +98,9 @@ def main(page: ft.Page):
         pelotas = fila_lista.controls
         # if para elegir algoritmo de ordenamiento
         if algoritmos.value == "Bubble Sort":
-            OrdenamientoBurbuja(pelotas)
+            ordenamiento_burbuja(pelotas)
         elif algoritmos.value == "Selection Sort":
-            SelectionSort(pelotas)
+            ordenamiento_seleccion(pelotas)
         page.update()
 
     def dropdown_change(e):
