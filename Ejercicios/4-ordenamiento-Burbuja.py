@@ -5,4 +5,14 @@
  se repite la comparacion hasta llegar al final de la lista.
 
  '''
+def bubblesort(arr):
+    n= len(arr)
+    for i in range(n):
+        for j in range(0,n-i-1):
+            if arr[j] > arr[j + 1] :
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
+    return arr
+
+numeros = [24,5,10,60,40,1]
+print( bubblesort(numeros))
