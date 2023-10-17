@@ -5,7 +5,7 @@ import time
 def main(page: ft.Page):
     page.title = "Algoritmos"
     page.bgcolor = ft.colors.BLUE_100
-    
+
     page.add(ft.Row(
                [ ft.Text(
                     value="Algoritmo de Ordenamiento de Burbujas", 
@@ -92,9 +92,11 @@ def main(page: ft.Page):
         if dd_bgcolor.value == "Blue":
             page.bgcolor = ft.colors.BLUE_100
         elif dd_bgcolor.value == "Green":
-            page.bgcolor = ft.colors.LIME_100
+            page.bgcolor = ft.colors.GREEN_100
         elif dd_bgcolor.value == "Purple":
             page.bgcolor = ft.colors.PURPLE_100
+        elif dd_bgcolor.value == "Orange":
+            page.bgcolor = ft.colors.ORANGE_100            
         elif dd_bgcolor.value == "Amber":
             page.bgcolor = ft.colors.AMBER_100
         page.update()
