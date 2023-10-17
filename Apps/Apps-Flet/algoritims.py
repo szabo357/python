@@ -47,19 +47,21 @@ def main(page: ft.Page):
             for j in range(i + 1, n):
                 if arr[j].content.value < arr[menor].content.value:
                     menor = j
-                    arr[j].bgcolor = ft.colors.YELLOW
-                    arr[menor].bgcolor = ft.colors.YELLOW
                     time.sleep(2)
+                    arr[menor].bgcolor = ft.colors.YELLOW
                     page.update()
             if menor != i:
                 arr[menor], arr[i] = (arr[i], arr[menor])
                 arr[menor].bgcolor = ft.colors.ORANGE
-                arr[i].bgcolor = ft.colors.ORANGE
                 time.sleep(2)
                 page.update()
-        arr[i].bgcolor = ft.colors.GREEN
+            time.sleep(2)
+            arr[i].bgcolor = ft.colors.GREEN
+            page.update()
+        time.sleep(2)
+        arr[j].bgcolor = ft.colors.GREEN
         page.update()
-        time.sleep(2)    
+            
 
 
     def list_size_change(e):
