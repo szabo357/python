@@ -52,8 +52,8 @@ def main(page: ft.Page):
     page.add(fila_lista,
         ft.Row(
             [
-            ft.ElevatedButton("Iniciar Ordenamiento",on_click=iniciar_click(pelotas)),
-            ft.ElevatedButton("Reiniciar Ordenamiento",on_click=reiniciar_click(fila_lista))
+            ft.ElevatedButton("Iniciar Ordenamiento",on_click=iniciar_click),
+            ft.ElevatedButton("Reiniciar Ordenamiento",on_click=reiniciar_click)
             ]
         ),
     )
