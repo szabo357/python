@@ -6,14 +6,16 @@ def main(page: ft.Page):
     page.title = "Algoritmos"
     page.add(
         ft.Container(
-            controls=[
+           content=
                 ft.Text("Algoritmo de Ordenamiento de Burbujas", 
                         size=16, 
                         weight=ft.FontWeight.BOLD,
-                        font_family="Roboto"
-            )],
-            alignment=ft.MainAxisAlignment.CENTER
-        ),
+                        font_family="Roboto",
+                )
+            ,
+            alignment=ft.MainAxisAlignment.CENTER,
+            height=25
+        )
     )
     page.add(ft.Divider(thickness=5,color=ft.colors.BLUE))
 
