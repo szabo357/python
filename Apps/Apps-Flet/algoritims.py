@@ -39,9 +39,19 @@ def main(page: ft.Page):
     
     pelotas = contenedores(10)
 
-    page.add(ft.Text("Algoritmo de Ordenamiento de Burbujas", size=16, weight=ft.FontWeight.BOLD, font_family="Roboto"))
+    page.add(
+        ft.Row(
+            ft.Text(
+                "Algoritmo de Ordenamiento de Burbujas", 
+                size=16, 
+                weight=ft.FontWeight.BOLD,
+                font_family="Roboto"
+            ),
+            alignment=ft.MainAxisAlignment.CENTER
+        )
+    )
     page.add(ft.Divider(thickness=5,color=ft.colors.BLUE))
-    page.add(ft.Row(pelotas))
+    page.add(ft.Row(pelotas,))
  #   page.add(ft.Row(ft.TextButton("Iniciar Ordenamiento",on_click=ordenar_click)))
     OrdenamientoBurbuja(pelotas)
 
