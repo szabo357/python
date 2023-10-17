@@ -42,7 +42,7 @@ def main(page: ft.Page):
 
     def reiniciar_click(e):
         fila_lista.clean()
-        for i in range( len(fila_lista)):
+        for i in range( len(fila_lista.controls)):
             fila_lista.controls.value= random.randint(1,200)
         
         page.update()
