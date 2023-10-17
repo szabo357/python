@@ -16,7 +16,6 @@ def main(page: ft.Page):
         ),
         ft.Divider(thickness=5,color=ft.colors.BLUE),
     )
-   # page.add(ft.Divider(thickness=5,color=ft.colors.BLUE))
 
     def contenedores(count):
         items= []
@@ -52,13 +51,33 @@ def main(page: ft.Page):
             arr[n-i-1].bgcolor=ft.colors.GREEN
         page.update()
 
+    def list_size_change(e):
+        #list_size.value = list_size.value
+        fila_lista.clean()
+        pelotas = contenedores(int(list_size.value))
+        fila_lista.controls = pelotas 
+        page.update()
 
-    pelotas = contenedores(14)
+    list_size = ft.Dropdown(
+        on_change=list_size_change,
+        
+        options=[
+            ft.dropdown.Option("6"),
+            ft.dropdown.Option("8"),
+            ft.dropdown.Option("10"),
+            ft.dropdown.Option("12"),
+            ft.dropdown.Option("14"),
+        ],
+        width=200,
+        value="6"
+    )
+
+    pelotas = contenedores(int(list_size.value))
     fila_lista = ft.Row(pelotas,alignment=ft.MainAxisAlignment.CENTER)
 
     def reiniciar_click(e):
         fila_lista.clean()
-        pelotas = contenedores(10)
+        pelotas = contenedores(list_size.value)
         fila_lista.controls = pelotas 
         page.update()
 
@@ -68,11 +87,10 @@ def main(page: ft.Page):
         page.update()
 
     def dropdown_change(e):
-        page.bgcolor= dd.value
+        page.bgcolor= dd_bgcolor.value
         page.update()
     
-
-    dd = ft.Dropdown(
+    dd_bgcolor = ft.Dropdown(
         on_change=dropdown_change,
         options=[
             ft.dropdown.Option("Blue"),
@@ -93,7 +111,7 @@ def main(page: ft.Page):
             ]
         ,alignment= ft.MainAxisAlignment.CENTER
         ),
-        ft.Row([dd], ft.MainAxisAlignment.CENTER)
+        ft.Row([dd_bgcolor,list_size], ft.MainAxisAlignment.CENTER)
     )
 
 ft.app(target=main)
