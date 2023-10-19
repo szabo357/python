@@ -3,7 +3,7 @@ import random
 import time
 
 def main(page: ft.Page):
-    page.title = "Algoritmo de ordenamiento"
+    page.title = "Sorting Algorithms"
     page.bgcolor = ft.colors.BLUE_100
 
     def containers(count):
