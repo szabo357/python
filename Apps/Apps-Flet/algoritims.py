@@ -125,8 +125,8 @@ def main(page: ft.Page):
         page.update()
 
     list_size = ft.Dropdown(
+        label= "List Size",
         on_change=list_size_change,
-        
         options=[
             ft.dropdown.Option("6"),
             ft.dropdown.Option("8"),
@@ -144,7 +144,7 @@ def main(page: ft.Page):
     
     
     algoritms = ft.Dropdown(
-        label= "Sorting Algorithm: ",
+        label= "Sorting Algorithm",
         on_change= algoritms_change,
         options= [
             ft.dropdown.Option("Bubble Sort"),
@@ -158,7 +158,8 @@ def main(page: ft.Page):
         width=200,
     )    
 
-    dd_bgcolor = ft.Dropdown(
+    bgcolor = ft.Dropdown(
+        label= "Background Color:",
         on_change=bgcolor_dropdown_change,
         options=[
             ft.dropdown.Option("Blue"),
@@ -187,7 +188,7 @@ def main(page: ft.Page):
     page.add(list_row,
         ft.Divider(thickness=5,color=ft.colors.BLUE),
         ft.Row(
-            [algoritms, dd_bgcolor, list_size,
+            [algoritms,list_size , bgcolor,
                 ft.OutlinedButton("Start Sorting",on_click=start_click,icon=ft.icons.PLAY_CIRCLE_OUTLINED,
                               style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=10))),
             ft.OutlinedButton("Reset",on_click=reset_click,icon=ft.icons.LOCK_RESET,
