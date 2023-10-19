@@ -98,13 +98,15 @@ def main(page: ft.Page):
         fila_lista.controls = balls 
         page.update()
 
-    def iniciar_click(e):
+    def start_click(e):
         balls = fila_lista.controls
         # if para elegir algoritmo de ordenamiento
         if algoritmos.value == "Bubble Sort":
             bubble_sort(balls)
         elif algoritmos.value == "Selection Sort":
             selection_sort(balls)
+        elif algoritmos.value == "Quick Sort":
+            quick_sort(balls)
         page.update()
 
     def dropdown_change(e):
@@ -165,9 +167,9 @@ def main(page: ft.Page):
         ft.Divider(thickness=5,color=ft.colors.BLUE),
         ft.Row(
             [algoritmos, dd_bgcolor, list_size,
-                ft.OutlinedButton("Iniciar Ordenamiento",on_click=iniciar_click,icon=ft.icons.PLAY_CIRCLE_OUTLINED,
+                ft.OutlinedButton("Start Sorting",on_click=start_click,icon=ft.icons.PLAY_CIRCLE_OUTLINED,
                               style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=10))),
-            ft.OutlinedButton("Reiniciar Ordenamiento",on_click=reiniciar_click,icon=ft.icons.LOCK_RESET,
+            ft.OutlinedButton("Reset",on_click=reset_click,icon=ft.icons.LOCK_RESET,
                               style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=10))),
             ]
         ,alignment= ft.MainAxisAlignment.CENTER
