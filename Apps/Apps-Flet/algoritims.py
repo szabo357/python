@@ -122,8 +122,8 @@ def main(page: ft.Page):
             page.bgcolor = ft.colors.ORANGE_100            
         elif bgcolor.value == "Amber":
             page.bgcolor = ft.colors.AMBER_100
-        divide1.color = bgcolor.value
-        divide2.color = bgcolor.value
+        divider1.color = bgcolor.value
+        divider2.color = bgcolor.value
         page.update()
 
     list_size = ft.Dropdown(
@@ -178,15 +178,16 @@ def main(page: ft.Page):
 
     balls = containers(int(list_size.value))
     list_row = ft.Row(balls,alignment=ft.MainAxisAlignment.CENTER)
-    divide1 = ft.Divider(thickness=5,color="blue")
-    divide2 = ft.Divider(thickness=5,color="blue")
+    divider1 = ft.Divider(thickness=5,color="blue")
+    divider2 = ft.Divider(thickness=5,color="blue")
     btn_start = ft.OutlinedButton("Start Sorting",on_click=start_click,icon=ft.icons.PLAY_CIRCLE_OUTLINED,
-                              style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=10))),
+                              style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=10)))
     btn_reset = ft.OutlinedButton("Reset",on_click=reset_click,icon=ft.icons.LOCK_RESET,
-                              style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=10))),
+                              style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=10)))
+    
     page.add(
         ft.Row([title],alignment=ft.MainAxisAlignment.CENTER),
-        divide1,list_row,divide2,
+        divider1, list_row, divider2,
         ft.Row(
             [algoritms,list_size , bgcolor,btn_start,btn_reset]
         ,alignment= ft.MainAxisAlignment.CENTER
