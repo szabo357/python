@@ -180,19 +180,15 @@ def main(page: ft.Page):
     list_row = ft.Row(balls,alignment=ft.MainAxisAlignment.CENTER)
     divide1 = ft.Divider(thickness=5,color="blue")
     divide2 = ft.Divider(thickness=5,color="blue")
-    
+    btn_start = ft.OutlinedButton("Start Sorting",on_click=start_click,icon=ft.icons.PLAY_CIRCLE_OUTLINED,
+                              style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=10))),
+    btn_reset = ft.OutlinedButton("Reset",on_click=reset_click,icon=ft.icons.LOCK_RESET,
+                              style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=10))),
     page.add(
         ft.Row([title],alignment=ft.MainAxisAlignment.CENTER),
-        divide1,
-        list_row,
-        divide2,
+        divide1,list_row,divide2,
         ft.Row(
-            [algoritms,list_size , bgcolor,
-                ft.OutlinedButton("Start Sorting",on_click=start_click,icon=ft.icons.PLAY_CIRCLE_OUTLINED,
-                              style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=10))),
-            ft.OutlinedButton("Reset",on_click=reset_click,icon=ft.icons.LOCK_RESET,
-                              style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=10))),
-            ]
+            [algoritms,list_size , bgcolor,btn_start,btn_reset]
         ,alignment= ft.MainAxisAlignment.CENTER
         )
     )
