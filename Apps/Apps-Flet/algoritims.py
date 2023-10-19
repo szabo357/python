@@ -186,12 +186,8 @@ def main(page: ft.Page):
                               style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=10)))
     
     page.add(
-        ft.Row([title],alignment=ft.MainAxisAlignment.CENTER),
-        divider1, list_row, divider2,
-        ft.Row(
-            [algoritms,list_size , bgcolor,btn_start,btn_reset]
-        ,alignment= ft.MainAxisAlignment.CENTER
-        )
+        ft.Row([title],alignment=ft.MainAxisAlignment.CENTER),divider1, list_row, divider2,
+        ft.Row([algoritms,list_size , bgcolor,btn_start,btn_reset],alignment= ft.MainAxisAlignment.CENTER)
     )
 
 ft.app(target=main)
