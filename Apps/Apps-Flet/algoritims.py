@@ -6,7 +6,7 @@ def main(page: ft.Page):
     page.title = "Algoritmo de ordenamiento"
     page.bgcolor = ft.colors.BLUE_100
 
-    def contenedores(count):
+    def containers(count):
         items= []
         for _  in range(count):
             items.append(    
@@ -25,7 +25,7 @@ def main(page: ft.Page):
             )
         return items
 
-    def ordenamiento_burbuja(arr):
+    def bubble_sort(arr):
         n = len(arr)
         for i in range(n):
             for j in range(0, n-i-1 ):
@@ -40,7 +40,7 @@ def main(page: ft.Page):
             arr[n-i-1].bgcolor=ft.colors.GREEN
         page.update()
 
-    def ordenamiento_seleccion(arr):
+    def selection_sort(arr):
         n = len(arr)
         for i in range( n - 1):
             menor = i
@@ -63,13 +63,12 @@ def main(page: ft.Page):
         page.update()
             
     def ordenamiento_rapido(arr):
-        pass
         page.update()
 
     def list_size_change(e):
         fila_lista.clean()
-        pelotas = contenedores(int(list_size.value))
-        fila_lista.controls = pelotas 
+        balls = containers(int(list_size.value))
+        fila_lista.controls = balls 
         page.update()
 
     def algoritmos_change(e):
@@ -90,22 +89,22 @@ def main(page: ft.Page):
         value="6"
     )
 
-    pelotas = contenedores(int(list_size.value))
-    fila_lista = ft.Row(pelotas,alignment=ft.MainAxisAlignment.CENTER)
+    balls = containers(int(list_size.value))
+    fila_lista = ft.Row(balls,alignment=ft.MainAxisAlignment.CENTER)
 
     def reiniciar_click(e):
         fila_lista.clean()
-        pelotas = contenedores(int(list_size.value))
-        fila_lista.controls = pelotas 
+        balls = containers(int(list_size.value))
+        fila_lista.controls = balls 
         page.update()
 
     def iniciar_click(e):
-        pelotas = fila_lista.controls
+        balls = fila_lista.controls
         # if para elegir algoritmo de ordenamiento
         if algoritmos.value == "Bubble Sort":
-            ordenamiento_burbuja(pelotas)
+            bubble_sort(balls)
         elif algoritmos.value == "Selection Sort":
-            ordenamiento_seleccion(pelotas)
+            selection_sort(balls)
         page.update()
 
     def dropdown_change(e):
