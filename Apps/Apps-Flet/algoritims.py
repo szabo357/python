@@ -112,15 +112,15 @@ def main(page: ft.Page):
         page.update()
 
     def bgcolor_dropdown_change(e):
-        if dd_bgcolor.value == "Blue":
+        if bgcolor.value == "Blue":
             page.bgcolor = ft.colors.BLUE_100
-        elif dd_bgcolor.value == "Green":
+        elif bgcolor.value == "Green":
             page.bgcolor = ft.colors.GREEN_100
-        elif dd_bgcolor.value == "Purple":
+        elif bgcolor.value == "Purple":
             page.bgcolor = ft.colors.PURPLE_100
-        elif dd_bgcolor.value == "Orange":
+        elif bgcolor.value == "Orange":
             page.bgcolor = ft.colors.ORANGE_100            
-        elif dd_bgcolor.value == "Amber":
+        elif bgcolor.value == "Amber":
             page.bgcolor = ft.colors.AMBER_100
         page.update()
 
