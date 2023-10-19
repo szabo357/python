@@ -72,7 +72,7 @@ def main(page: ft.Page):
         page.update()
 
     def algoritms_change(e):
-        titulo.value = "Sorting Algorithm: "  + algoritms.value
+        title.value = "Sorting Algorithm: "  + algoritms.value
         page.update()
 
     list_size = ft.Dropdown(
@@ -133,8 +133,8 @@ def main(page: ft.Page):
             ft.dropdown.Option("Merge Sort"),
             ft.dropdown.Option("Insertion Sort"),
         ],
+        value = "Bubble Sort",
         width=200,
-        value="Bubble Sort"
     )    
 
     dd_bgcolor = ft.Dropdown(
@@ -150,14 +150,14 @@ def main(page: ft.Page):
         width=200,
     )
     
-    titulo =ft.Text(
-            value = "Algoritmo de ordenamiento: "+ algoritms.value , 
+    title =ft.Text(
+            value = "Sorting Algoritm: "+ algoritms.value , 
             weight=ft.FontWeight.BOLD,
             font_family="Roboto",
             style=ft.TextThemeStyle.HEADLINE_MEDIUM
           )
     
-    page.add(ft.Row([ titulo],
+    page.add(ft.Row([ title],
             alignment=ft.MainAxisAlignment.CENTER
         ),
         ft.Divider(thickness=5,color=ft.colors.BLUE),
