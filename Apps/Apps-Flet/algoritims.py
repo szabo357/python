@@ -62,7 +62,9 @@ def main(page: ft.Page):
         arr[j].bgcolor = ft.colors.GREEN
         page.update()
             
-
+    def ordenamiento_rapido(arr):
+        pass
+        page.update()
 
     def list_size_change(e):
         fila_lista.clean()
