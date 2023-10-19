@@ -24,7 +24,7 @@ def main(page: ft.Page):
                 )
             )
         return items
-
+# Sorting Algoritms
     def bubble_sort(arr):
         n = len(arr)
         for i in range(n):
