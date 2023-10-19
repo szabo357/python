@@ -137,12 +137,7 @@ def main(page: ft.Page):
         width=200,
         value="6"
     )
-
-    balls = containers(int(list_size.value))
-    list_row = ft.Row(balls,alignment=ft.MainAxisAlignment.CENTER)
-
-    
-    
+        
     algoritms = ft.Dropdown(
         label= "Sorting Algorithm",
         on_change= algoritms_change,
@@ -171,21 +166,21 @@ def main(page: ft.Page):
         value = "Blue",
         width=200,
     )
-    
+
     title =ft.Text(
             value = "Sorting Algoritm: "+ algoritms.value , 
             weight=ft.FontWeight.BOLD,
             font_family="Roboto",
             style=ft.TextThemeStyle.HEADLINE_MEDIUM
-          )
-    
-    page.add(ft.Row([ title],
-            alignment=ft.MainAxisAlignment.CENTER
-        ),
-        ft.Divider(thickness=5,color=ft.colors.BLUE),
     )
 
-    page.add(list_row,
+    balls = containers(int(list_size.value))
+    list_row = ft.Row(balls,alignment=ft.MainAxisAlignment.CENTER)
+
+    page.add(
+        ft.Row([title],alignment=ft.MainAxisAlignment.CENTER),
+        ft.Divider(thickness=5,color=ft.colors.BLUE),
+        list_row,
         ft.Divider(thickness=5,color=ft.colors.BLUE),
         ft.Row(
             [algoritms,list_size , bgcolor,
