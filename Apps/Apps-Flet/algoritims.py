@@ -179,9 +179,9 @@ def main(page: ft.Page):
 
     page.add(
         ft.Row([title],alignment=ft.MainAxisAlignment.CENTER),
-        ft.Divider(thickness=5,color=ft.colors.BLUE),
+        ft.Divider(thickness=5,color=bgcolor.value),
         list_row,
-        ft.Divider(thickness=5,color=ft.colors.BLUE),
+        ft.Divider(thickness=5,color=bgcolor.value),
         ft.Row(
             [algoritms,list_size , bgcolor,
                 ft.OutlinedButton("Start Sorting",on_click=start_click,icon=ft.icons.PLAY_CIRCLE_OUTLINED,
