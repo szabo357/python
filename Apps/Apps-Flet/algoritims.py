@@ -92,7 +92,7 @@ def main(page: ft.Page):
     balls = containers(int(list_size.value))
     fila_lista = ft.Row(balls,alignment=ft.MainAxisAlignment.CENTER)
 
-    def reiniciar_click(e):
+    def reset_click(e):
         fila_lista.clean()
         balls = containers(int(list_size.value))
         fila_lista.controls = balls 
