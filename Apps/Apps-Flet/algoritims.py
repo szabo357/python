@@ -61,7 +61,10 @@ def main(page: ft.Page):
         time.sleep(2)
         arr[j].bgcolor = ft.colors.GREEN
         page.update()
-            
+    ##
+    # 
+    # Sorting Algoritms to implement.
+    #       
     def quick_sort(arr):
         page.update()
 
@@ -74,6 +77,7 @@ def main(page: ft.Page):
     def insertion_sort(arr):
         page.update()
 
+# Event Listeners
     def list_size_change(e):
         list_row.clean()
         balls = containers(int(list_size.value))
@@ -83,23 +87,6 @@ def main(page: ft.Page):
     def algoritms_change(e):
         title.value = "Sorting Algorithm: "  + algoritms.value
         page.update()
-
-    list_size = ft.Dropdown(
-        on_change=list_size_change,
-        
-        options=[
-            ft.dropdown.Option("6"),
-            ft.dropdown.Option("8"),
-            ft.dropdown.Option("10"),
-            ft.dropdown.Option("12"),
-            ft.dropdown.Option("14"),
-        ],
-        width=200,
-        value="6"
-    )
-
-    balls = containers(int(list_size.value))
-    list_row = ft.Row(balls,alignment=ft.MainAxisAlignment.CENTER)
 
     def reset_click(e):
         list_row.clean()
@@ -136,6 +123,25 @@ def main(page: ft.Page):
         elif dd_bgcolor.value == "Amber":
             page.bgcolor = ft.colors.AMBER_100
         page.update()
+
+    list_size = ft.Dropdown(
+        on_change=list_size_change,
+        
+        options=[
+            ft.dropdown.Option("6"),
+            ft.dropdown.Option("8"),
+            ft.dropdown.Option("10"),
+            ft.dropdown.Option("12"),
+            ft.dropdown.Option("14"),
+        ],
+        width=200,
+        value="6"
+    )
+
+    balls = containers(int(list_size.value))
+    list_row = ft.Row(balls,alignment=ft.MainAxisAlignment.CENTER)
+
+    
     
     algoritms = ft.Dropdown(
         label= "Sorting Algorithm: ",
