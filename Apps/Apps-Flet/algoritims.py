@@ -177,7 +177,7 @@ def main(page: ft.Page):
 
     balls = containers(int(list_size.value))
     list_row = ft.Row(balls,alignment=ft.MainAxisAlignment.CENTER)
-    divider = ft.Divider(thickness=5,color= bgcolor.value)
+    divider = ft.Divider(thickness=5,color="blue")
     
     page.add(
         ft.Row([title],alignment=ft.MainAxisAlignment.CENTER),
