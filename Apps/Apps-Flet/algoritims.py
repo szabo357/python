@@ -71,8 +71,8 @@ def main(page: ft.Page):
         list_row.controls = balls 
         page.update()
 
-    def algoritmos_change(e):
-        titulo.value = "Algoritmo de ordenamiento: "  + algoritmos.value
+    def algoritms_change(e):
+        titulo.value = "Sorting Algorithm: "  + algoritms.value
         page.update()
 
     list_size = ft.Dropdown(
@@ -101,11 +101,11 @@ def main(page: ft.Page):
     def start_click(e):
         balls = list_row.controls
         # if para elegir algoritmo de ordenamiento
-        if algoritmos.value == "Bubble Sort":
+        if algoritms.value == "Bubble Sort":
             bubble_sort(balls)
-        elif algoritmos.value == "Selection Sort":
+        elif algoritms.value == "Selection Sort":
             selection_sort(balls)
-        elif algoritmos.value == "Quick Sort":
+        elif algoritms.value == "Quick Sort":
             quick_sort(balls)
         page.update()
 
@@ -122,9 +122,9 @@ def main(page: ft.Page):
             page.bgcolor = ft.colors.AMBER_100
         page.update()
     
-    algoritmos = ft.Dropdown(
-        label= "Algoritmo de Ordenamiento: ",
-        on_change= algoritmos_change,
+    algoritms = ft.Dropdown(
+        label= "Sorting Algorithm: ",
+        on_change= algoritms_change,
         options= [
             ft.dropdown.Option("Bubble Sort"),
             ft.dropdown.Option("Selection Sort"),
@@ -151,7 +151,7 @@ def main(page: ft.Page):
     )
     
     titulo =ft.Text(
-            value = "Algoritmo de ordenamiento: "+ algoritmos.value , 
+            value = "Algoritmo de ordenamiento: "+ algoritms.value , 
             weight=ft.FontWeight.BOLD,
             font_family="Roboto",
             style=ft.TextThemeStyle.HEADLINE_MEDIUM
@@ -166,7 +166,7 @@ def main(page: ft.Page):
     page.add(list_row,
         ft.Divider(thickness=5,color=ft.colors.BLUE),
         ft.Row(
-            [algoritmos, dd_bgcolor, list_size,
+            [algoritms, dd_bgcolor, list_size,
                 ft.OutlinedButton("Start Sorting",on_click=start_click,icon=ft.icons.PLAY_CIRCLE_OUTLINED,
                               style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=10))),
             ft.OutlinedButton("Reset",on_click=reset_click,icon=ft.icons.LOCK_RESET,
