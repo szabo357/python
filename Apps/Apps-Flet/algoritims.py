@@ -66,9 +66,9 @@ def main(page: ft.Page):
         page.update()
 
     def list_size_change(e):
-        fila_lista.clean()
+        list_row.clean()
         balls = containers(int(list_size.value))
-        fila_lista.controls = balls 
+        list_row.controls = balls 
         page.update()
 
     def algoritmos_change(e):
@@ -90,16 +90,16 @@ def main(page: ft.Page):
     )
 
     balls = containers(int(list_size.value))
-    fila_lista = ft.Row(balls,alignment=ft.MainAxisAlignment.CENTER)
+    list_row = ft.Row(balls,alignment=ft.MainAxisAlignment.CENTER)
 
     def reset_click(e):
-        fila_lista.clean()
+        list_row.clean()
         balls = containers(int(list_size.value))
-        fila_lista.controls = balls 
+        list_row.controls = balls 
         page.update()
 
     def start_click(e):
-        balls = fila_lista.controls
+        balls = list_row.controls
         # if para elegir algoritmo de ordenamiento
         if algoritmos.value == "Bubble Sort":
             bubble_sort(balls)
@@ -163,7 +163,7 @@ def main(page: ft.Page):
         ft.Divider(thickness=5,color=ft.colors.BLUE),
     )
 
-    page.add(fila_lista,
+    page.add(list_row,
         ft.Divider(thickness=5,color=ft.colors.BLUE),
         ft.Row(
             [algoritmos, dd_bgcolor, list_size,
