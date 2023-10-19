@@ -65,6 +65,15 @@ def main(page: ft.Page):
     def quick_sort(arr):
         page.update()
 
+    def double_sort(arr):
+        page.update()
+
+    def merge_sort(arr):
+        page.update
+    
+    def insertion_sort(arr):
+        page.update()
+
     def list_size_change(e):
         list_row.clean()
         balls = containers(int(list_size.value))
@@ -107,9 +116,15 @@ def main(page: ft.Page):
             selection_sort(balls)
         elif algoritms.value == "Quick Sort":
             quick_sort(balls)
+        elif algoritms.value == "Double Sort":
+            double_sort(balls)
+        elif algoritms.value == "Merge Sort":
+            merge_sort(balls)
+        elif algoritms.value == "Insertion Sort":
+            insertion_sort(balls)
         page.update()
 
-    def dropdown_change(e):
+    def bgcolor_dropdown_change(e):
         if dd_bgcolor.value == "Blue":
             page.bgcolor = ft.colors.BLUE_100
         elif dd_bgcolor.value == "Green":
@@ -138,7 +153,7 @@ def main(page: ft.Page):
     )    
 
     dd_bgcolor = ft.Dropdown(
-        on_change=dropdown_change,
+        on_change=bgcolor_dropdown_change,
         options=[
             ft.dropdown.Option("Blue"),
             ft.dropdown.Option("Green"),
