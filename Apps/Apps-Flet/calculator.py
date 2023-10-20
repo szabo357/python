@@ -265,7 +265,7 @@ class CalculatorApp(ft.UserControl):
         self.new_operand = True
 
 def main(page: ft.Page):
-    page.title= "App Calculadora"
+    page.title= "App Calculator"
     calc = CalculatorApp()
     page.add(calc)
 
