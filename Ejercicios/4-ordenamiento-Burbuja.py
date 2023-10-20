@@ -3,9 +3,11 @@
  una lista de menor a Mayor. y lo hace comparando los primeros 2 valores de la lista,
  si el primer valor es mayor que el segundo valor entonces se intercambian los valores de la lista.
  se repite la comparacion hasta llegar al final de la lista.
+  '''
 
- '''
+
 def bubblesort(arr):
+    
     n= len(arr)
     for i in range(n):
         for j in range(0,n-i-1):
@@ -14,5 +16,6 @@ def bubblesort(arr):
 
     return arr
 
-numeros = [24,5,10,60,40,1]
-print( bubblesort(numeros))
+arr = [24,5,10,60,40,1]
+
+print(bubblesort(arr))
