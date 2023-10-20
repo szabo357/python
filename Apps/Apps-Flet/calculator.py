@@ -266,9 +266,7 @@ class CalculatorApp(ft.UserControl):
 
 def main(page: ft.Page):
     page.title= "App Calculadora"
-
     calc = CalculatorApp()
-    
     page.add(calc)
 
 ft.app(target=main)
