@@ -22,8 +22,9 @@ my_float = 2.5 * 2
 print("Hola " * int(my_float))
 
 ### Operadores Comparativos ###
+print("\n°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°")
+print("Operadores Comparativos\n")
 
-# Operaciones con enteros
 print(3 > 4)
 print(3 < 4)
 print(3 >= 4)
@@ -43,6 +44,8 @@ print("Hola" != "Python")
 ### Operadores Lógicos ###
 
 # Basada en el Álgebra de Boole https://es.wikipedia.org/wiki/%C3%81lgebra_de_Boole
+print("\n°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°")
+print("Operadores Booleanos\n")
 print(3 > 4 and "Hola" > "Python")
 print(3 > 4 or "Hola" > "Python")
 print(3 < 4 and "Hola" < "Python")
