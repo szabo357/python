@@ -42,7 +42,6 @@ Si tu encuentrás una manera distinta de resolver el problema por favor comparte
 
 ### 4 Tabla de Multiplicar  
   
- 
    Crea un programa que sea capaz de solicitarte un número y se
    encargue de imprimir su tabla de multiplicar entre el 1 y el 10.
    - Debe visualizarse qué operación se realiza y su resultado.
@@ -57,15 +56,48 @@ Si tu encuentrás una manera distinta de resolver el problema por favor comparte
 
 ### 5 Ordenamiento de Burbuja
 
- /*
- * Crea un programa que sea capaz de solicitarte un número y se
- * encargue de imprimir su tabla de multiplicar entre el 1 y el 10.
- * - Debe visualizarse qué operación se realiza y su resultado.
- *   Ej: 1 x 1 = 1
- *       1 x 2 = 2
- *       1 x 3 = 3
- *       ... 
- */ 
+  Enunciado
 
   Solución: :hash: :five:  -> [Ordenamiento de Burbuja](./5-ordenamiento_burbuja.py)
+  
   ---
+
+### 6 Ordenamiento Rápido
+
+  Enunciado
+
+  Solución: :hash: :six:  -> [Ordenamiento Rápido](./6-ordenamiento_rapido.py)
+  
+  ---
+
+### 7 Ordenamiento Doble
+
+  Enunciado
+
+  Solución: :hash: :seven:  -> [Ordenamiento Doble](./7-ordenamiento_doble.py)
+  
+  ---
+
+### 8 Ordenamiento de Selección
+
+  Enunciado
+
+  Solución: :hash: :eight:  -> [Ordenamiento de Selección](./8-ordenamiento_seleccion.py)
+  
+  ---
+
+### 9 Ordenamiento de Inserción
+
+  Enunciado
+
+  Solución: :hash: :nine:  -> [Ordenamiento de Inserción](./9-ordenamiento_insercion.py)
+  
+  ---    
+
+### 10 Ordenamiento de Burbuja
+
+  Enunciado
+
+  Solución: :hash: :ten:  -> [Ordenamiento de Unión](./10-ordenamiento_union.py)
+  
+  ---  
