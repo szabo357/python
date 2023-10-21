@@ -40,6 +40,7 @@ print(type(my_tuple))
 
 my_tuple[4] = "Szabo"
 my_tuple.insert(1, "Azul")
+my_tuple.insert(1,"Jose")
 my_tuple = tuple(my_tuple)
 print(my_tuple)
 print(type(my_tuple))
