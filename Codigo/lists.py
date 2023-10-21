@@ -70,17 +70,17 @@ print(my_list)
 
 # Operaciones con listas
 
-#my_new_list = my_list.copy()
+my_new_list = my_list.copy()
 
-#my_list.clear()
-#print(my_list)
-#print(my_new_list)
+my_list.clear()
+print(my_list)
+print(my_new_list)
 
-#my_new_list.reverse()
-#print(my_new_list)
+my_new_list.reverse()
+print(my_new_list)
 
-#my_new_list.sort()
-#print(my_new_list)
+my_new_list.sort()
+print(my_new_list)
 
 # Sublistas
 
