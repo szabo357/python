@@ -15,7 +15,7 @@ Si tu encuentrás una manera distinta de resolver el problema por favor comparte
   - Múltiplos de 5 por la palabra "buzz".
   - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
   
-  Solución: :hash: :one:  -> [Fizzbuzz](./1-Fizzbuzz.py)
+  Solución: :hash: :one:  -> [Fizzbuzz](./1-fizzbuzz.py)
 
 ---
 
@@ -28,7 +28,7 @@ Si tu encuentrás una manera distinta de resolver el problema por favor comparte
   - 1 factorial es, lógicamente, 1, ya que multiplicamos 1 x 1
   - por convención 0 factorial es, 1.
 
-  Solución: :hash: :two:  -> [Factorial](./2-Factorial.py)
+  Solución: :hash: :two:  -> [Factorial](./2-factorial.py)
 
   ---
 
@@ -36,7 +36,7 @@ Si tu encuentrás una manera distinta de resolver el problema por favor comparte
 
   Crea una función que reciba días, horas, minutos y segundos (como enteros) y retorne su resultado en milisegundos.
 
-  Solución: :hash: :three:  -> [Conversion a milisegundos](./3-Conversion_Milisegundos.py)
+  Solución: :hash: :three:  -> [Conversion a milisegundos](./3-conversion_milisegundos.py)
 
   ---
 
@@ -51,7 +51,7 @@ Si tu encuentrás una manera distinta de resolver el problema por favor comparte
          2 x 3 = 6
          ... 
 
-  Solución: :hash: :four:  -> [Nombre Ejercicio](./4-Factorial.py)
+  Solución: :hash: :four:  -> [Tabla de Multiplicar](./4-tabla_multiplicar.py)
 
   ---
 
@@ -67,5 +67,5 @@ Si tu encuentrás una manera distinta de resolver el problema por favor comparte
  *       ... 
  */ 
 
-  Solución: :hash: :four:  -> [Nombre Ejercicio](./4-Factorial.py)
+  Solución: :hash: :five:  -> [Ordenamiento de Burbuja](./5-ordenamiento_burbuja.py)
   ---
