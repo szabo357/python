@@ -36,6 +36,9 @@ print(3 == 4)
 print(3 != 4)
 
 # Operaciones con cadenas de texto
+print("\n°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°")
+print("comparaciones cadenas de texto\n")
+
 print("Hola" > "Python")
 print("Hola" < "Python")
 print("aaaa" >= "abaa")  # Ordenación alfabética por ASCII
