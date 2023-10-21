@@ -18,6 +18,7 @@ print(my_tuple[-1])
 # print(my_tuple[4]) IndexError
 # print(my_tuple[-6]) IndexError
 
+# metodos en las tuplas
 print(my_tuple.count("Miklos"))
 print(my_tuple.index("Szabo"))
 print(my_tuple.index("Miklos"))
@@ -46,7 +47,6 @@ print(my_tuple)
 print(type(my_tuple))
 
 # Eliminación
-
 # del my_tuple[2] TypeError: 'tuple' object doesn't support item deletion
 
 del my_tuple
