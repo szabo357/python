@@ -16,6 +16,7 @@ print(2 ** 3 + 3 - 7 / 1 // 4)
 # Operaciones con cadenas de texto
 print("\n°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°")
 print("Operaciones con cadenas de texto\n")
+
 print("Hola " + "Python " + "¿Qué tal?")
 print("Hola " + str(5))
 
@@ -54,6 +55,7 @@ print("Hola" != "Python")
 # Basada en el Álgebra de Boole https://es.wikipedia.org/wiki/%C3%81lgebra_de_Boole
 print("\n°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°")
 print("Operadores Booleanos\n")
+
 print(3 > 4 and "Hola" > "Python")
 print(3 > 4 or "Hola" > "Python")
 print(3 < 4 and "Hola" < "Python")
