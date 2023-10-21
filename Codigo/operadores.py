@@ -1,6 +1,9 @@
 ### Operadores Aritméticos ###
 
 # Operaciones con enteros
+print("\n°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°")
+print("Operadores Aritmeticos\n")
+
 print(3 + 4)
 print(3 - 4)
 print(3 * 4)
