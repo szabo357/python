@@ -8,9 +8,10 @@
         ... 
  
 """
-
+1
 def tabla_multiplicar(numero):
     for i in range(1,11):
-        print("%d X %d = %d"%(numero, i , numero*i ))
+        print("%d X %d =  %d"%(numero, i , numero*i ))
 
-num= input("Ingrese un Numero: ")
+num= int(input("Ingrese un Numero: "))
+tabla_multiplicar(num)
