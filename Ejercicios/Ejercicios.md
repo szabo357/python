@@ -98,6 +98,6 @@ Si tu encuentrás una manera distinta de resolver el problema por favor comparte
 
   Enunciado
 
-  Solución: :hash: :ten:  -> [Ordenamiento de Unión](./10-ordenamiento_union.py)
+  Solución: :hash: :one: :zero:  -> [Ordenamiento de Unión](./10-ordenamiento_union.py)
   
   ---  
