@@ -8,10 +8,13 @@
         ... 
  
 """
-1
-def tabla_multiplicar(numero):
+
+def tabla_multiplicar():
+  try:
+    numero = int(input("Ingrese un Numero para generar su tabla de multiplicar: "))
     for i in range(1,11):
         print("%d X %d =  %d"%(numero, i , numero*i ))
+  except ValueError: 
+     print("Error: Introduce un número entero válido.")
 
-num= int(input("Ingrese un Numero: "))
-tabla_multiplicar(num)
+tabla_multiplicar()
