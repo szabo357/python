@@ -84,10 +84,10 @@ print(my_new_list)
 
 # Sublistas
 
-#print(my_new_list[1:3])
+print(my_new_list[1:3])
 
 # Cambio de tipo
 
-#my_list = "Hola Python"
-#print(my_list)
-#print(type(my_list))
+my_list = "Hola Python"
+print(my_list)
+print(type(my_list))
