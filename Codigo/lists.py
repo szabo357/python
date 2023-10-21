@@ -27,13 +27,13 @@ print(my_list.count(30))
 print(my_other_list[4])  #IndexError
 print(my_other_list[-5]) #IndexError
 
-#print(my_other_list.index("Miklos"))
+print(my_other_list.index("Miklos"))
 
-#age, height, name, surname = my_other_list
-#print(name)
+age, height, name, surname = my_other_list
+print(name)
 
-#name, height, age, surname = my_other_list[2], my_other_list[1], my_other_list[0], my_other_list[3]
-#print(age)
+name, height, age, surname = my_other_list[2], my_other_list[1], my_other_list[0], my_other_list[3]
+print(age)
 
 # Concatenación
 
