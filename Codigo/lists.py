@@ -24,8 +24,8 @@ print(my_other_list[1])
 print(my_other_list[-1])
 print(my_other_list[-4])
 print(my_list.count(30))
-print(my_other_list[4])  #IndexError
-print(my_other_list[-5]) #IndexError
+#print(my_other_list[4])  #IndexError
+#print(my_other_list[-5]) #IndexError
 
 print(my_other_list.index("Miklos"))
 
@@ -37,36 +37,36 @@ print(age)
 
 # Concatenación
 
-#print(my_list + my_other_list)
+print(my_list + my_other_list)
 #print(my_list - my_other_list)
 
 
 # Creación, inserción, actualización y eliminación
 
-#my_other_list.append("Miklos")
-#print(my_other_list)
+my_other_list.append("Miklos")
+print(my_other_list)
 
-#my_other_list.insert(1, "Rojo")
-#print(my_other_list)
+my_other_list.insert(1, "Rojo")
+print(my_other_list)
 
-#my_other_list[1] = "Azul"
-#print(my_other_list)
+my_other_list[1] = "Azul"
+print(my_other_list)
 
-#my_other_list.remove("Azul")
-#print(my_other_list)
+my_other_list.remove("Azul")
+print(my_other_list)
 
-#my_list.remove(30)
-#print(my_list)
+my_list.remove(30)
+print(my_list)
 
-#print(my_list.pop())
-#print(my_list)
+print(my_list.pop())
+print(my_list)
 
-#my_pop_element = my_list.pop(2)
-#print(my_pop_element)
-#print(my_list)
+my_pop_element = my_list.pop(2)
+print(my_pop_element)
+print(my_list)
 
-#del my_list[2]
-#print(my_list)
+del my_list[2]
+print(my_list)
 
 # Operaciones con listas
 
