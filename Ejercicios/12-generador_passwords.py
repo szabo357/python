@@ -10,7 +10,7 @@
 import string 
 import random
 
-def generar_pwd(length = 8,upper=False,adddigits=False,addsymbols=False)->str:
+def generar_pwd(length = 8 , upper = False, adddigits = False, addsymbols = False )->str:
     try:
         password = ""
         characters = []
@@ -35,7 +35,6 @@ def generar_pwd(length = 8,upper=False,adddigits=False,addsymbols=False)->str:
     except ValueError:
         print("Error Generating Password")
 
-    return password
 
 print(generar_pwd(8,False,True,True))
 print(generar_pwd(16,True,True,True))
