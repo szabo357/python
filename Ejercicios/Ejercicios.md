@@ -109,7 +109,6 @@ Si tu encuentrás una manera distinta de resolver el problema por favor comparte
   - Las columnas se designan por letras de la "A" a la "Z" de forma infinita.
   - Ejemplos: A = 1, Z = 26, AA = 27, CA = 79.
 
-  Solución: :hash: :one: :zero:  -> [Ordenamiento de Unión](./10-ordenamiento_union.py)
+  Solución: :hash: :one: :one:  -> [Ordenamiento de Unión](./11-columna_excel.py)
 
   ---
-  
