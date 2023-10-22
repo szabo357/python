@@ -5,20 +5,19 @@
   - Ejemplos: A = 1, Z = 26, AA = 27, CA = 79.
 """
 
-def columna_excel(nombre_columna: str)->int:
-     numero_columna = 0
+def calculate_excel_column(column_name: str)->int:
+     column_number = 0
      alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
      
-     for letra in nombre_columna.upper():
-        numero_columna = (numero_columna * len(alphabet)) + (alphabet.index(letra) + 1)
+     for letter in column_name.upper():
+        column_number = (column_number * len(alphabet)) + (alphabet.index(letter) + 1)
 
-     return numero_columna  
-       # print(f"Letra: {alphabet[i]} indice: {i+1} ")
-
-    
-print(columna_excel("AZZ"))
-print(columna_excel("A"))
-print(columna_excel("AA"))
-print(columna_excel("AB"))
-print(columna_excel("BA"))
-print(columna_excel("CA"))
+     return column_number  
+      
+      
+print(calculate_excel_column("AZZ"))
+print(calculate_excel_column("A"))
+print(calculate_excel_column("AA"))
+print(calculate_excel_column("AB"))
+print(calculate_excel_column("BA"))
+print(calculate_excel_column("CA"))
