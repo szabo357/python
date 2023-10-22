@@ -1,41 +1,41 @@
-import string as strs
+"""
+  Escribe un programa que sea capaz de generar contraseñas de forma aleatoria.
+  Podrás configurar generar contraseñas con los siguientes parámetros:
+  - Longitud: Entre 8 y 16.
+  - Con o sin letras mayúsculas.
+  - Con o sin números.
+  - Con o sin símbolos.
+  (Pudiendo combinar todos estos parámetros entre ellos)
+"""
+import string 
 import random
-def generar_pwd(length:int,upper:bool,adddigits:bool,addsimbols:bool)->str:
+
+def generar_pwd(length = 8,upper=False,adddigits=False,addsymbols=False)->str:
     try:
-        password = []
-        lowers  = strs.ascii_lowercase
-        uppers  = strs.ascii_uppercase
-        digits  = strs.digits
-        symbols = strs.punctuation
+        password = ""
+        characters = []
 
-        if length < 8 or length > 16 :
-            raise Exception("Password Length must be between 8 and 16 characters.")
-        else:
+        characters += string.ascii_lowercase 
 
-            for i in range(length):   
-            
-                if upper == True :
-                    i+=1
-                    password.append(uppers[ random.randint(0,  len(uppers)-1 )]) 
-                else:
-                    i+=1
-                    password.append(lowers[ random.randint(0,  len(lowers)-1 )])   
+        if upper :
+            characters += string.ascii_uppercase
+        if adddigits:
+            characters += string.digits
+        if addsymbols:
+            characters += string.punctuation
 
-                if adddigits == True:
-                    i+=1
-                    password.append(digits[ random.randint(0,  len(digits)-1 )])
-            
-                if addsimbols == True:
-                    i+=1
-                    password.append(symbols[ random.randint(0, len(symbols)-1 )])
-            
-                if i >= length:
-                    return str(password)
+        final_length = 8 if length < 8 else 16 if length > 16 else length  
+        i = 0
+        while i < final_length:
+            password+= random.choice(characters)
+            i+=1
 
+        return str(password)
+    
     except ValueError:
         print("Error Generating Password")
 
     return password
 
-# El generador de passwords aun falla, tiene bugs!!
 print(generar_pwd(8,False,True,True))
+print(generar_pwd(16,True,True,True))
