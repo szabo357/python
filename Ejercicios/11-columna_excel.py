@@ -5,15 +5,20 @@
   - Ejemplos: A = 1, Z = 26, AA = 27, CA = 79.
 """
 
-def columna_excel(nombre_columna):
+def columna_excel(nombre_columna: str)->int:
+     numero_columna = 0
      alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-     nombre_columna = str(nombre_columna.upper())
-     search_list = []
-
-     for i in range(len(alphabet)):
-        print(alphabet[i])
      
-    
+     for letra in nombre_columna.upper():
+        numero_columna = (numero_columna * len(alphabet)) + (alphabet.index(letra) + 1)
 
-columna_excel("A")
-#columna_excel("AA")
+     return numero_columna  
+       # print(f"Letra: {alphabet[i]} indice: {i+1} ")
+
+    
+print(columna_excel("AZZ"))
+print(columna_excel("A"))
+print(columna_excel("AA"))
+print(columna_excel("AB"))
+print(columna_excel("BA"))
+print(columna_excel("CA"))
