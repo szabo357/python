@@ -37,3 +37,10 @@ print(f"El contenido del set es: {my_other_set}")
 # Eliminando un Set.
 del my_other_set
 # print(my_other_set) NameError: name 'my_other_set' is not defined. El set fue eliminado.
+
+#Convirtiendo una lista en Set
+# syntax
+mi_lista = ['item1', 'item2', 'item3', 'item4', 'item1']
+nuevo_set = set(mi_lista) 
+print(nuevo_set)
+
