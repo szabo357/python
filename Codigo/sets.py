@@ -73,3 +73,6 @@ numeros_enteros = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 numeros_pares = {0, 2, 4, 6, 8, 10}
 print(numeros_enteros.issubset(numeros_pares)) # False, Porque numeros_enteros es un super set
 print(numeros_enteros.issuperset(numeros_pares)) # True
+
+#Encontrando la diferencia entre 2 sets
+print(st1.difference(st2))
