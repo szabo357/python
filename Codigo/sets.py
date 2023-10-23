@@ -76,3 +76,4 @@ print(numeros_enteros.issuperset(numeros_pares)) # True
 
 #Encontrando la diferencia entre 2 sets
 print(st1.difference(st2))
+print(numeros_enteros.difference(numeros_pares))
