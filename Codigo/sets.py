@@ -67,3 +67,9 @@ st1 = {'item1', 'item2', 'item3', 'item4'}
 st2 = {'item3', 'item2'}
 print(st1.intersection(st2)) # Devuelve la interseccion como un nuevo Set {'item3', 'item2'}
 
+# 1 Probando si un Set es Subset de otro Set.  El Subset es parte de un Super Set.
+# 2 Probando si un Set es Super Set de otro Set. El Super Set contiene a todo un Subset 
+numeros_enteros = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+numeros_pares = {0, 2, 4, 6, 8, 10}
+print(numeros_enteros.issubset(numeros_pares)) # False, Porque numeros_enteros es un super set
+print(numeros_enteros.issuperset(numeros_pares)) # True
