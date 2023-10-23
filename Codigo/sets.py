@@ -61,3 +61,8 @@ miset1.clear()
 miset1 = {'item1', 'item2', 'item3', 'item4'}
 miset1.update(miset2)
 print(miset1)
+
+# Encontrando la intersección de 2 Sets.
+st1 = {'item1', 'item2', 'item3', 'item4'}
+st2 = {'item3', 'item2'}
+print(st1.intersection(st2)) # {'item3', 'item2'}
