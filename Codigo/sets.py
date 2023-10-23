@@ -78,6 +78,9 @@ print(numeros_enteros.issuperset(numeros_pares)) # True
 print(st1.difference(st2))
 print(numeros_enteros.difference(numeros_pares))
 
+#Encontrando la diferencia simetrica entre 2 sets.
+#Devuelve todos los elementos que no estan presentes en ambas listas.
+print(numeros_enteros.symmetric_difference(numeros_pares))
 
 # Probando si los Sets estan desunidos.
 print(st2.isdisjoint(st1)) # False
