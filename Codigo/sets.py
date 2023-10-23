@@ -12,6 +12,12 @@ my_set.add('Papel')
 my_set.add('Borrador')
 print(my_set)
 
-my_set.add('Libro')
+my_other_set.add('Libro')
 print(my_set)
 print(len(my_set))
+print(my_other_set)
+
+#verificar si un elemento existe en un set
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+print('mango' in fruits ) # True
+
