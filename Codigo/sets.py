@@ -1,7 +1,7 @@
 # Aprendiendo sobre sets.
 
 my_set = set()
-my_other_set = {'items1', 'items2', 'items3', 'items4'}
+my_other_set = {'item1', 'item2', 'item3', 'item4'}
 
 print( len(my_set) )
 print( len(my_other_set) )
@@ -29,3 +29,7 @@ print(my_other_set)
 
 #Remover un elemento aleatoriamente
 print(my_other_set.pop())
+
+# Borrando el Set. 
+my_other_set.clear()
+print(f"El contenido del set es: {my_other_set}")
