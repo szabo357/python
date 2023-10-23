@@ -44,3 +44,6 @@ mi_lista = ['item1', 'item2', 'item3', 'item4', 'item1']
 nuevo_set = set(mi_lista) 
 print(nuevo_set)
 
+#Convirtiendo un set en una lista
+nueva_lista = list(nuevo_set)
+print(nueva_lista)
