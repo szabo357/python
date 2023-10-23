@@ -30,6 +30,10 @@ print(my_other_set)
 #Remover un elemento aleatoriamente
 print(my_other_set.pop())
 
-# Borrando el Set. 
+# Borrando el contenido del Set. 
 my_other_set.clear()
 print(f"El contenido del set es: {my_other_set}")
+
+# Eliminando un Set.
+del my_other_set
+# print(my_other_set) NameError: name 'my_other_set' is not defined. El set fue eliminado.
