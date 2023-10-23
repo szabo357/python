@@ -56,3 +56,8 @@ miset2 = {'item5', 'item6', 'item7', 'item8'}
 miset3 = miset1.union(miset2)
 print( miset3)
 
+# Uniendo Sets. con la funcion update. En este caso los valores de miset2 se agregan a miset1.
+miset1.clear()
+miset1 = {'item1', 'item2', 'item3', 'item4'}
+miset1.update(miset2)
+print(miset1)
