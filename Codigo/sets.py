@@ -47,3 +47,12 @@ print(nuevo_set)
 #Convirtiendo un set en una lista
 nueva_lista = list(nuevo_set)
 print(nueva_lista)
+
+#uniendo Sets. 
+# La funcion union sirve para unir 2 sets diferentes. pero devuelve un nuevo set. 
+# asi que debe ser almacenado en una nueva variable.
+miset1 = {'item1', 'item2', 'item3', 'item4'}
+miset2 = {'item5', 'item6', 'item7', 'item8'}
+miset3 = miset1.union(miset2)
+print( miset3)
+
