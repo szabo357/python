@@ -80,7 +80,8 @@ print(numeros_enteros.difference(numeros_pares))
 
 #Encontrando la diferencia simetrica entre 2 sets.
 #Devuelve todos los elementos que no estan presentes en ambas listas.
-print(numeros_enteros.symmetric_difference(numeros_pares))
+algunos_numeros = {1,2,3,4,5}
+print(numeros_enteros.symmetric_difference(algunos_numeros))
 
 # Probando si los Sets estan desunidos.
 print(st2.isdisjoint(st1)) # False
