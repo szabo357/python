@@ -65,4 +65,5 @@ print(miset1)
 # Encontrando la intersección de 2 Sets.
 st1 = {'item1', 'item2', 'item3', 'item4'}
 st2 = {'item3', 'item2'}
-print(st1.intersection(st2)) # {'item3', 'item2'}
+print(st1.intersection(st2)) # Devuelve la interseccion como un nuevo Set {'item3', 'item2'}
+
