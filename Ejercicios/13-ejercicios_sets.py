@@ -32,6 +32,10 @@ print(A.intersection(B))
 #3 Es A un subset de B
 print(A.issubset(B))
 #4 Estan desunidos los sets A y B ?
+print(A.isdisjoint(B))
 #5 Unir A con B y B con A
+print(A.union(B))
+print(B.union(A))
 #6 Cual es la diferencia simetrica entre A y B
+print(A.symmetric_difference(B))
 #7 Eliminar los sets completamente
