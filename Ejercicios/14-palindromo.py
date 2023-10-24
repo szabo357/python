@@ -8,8 +8,6 @@
 """
 
 def palindromo(cadena="")->bool:
-    print(cadena)
-    print(cadena[::-1])
     new_cadena= cadena.lower().replace(" ","")
     return new_cadena == new_cadena[::-1]
 
