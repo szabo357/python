@@ -32,3 +32,30 @@ print('soccer' in my_dict.values())
 print(my_dict.get('first_name')) # la funcion get devuelve None si el indice no existe en el dict.
 print(my_dict.get('sport1'))
 
+# Inserción
+
+my_dict["Calle"] = "Calle 14"
+print(my_dict)
+
+# Actualización
+
+my_dict["Nombre"] = "Pedro"
+print(my_dict["Nombre"])
+
+# Eliminación
+
+del my_dict["Calle"]
+print(my_dict)
+
+# Otras operaciones
+print("#####################")
+print(my_dict.items())  # .items() Cambia el diccionario a una lista de tuplas
+print(my_dict.keys())   # .keys() devuelve una lista con todas las llaves del diccionario.
+print(my_dict.values()) # .values() devuelve una lista con todos los valores del diccionario.
+
+my_list = ["Nombre", "Apellido", "Piso"]
+my_values=["Juan","Castro",2]
+my_new_dict = dict.fromkeys((my_list))
+print(my_new_dict)
+
+
