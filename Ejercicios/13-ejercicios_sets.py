@@ -28,6 +28,7 @@ print(it_companies)
 #1 Une A y B
 print(A.union(B))
 #2 Encuentra A interseccion de B
+print(A.intersection(B))
 #3 Es A un subset de B
 #4 Estan desunidos los sets A y B ?
 #5 Unir A con B y B con A
