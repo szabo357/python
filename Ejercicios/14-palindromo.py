@@ -6,13 +6,14 @@
   NO se tienen en cuenta los espacios, signos de puntuación y tildes.
   Ejemplo: Ana lleva al oso la avellana. 
 """
-import string
+
 def palindromo(cadena="")->bool:
+    print(cadena)
+    print(cadena[::-1])
+    new_cadena= cadena.lower().replace(" ","")
+    return new_cadena == new_cadena[::-1]
 
-    characters= string.punctuation
-    characters +=string.digits
-    cadena.lower().replace(characters,"")
-
-    return cadena == cadena[::-1]
-
+#print(string.punctuation,string.ascii_letters)
 print(palindromo("Ana lleva al oso la avellana"))
+print(palindromo("Miklos"))
+print(palindromo("Ada"))
