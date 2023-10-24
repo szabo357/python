@@ -25,8 +25,10 @@ print(my_other_dict)
 print(len(my_dict))
 
 # Imprime el valor de la llave sport1
-print(my_dict['sport1'])
-
+#print(my_other_dict[1]) # Key Error 1
+print(my_other_dict["Nombre"])
 print(my_dict.values())
-
 print('soccer' in my_dict.values())
+print(my_dict.get('first_name')) # la funcion get devuelve None si el indice no existe en el dict.
+print(my_dict.get('sport1'))
+
