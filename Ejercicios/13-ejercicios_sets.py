@@ -41,3 +41,22 @@ print(A.symmetric_difference(B))
 #7 Eliminar los sets completamente
 del A 
 del B
+
+# Ejercicios nivel 3
+#1 convertir ages a un set y comparar la longitud de la lista y el set, cual es mas grande?
+nuevo_set = set(age)
+print(len(age),len(nuevo_set))
+#2 Explicar la diferencia entre los siguientes tipos de datos: string, list, tuple and set
+# - Un String es una cadena de Caracteres. Basicamente es un arreglo indexado de caracteres unicode.
+# - es posible iterar entre cada caracter de un String.
+# - Una Lista es una coleccion de tipos de datos distintos ordenados e indexados que es mutable y actualizable.
+# - Una tupla es una coleccion de tipos de datos distintos, ordenados e indexados que es inmutable. 
+# -Un Set es un conjunto de elementos unicos que no estan ordenados e indexados. una vez
+# se ha creado un Set.los elementos no pueden ser modificados. Pero si se pueden hacer operaciones
+# de conjuntos con ellos.
+
+#3 cuantas palabras unicas se usaron en la oracion: Soy profesor y me encanta inspirar y enseñar a la gente. 
+#  utiliza el metodo split para obtener las palabras unicas.
+oracion = "Soy profesor y me encanta inspirar y enseñar a la gente"
+palabras_unicas = set(oracion.split()) 
+print(len(palabras_unicas))
