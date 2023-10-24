@@ -39,3 +39,5 @@ print(B.union(A))
 #6 Cual es la diferencia simetrica entre A y B
 print(A.symmetric_difference(B))
 #7 Eliminar los sets completamente
+del A 
+del B
