@@ -12,7 +12,10 @@ print(len(it_companies))
 it_companies.add("Twitter")
 print(it_companies)
 #3 Agrega multiples compañias de IT de un solo a it_companies
-it_companies.update({"Oracle","Sap","IBM"})
+it_companies.update({"Sap","Accenture","DXC"})
 print(it_companies)
 #4 Remueve una de las compañias de it_companies
+it_companies.remove("Sap")
+print(it_companies)
 #5 Cual es la diferencia entre las funciones remove y discard
+
