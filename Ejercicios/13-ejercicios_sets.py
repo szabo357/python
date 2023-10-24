@@ -24,3 +24,12 @@ print(it_companies)
 # puede o no pertenecer al set. discard no emitira un mensaje de error si el elemento no existe en
 # el set.
 
+# Ejercicios nivel 2
+#1 Une A y B
+print(A.union(B))
+#2 Encuentra A interseccion de B
+#3 Es A un subset de B
+#4 Estan desunidos los sets A y B ?
+#5 Unir A con B y B con A
+#6 Cual es la diferencia simetrica entre A y B
+#7 Eliminar los sets completamente
