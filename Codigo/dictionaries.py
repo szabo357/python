@@ -113,3 +113,6 @@ myfamily = {
   "child3" : child3
 }
 
+# Accessing Nested dictionary
+print(myfamily["child2"]["name"])
+print(myfamily["child2"]["year"])
