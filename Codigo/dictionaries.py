@@ -69,7 +69,11 @@ my_new_dict.update({"Nombre":"Juan"})
 print((my_new_dict))
 
 # Iterating a dictionary
-for x,y in my_new_dict:
+for x in my_new_dict:
+  print(x)
+
+# iterating key-values of dictionary
+for x,y in my_new_dict.items():
   print(x,y)
 
 
