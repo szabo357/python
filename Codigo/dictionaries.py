@@ -68,5 +68,6 @@ my_new_dict.update({"sport4":"baseball"})
 my_new_dict.update({"Nombre":"Juan"})
 print((my_new_dict))
 
+del my_new_dict
 
 
