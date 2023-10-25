@@ -43,7 +43,6 @@ my_dict["Nombre"] = "Pedro"
 print(my_dict["Nombre"])
 
 # Eliminación
-
 del my_dict["Calle"]
 print(my_dict)
 
@@ -116,3 +115,16 @@ myfamily = {
 # Accessing Nested dictionary
 print(myfamily["child2"]["name"])
 print(myfamily["child2"]["year"])
+
+# dictionaries methods list
+myfamily.clear()         #Removes all the elements from the dictionary
+myfamily.copy()          #Returns a copy of the dictionary
+myfamily.fromkeys()      #Returns a dictionary with the specified keys and value
+myfamily.get()           #Returns the value of the specified key
+myfamily.items()         #Returns a list containing a tuple for each key value pair
+myfamily.keys()          #Returns a list containing the dictionary's keys
+myfamily.pop()           #Removes the element with the specified key
+myfamily.popitem()       #Removes the last inserted key-value pair
+myfamily.setdefault()    #Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
+myfamily.update()        #Updates the dictionary with the specified key-value pairs
+myfamily.values()        #Returns a list of all the values in the dictionary
