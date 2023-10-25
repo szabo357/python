@@ -88,7 +88,28 @@ for x in my_new_dict.keys():
 for x,y in my_new_dict.items():
   print(x,y)
 
-
+# make a copy of a dictionary
+new_dict = my_new_dict.copy()
+print( new_dict)
 # del my_new_dict  deletes dictionary.
 
+# Nested dictionaries.
+child1 = {
+  "name" : "Emil",
+  "year" : 2004
+}
+child2 = {
+  "name" : "Tobias",
+  "year" : 2007
+}
+child3 = {
+  "name" : "Linus",
+  "year" : 2011
+}
+
+myfamily = {
+  "child1" : child1,
+  "child2" : child2,
+  "child3" : child3
+}
 
