@@ -7,10 +7,29 @@ if a > 0:
     print('A is a positive number')
 # A is a positive number
 
-# The else statement is used to execute another block of code in case the if condition is false.
-a = 2
-if a > 5:
-    print('A is greater than 5')
+
+age = 25
+# The elif keyword is Python's way of saying 
+# "if the previous conditions were not true, then try this condition".
+if (age >= 10 and age <= 20) :
+    #block1
+    print("Age is between 10 an 20 years")
+elif (age >= 20 and age <= 30):
+    #block2
+    print("Age is between 10 an 20 years")
+
+
+
+#The else keyword catches anything which isn't caught by the preceding conditions.
+if (age >= 10 and age <= 20) :
+    #block1
+    print("Age is between 10 an 20 years")
+elif (age >= 20 and age <= 30):
+    #block2
+    print("Age is between 10 an 20 years")
 else:
-    print('A is less than 5')
+    #block3
+    print("Age is  30 or greater")
+
+
 
