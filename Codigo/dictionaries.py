@@ -61,7 +61,7 @@ print(my_new_dict)
 my_new_dict = dict.fromkeys(my_dict)
 print((my_new_dict))
 
-my_new_dict = dict.fromkeys(my_dict.keys, my_dict.values)
+my_new_dict = my_dict.update({"sport1":"ping pong"})
 print((my_new_dict))
 
 
