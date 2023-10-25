@@ -68,23 +68,23 @@ my_new_dict.update({"sport4":"baseball"})
 my_new_dict.update({"Nombre":"Juan"})
 print((my_new_dict))
 
-# looping a dictionary
+# looping a dictionary ( return key names )
 for x in my_new_dict:
   print(x)
 
-#looping dictionaries values one by one
+#looping dictionaries values one by one (return values)
 for x in my_new_dict:
   print(my_new_dict[x])
 
-#looping dictionaries values
+#looping dictionaries values ( return values)
 for x in my_new_dict.values():
   print(x)
 
-#looping dictionaries keys
+#looping dictionaries keys ( return keys)
 for x in my_new_dict.keys():
   print(x)
 
-# looping key-values of dictionary
+# looping key-values of dictionary (return key-values)
 for x,y in my_new_dict.items():
   print(x,y)
 
