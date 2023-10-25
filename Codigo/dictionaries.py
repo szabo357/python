@@ -68,6 +68,11 @@ my_new_dict.update({"sport4":"baseball"})
 my_new_dict.update({"Nombre":"Juan"})
 print((my_new_dict))
 
+# Iterating a dictionary
+for x in my_new_dict:
+  print(x)
+
+
 del my_new_dict
 
 
