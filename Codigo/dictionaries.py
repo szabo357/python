@@ -61,7 +61,11 @@ print(my_new_dict)
 my_new_dict = dict.fromkeys(my_dict)
 print((my_new_dict))
 
-my_new_dict = my_dict.update({"sport1":"ping pong"})
+my_new_dict.update({"sport1":"ping pong"})
+my_new_dict.update({"sport2":"tenis"})
+my_new_dict.update({"sport3":"soccer"})
+my_new_dict.update({"sport4":"baseball"})
+my_new_dict.update({"Nombre":"Juan"})
 print((my_new_dict))
 
 
