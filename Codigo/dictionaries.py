@@ -61,5 +61,8 @@ print(my_new_dict)
 my_new_dict = dict.fromkeys(my_dict)
 print((my_new_dict))
 
+my_new_dict = dict.fromkeys(my_dict.keys, my_dict.values)
+print((my_new_dict))
+
 
 
