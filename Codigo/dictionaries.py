@@ -53,9 +53,13 @@ print(my_dict.items())  # .items() Cambia el diccionario a una lista de tuplas
 print(my_dict.keys())   # .keys() devuelve una lista con todas las llaves del diccionario.
 print(my_dict.values()) # .values() devuelve una lista con todos los valores del diccionario.
 
-my_list = ["Nombre", "Apellido", "Piso"]
-my_values=["Juan","Castro",2]
+my_list =  ["Nombre", "Apellido", "Piso"]
+my_values= ["Juan","Castro",2]
 my_new_dict = dict.fromkeys((my_list))
 print(my_new_dict)
+
+my_new_dict = dict.fromkeys(my_dict)
+print((my_new_dict))
+
 
 
