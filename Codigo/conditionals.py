@@ -19,7 +19,6 @@ elif (age >= 20 and age <= 30):
     print("Age is between 10 an 20 years")
 
 
-
 #The else keyword catches anything which isn't caught by the preceding conditions.
 if (age >= 10 and age <= 20) :
     #block1
@@ -32,4 +31,7 @@ else:
     print("Age is  30 or greater")
 
 
+# short hand if
+a,b = 5 , 3
+if a > b: print("a is greater than b")
 
