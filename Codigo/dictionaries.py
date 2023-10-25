@@ -80,7 +80,9 @@ for x in my_new_dict:
 for x in my_new_dict.values():
   print(x)
 
-
+#looping dictionaries keys
+for x in my_new_dict.keys():
+  print(x)
 
 # looping key-values of dictionary
 for x,y in my_new_dict.items():
