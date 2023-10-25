@@ -72,14 +72,20 @@ print((my_new_dict))
 for x in my_new_dict:
   print(x)
 
+#looping dictionaries values one by one
+for x in my_new_dict:
+  print(my_new_dict[x])
+
+#looping dictionaries values
+for x in my_new_dict.values():
+  print(x)
+
+
 
 # looping key-values of dictionary
 for x,y in my_new_dict.items():
   print(x,y)
 
-#looping dictionaries values one by one
-for x in my_new_dict:
-  print(my_new_dict[x])
 
 # del my_new_dict  deletes dictionary.
 
