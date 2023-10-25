@@ -33,12 +33,10 @@ print(my_dict.get('first_name')) # la funcion get devuelve None si el indice no 
 print(my_dict.get('sport1'))
 
 # Inserción
-
 my_dict["Calle"] = "Calle 14"
 print(my_dict)
 
 # Actualización
-
 my_dict["Nombre"] = "Pedro"
 print(my_dict["Nombre"])
 
