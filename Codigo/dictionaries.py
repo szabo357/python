@@ -68,15 +68,19 @@ my_new_dict.update({"sport4":"baseball"})
 my_new_dict.update({"Nombre":"Juan"})
 print((my_new_dict))
 
-# Iterating a dictionary
+# looping a dictionary
 for x in my_new_dict:
   print(x)
 
-# iterating key-values of dictionary
+
+# looping key-values of dictionary
 for x,y in my_new_dict.items():
   print(x,y)
 
+#looping dictionaries values one by one
+for x in my_new_dict:
+  print(my_new_dict[x])
 
-del my_new_dict
+# del my_new_dict  deletes dictionary.
 
 
