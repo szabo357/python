@@ -35,3 +35,7 @@ else:
 a,b = 5 , 3
 if a > b: print("a is greater than b")
 
+# short hand if ... else
+a = 2
+b = 330
+print("A") if a > b else print("B")
