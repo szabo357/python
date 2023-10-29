@@ -28,6 +28,31 @@ def create_house()->(list,list):
 
     return house, door
 
+def move(position: list)->list:
+    row, col = position[0], position[1]
+
+    movements = "N S E O"
+
+    if row == 0: movements = movements.replace("N ","")
+    if row == 3: movements = movements.replace("S ","")
+    if row == 0: movements = movements.replace("O ","")
+    if row == 3: movements = movements.replace("E ","")
+
+    movement = input(f"¿Hacia dónde te quieres desplazar [ {movements}]?: ").upper()
+
+    if movement in movements:
+        if movement == "N": position =   [ row-1, col]
+        elif movement == "S": position = [ row+1, col]
+        elif movement == "E": position = [ row, col+1]
+        elif movement == "O": position = [ row, col-1]
+
+        return position 
+    else:
+        print("Desplazamiento incorrecto. Selecciona una de las opciones validas.")
+        return move(position)
+
+
+
 house,door = create_house()
 
 position = door
