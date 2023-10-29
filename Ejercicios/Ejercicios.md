@@ -206,3 +206,14 @@ Esta podría ser una representación:
   Solución: :hash: :one: :five:  -> [La casa encantada](./15-la_casa_encantada.py)
 
   --- 
+
+  ### 16 Eliminando Caracteres
+
+Crea una función que reciba dos cadenas como parámetro (str1, str2)
+e imprima otras dos cadenas como salida (out1, out2).
+- out1 contendrá todos los caracteres presentes en la str1 pero NO estén presentes en str2.
+- out2 contendrá todos los caracteres presentes en la str2 pero NO estén presentes en str1.
+  
+    Solución: :hash: :one: :six:  -> [Eliminando Caracteres](./16-eliminando_caracteres.py)
+
+  --- 
