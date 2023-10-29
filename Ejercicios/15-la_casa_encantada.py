@@ -13,6 +13,16 @@ def create_house()->(list,list):
 
     house[door[0]][door[1]] = "🚪"
 
+    def generate_candy(door:list)->list:
+        candy = [random.randint(0,3),random.randint(0,3)]
+        if candy[0] == door[0] and candy[1] == door[1]:
+            return generate_candy(door)
+        return candy
+    
+    candy = generate_candy(door)
+
+    house[candy[0]][candy[1]] = "🍭"
+
     for row in house:
         print("".join(map(str,row)))
 
