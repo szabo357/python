@@ -109,6 +109,98 @@ Si tu encuentrás una manera distinta de resolver el problema por favor comparte
   - Las columnas se designan por letras de la "A" a la "Z" de forma infinita.
   - Ejemplos: A = 1, Z = 26, AA = 27, CA = 79.
 
-  Solución: :hash: :one: :one:  -> [Ordenamiento de Unión](./11-columna_excel.py)
+  Solución: :hash: :one: :one:  -> [La columna de Excel](./11-columna_excel.py)
 
   ---
+
+### 12 Generador de Passwords
+
+  Escribe un programa que sea capaz de generar contraseñas de forma aleatoria.
+  Podrás configurar generar contraseñas con los siguientes parámetros:
+  - Longitud: Entre 8 y 16.
+  - Con o sin letras mayúsculas.
+  - Con o sin números.
+  - Con o sin símbolos.
+  (Pudiendo combinar todos estos parámetros entre ellos)
+
+  Solución: :hash: :one: :two:  -> [Generador de passwords](./12-generador_passwords.py)
+
+  ---
+
+### 13 Ejercicios Sets
+
+it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
+A = {19, 22, 24, 20, 25, 26}
+B = {19, 22, 20, 25, 26, 24, 28, 27}
+age = [22, 19, 24, 25, 26, 24, 25, 24]
+
+Ejercicios Nivel 1
+1 Encuentra la longitus del Set it_companies
+2 Agrega 'Twitter' a it_companies
+3 Agrega multiples compañias de IT de un solo a it_companies
+4 Remueve una de las compañias de it_companies
+5 ¿Cuál es la diferencia entre las funciones remove y discard?
+
+Ejercicios nivel 2
+1 Une A y B
+2 Encuentra A interseccion de B
+3 Es A un subset de B
+4 Estan desunidos los sets A y B ?
+5 Unir A con B y B con A
+6 Cual es la diferencia simetrica entre A y B
+7 Eliminar los sets completamente
+
+Ejercicios nivel 3
+1 convertir ages a un set y comparar la longitud de la lista y el set, cual es mas grande?
+2 Explicar la diferencia entre los siguientes tipos de datos: string, list, tuple and set.
+3 ¿Cuántas palabras únicas se usaron en la oración?: Soy profesor y me encanta inspirar y enseñar a la gente. 
+-utiliza el metodo split para obtener las palabras unicas.
+
+  Solución: :hash: :one: :three:  -> [Ejercicios Sets](./13-ejercicios_sets.py)
+
+  ---
+
+### 14 ¿Es un palíndromo?
+
+
+Escribe una función que reciba un texto y retorne verdadero o falso (Boolean) según sean o no palíndromos.
+Un Palíndromo es una palabra o expresión que es igual si se lee de izquierda a derecha que de derecha a izquierda.
+
+No se tienen en cuenta los espacios, signos de puntuación y tildes.
+
+  Ejemplo: Ana lleva al oso la avellana.
+ 
+
+  Solución: :hash: :one: :four:  -> [Palíndromo](./14-palindromo.py)
+
+  ---
+
+  ### 15 La casa encantanda
+  
+Este es un reto especial por Halloween.
+Te encuentras explorando una mansión abandonada llena de habitaciones.
+En cada habitación tendrás que resolver un acertijo para poder avanzar a la siguiente.
+Tu misión es encontrar la habitación de los dulces.
+ 
+Se trata de implementar un juego interactivo de preguntas y respuestas por terminal.
+(Tienes total libertad para ser creativo con los textos)
+ 
+🏰 Casa: La mansión se corresponde con una estructura cuadrada 4 x 4 que deberás modelar. 
+Las habitaciones de puerta y dulces no tienen enigma.(16 habitaciones, siendo una de entrada y otra donde están los dulces)
+   Esta podría ser una representación:
+    🚪⬜️⬜️⬜️
+    ⬜️👻⬜️⬜️
+    ⬜️⬜️⬜️👻
+    ⬜️⬜️🍭⬜️
+❓ Enigmas: Cada habitación propone un enigma aleatorio que deberás responder con texto.
+  
+  Si no lo aciertas no podrás desplazarte.
+  🧭 Movimiento: Si resuelves el enigma se te preguntará a donde quieres desplazarte.
+ (Ejemplo: norte/sur/este/oeste. Sólo deben proporcionarse las opciones posibles)
+  🍭 Salida: Sales de la casa si encuentras la habitación de los dulces.
+  👻 (Bonus) Fantasmas: Existe un 10% de que en una habitación aparezca un fantasma y
+    tengas que responder dos preguntas para salir de ella.
+  
+  Solución: :hash: :one: :five:  -> [La casa encantada](./15-la_casa_encantada.py)
+
+  --- 

@@ -17,7 +17,7 @@ print(it_companies)
 #4 Remueve una de las compañias de it_companies
 it_companies.remove("Sap")
 print(it_companies)
-#5 Cual es la diferencia entre las funciones remove y discard
+#5 ¿Cuál es la diferencia entre las funciones remove y discard?
 # La funcion remove se utiliza para remover un elemento de un Set. El elemento debe pertenecer 
 # obligatoriamente al set, sino un error es mostrado en consola. 
 # La funcion discard tambien remueve un elemento de un set con la diferencia de que el elemento
