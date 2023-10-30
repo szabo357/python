@@ -2815,10 +2815,22 @@ world =[
 ]
 
 # list countries that contains "land"
-for country in countries:
-    if "land" in country:
-        print(country)
+#for country in countries:
+#    if "land" in country:
+#        print(country)
 
+#Exercise1 :What are the total number of languages in the data
+langs = set()
 for country in world:
-    print(country["name"], country["population"])
-    print(country["languages"])
+    for lang in country["languages"]:
+        langs.add(lang)
+
+print(f"there are {len(langs)} languages in data.")
+
+#Excercise2 Find the ten most spoken languages from the data.
+
+
+#for country in world:
+#    print(country["name"], country["population"])
+#    print(country["languages"])
+
