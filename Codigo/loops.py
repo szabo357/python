@@ -42,3 +42,12 @@ while contador < 10:
     contador+=1
 else: 
     print(f"contador es igual a {contador}")
+
+# for Loop
+# print half triangle
+my_str ="#"
+for _ in range(7):
+    print(my_str)
+    my_str+="#"
+else:
+    print("Triangle has been printed!")
