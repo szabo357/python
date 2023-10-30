@@ -43,7 +43,18 @@ while contador < 10:
 else: 
     print(f"contador es igual a {contador}")
 
+
+
 # for Loop
+# In Python the for loop is used for iterating
+# over a sequence : list,tuple,set,dictionary, or a string.
+
+# for loop with list
+my_list = [35, 24, 62, 52, 30, 30, 17]
+
+for element in my_list:
+    print(element)
+
 # print half triangle
 my_str ="#"
 for _ in range(7):
