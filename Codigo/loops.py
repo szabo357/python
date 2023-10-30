@@ -55,6 +55,24 @@ my_list = [35, 24, 62, 52, 30, 30, 17]
 for element in my_list:
     print(element)
 
+# for loop with Strings.
+language = 'Python'
+for letter in language:
+    print(letter)
+
+for i in range(len(language)):
+    print(language[i])
+
+# for loop with tuple
+numbers = (0, 1, 2, 3, 4, 5)
+for number in numbers:
+    print(number)
+
+# for loop with sets
+it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
+for company in it_companies:
+    print(company)
+
 # print half triangle
 my_str ="#"
 for _ in range(7):
