@@ -2821,4 +2821,4 @@ for country in countries:
 
 for country in world:
     print(country["name"], country["population"])
-
+    print(country["languages"])
