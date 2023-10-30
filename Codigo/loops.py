@@ -73,6 +73,17 @@ it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Am
 for company in it_companies:
     print(company)
 
+# for with dictionaries
+my_dict = {"name": "Jose", "lastname": "Avila", "age": 35, "language": "Python"}
+
+for element in my_dict:
+    print(element)
+    if element == "age":
+        break
+else:
+    print("for loop for dictionaries has finished.")
+
+
 # print half triangle
 my_str ="#"
 for _ in range(7):
@@ -80,3 +91,11 @@ for _ in range(7):
     my_str+="#"
 else:
     print("Triangle has been printed!")
+
+# Nested for loops cube example
+
+for _ in range(10):
+    my_str=""
+    for _ in range(10):
+        my_str+="#"
+    print(my_str )
