@@ -2820,4 +2820,4 @@ for country in countries:
         print(country)
 
 for country in world:
-    print(country.items)
+    print(type(country))
