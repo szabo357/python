@@ -1,4 +1,6 @@
 import flet as ft
+import countriesdata
+w = world
 
 def main(page: ft.Page):
     page.title = "Flet countries List"
