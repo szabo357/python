@@ -20,6 +20,16 @@ def sum_of_numbers(n):
     
     return total
 
+def is_prime(num):
+    if num == 1:
+        return False
+    elif num >1:
+        for i in range(2,num):
+            if (num % i) == 0:
+                return True
+    else:
+        return False
+
 # calling the functions
 half_triangle(10)
 print(area_of_circle(10))
