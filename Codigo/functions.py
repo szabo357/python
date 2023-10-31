@@ -55,6 +55,16 @@ def sum_all_listvalues(*args):
         sum+=number
     return sum
 
+#Defines a function with a default value
+def sum_all_default(a,b=20):
+    total = a + b
+    return total
+
+#Defines a function with arbitrary parameters
+def print_texts(*texts):
+    for text in texts:
+        print(text.upper())
+
 
 # calling the functions
 half_triangle(10)
@@ -65,3 +75,5 @@ print(is_prime(7))
 print(squarenum(sum_two_values(1,2)))
 print(sum_all(1,2,3,4,5,6))
 print(sum_all_listvalues([1,2,3,4,5,6],[20,30,50],[50,100,150]))
+print(sum_all_default(3))
+print_texts("hola","Python","Pydev")
