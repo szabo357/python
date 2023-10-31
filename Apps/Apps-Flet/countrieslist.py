@@ -3,7 +3,7 @@ import flet as ft
 def main(page: ft.Page):
     page.title = "Flet counter example"
     page.vertical_alignment=ft.MainAxisAlignment.CENTER
-    page.bgcolor =
+    page.bgcolor = ft.colors.INDIGO_100
     txt_number = ft.TextField(value="0",text_align="center",width=100)
     
     def minus_click(e):
