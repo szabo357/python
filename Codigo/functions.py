@@ -20,7 +20,7 @@ def sum_of_numbers(n):
     
     return total
 
-def is_prime(num):
+def is_prime(num)->bool:
     if num == 1:
         return False
     elif num > 1:
