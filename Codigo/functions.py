@@ -32,12 +32,17 @@ def is_prime(num)->bool:
     else:
         return False
 
+def sum_two_values(firstval,secondval):
+    return firstval+secondval
+
+def squarenum(num):
+    return num**2
+
+
 # calling the functions
 half_triangle(10)
 print(area_of_circle(10))
 print(area_of_circle(5))
 print(sum_of_numbers(5))
-print(sum_of_numbers(10))
-print(sum_of_numbers(100))
-print(sum_of_numbers(1000))
 print(is_prime(7))
+print(squarenum(sum_two_values(1,2)))
