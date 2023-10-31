@@ -38,6 +38,23 @@ def sum_two_values(firstval,secondval):
 def squarenum(num):
     return num**2
 
+# Arbitrary number of Arguments
+# puede evaluar varios numeros a la vez
+# si se pasan como argumento de manera independiente.
+# si en cambio se pasa una lista devuelve el error
+def sum_all(*args):
+    total = 0
+    for num in args:
+        total+=num
+    return total
+
+def sum_all_listvalues(*args):
+    sum = 0
+    for list in args:
+       for number in list:
+        sum+=number
+    return sum
+
 
 # calling the functions
 half_triangle(10)
@@ -46,3 +63,5 @@ print(area_of_circle(5))
 print(sum_of_numbers(5))
 print(is_prime(7))
 print(squarenum(sum_two_values(1,2)))
+print(sum_all(1,2,3,4,5,6))
+print(sum_all_listvalues([1,2,3,4,5,6],[20,30,50],[50,100,150]))
