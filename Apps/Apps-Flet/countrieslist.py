@@ -1,6 +1,7 @@
 import flet as ft
 import countriesdata as cd
 world = cd.World.countries
+flg = cd.World.flags
 
 def main(page: ft.Page):
     page.title = "Flet countries List"
@@ -16,28 +17,26 @@ def main(page: ft.Page):
         fit=ft.ImageFit.CONTAIN,
     )
     images = ft.Row(expand=1,wrap=False,scroll="always")
-    flags = ft.Row(expand=1,wrap=False,scroll="always")
-    page.add(img,images,flags)
+    #flags = ft.Row(expand=1,wrap=False,scroll="always")
+    page.add(img,images)
 
-    for country in world[:30]:
-        images.controls.append(
+    for country in flg[:30]:
+        images.controls.append([
             ft.Image(
                 src= country["flag"],
                 width=200,
                 height=200,
-                fit=ft.ImageFit.NONE,
+                fit=ft.ImageFit.CONTAIN,
                 repeat=ft.ImageRepeat.NO_REPEAT,
                 border_radius=ft.border_radius.all(10)
-            )    
-        )
-        flags.controls.append(
+            ),
             ft.Text(
-                value=country["flag"],
+                value=country["country"],
                 height=200,
                 bgcolor="blue",
-                selectable=True
-            )
-        )
+                selectable=False
+            )    
+        ])
     page.update()
 
 ft.app(target=main)
