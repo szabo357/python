@@ -2819,16 +2819,43 @@ world =[
 #    if "land" in country:
 #        print(country)
 
-#Exercise1 :What are the total number of languages in the data
+#Exercise2 :What are the total number of languages in the data
 langs = set()
 for country in world:
     for lang in country["languages"]:
         langs.add(lang)
 
-print(f"there are {len(langs)} languages in data.")
+#print(f"there are {len(langs)} languages in data.")
+#print(langs)
 
-#Excercise2 Find the ten most spoken languages from the data.
 
+
+#Excercise3 Find the ten most spoken languages from the data.
+#my_data = {}
+my_world = world.copy()
+topten_langs = list()
+lang_pop = list()
+lang_pop_sum = list()
+#langs = set()
+for country in my_world:
+    for lang in country["languages"]:
+        lang_pop.append([lang,country["population"]])
+            #{'language':lang,
+            # 'population':country["population"]
+            #})
+
+for lang in langs:
+    counter = 0
+    for language,pop in lang_pop:
+        if lang == language:
+            counter = counter + pop
+    lang_pop_sum.append([lang,counter])
+    #lang_pop_sum.append({lang:counter})
+ 
+
+print(len(lang_pop_sum)) 
+lang_pop_sum.sort()
+print(lang_pop_sum[:][:10])
 
 #for country in world:
 #    print(country["name"], country["population"])
