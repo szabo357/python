@@ -2850,8 +2850,9 @@ for lang in langs:
         if lang == language:
             counter = counter + pop
     #lang_pop_sum.append([lang,counter])
+    lang_pop_sum.append([counter,lang])
     #lang_pop_sum.append({lang:counter})
-    lang_pop_sum.append({counter:lang})
+    #lang_pop_sum.append({counter:lang})
 
 print(len(lang_pop_sum)) 
 lang_pop_sum.sort()
