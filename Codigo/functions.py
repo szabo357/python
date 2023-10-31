@@ -23,10 +23,12 @@ def sum_of_numbers(n):
 def is_prime(num):
     if num == 1:
         return False
-    elif num >1:
+    elif num > 1:
         for i in range(2,num):
             if (num % i) == 0:
-                return True
+                break
+        else:
+            return True
     else:
         return False
 
@@ -38,3 +40,4 @@ print(sum_of_numbers(5))
 print(sum_of_numbers(10))
 print(sum_of_numbers(100))
 print(sum_of_numbers(1000))
+print(is_prime(7))
