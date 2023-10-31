@@ -2854,9 +2854,10 @@ for lang in langs:
     #lang_pop_sum.append({lang:counter})
     #lang_pop_sum.append({counter:lang})
 
-print(len(lang_pop_sum)) 
-lang_pop_sum.sort()
-print(lang_pop_sum)
+#print(len(lang_pop_sum)) 
+lang_pop_sum.sort(reverse=True)
+for i in range(0,10):
+    print(lang_pop_sum[i])
 
 
 #mydict = dict(lang_pop_sum)
