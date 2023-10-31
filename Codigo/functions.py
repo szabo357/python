@@ -16,3 +16,4 @@ def area_of_circle (r):
 # calling the function
 half_triangle(10)
 print(area_of_circle(10))
+print(area_of_circle(5))
