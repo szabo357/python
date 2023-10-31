@@ -2854,7 +2854,7 @@ for lang in langs:
     lang_pop_sum.append({counter:lang})
 
 print(len(lang_pop_sum)) 
-sorted(lang_pop_sum)
+lang_pop_sum.sort()
 print(lang_pop_sum)
 
 
