@@ -2849,19 +2849,19 @@ for lang in langs:
     for language,pop in lang_pop:
         if lang == language:
             counter = counter + pop
-    lang_pop_sum.append([lang,counter])
-    #lang_pop_sum.({lang:counter})
- 
-for c,p in lang_pop_sum:
-    print(c,p)
+    #lang_pop_sum.append([lang,counter])
+    #lang_pop_sum.append({lang:counter})
+    lang_pop_sum.append({counter:lang})
 
 print(len(lang_pop_sum)) 
-lang_pop_sum.sort()
+sorted(lang_pop_sum)
+print(lang_pop_sum)
 
-mydict = dict(lang_pop_sum)
-print( max(mydict.items()))
+
+#mydict = dict(lang_pop_sum)
+#sorted(mydict)
+#print( max(mydict.items()))
 
 #for country in world:
 #    print(country["name"], country["population"])
 #    print(country["languages"])
-
