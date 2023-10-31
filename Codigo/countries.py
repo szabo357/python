@@ -2850,12 +2850,16 @@ for lang in langs:
         if lang == language:
             counter = counter + pop
     lang_pop_sum.append([lang,counter])
-    #lang_pop_sum.append({lang:counter})
+    #lang_pop_sum.({lang:counter})
  
+for c,p in lang_pop_sum:
+    print(c,p)
 
 print(len(lang_pop_sum)) 
 lang_pop_sum.sort()
-print(lang_pop_sum[:][:10])
+
+mydict = dict(lang_pop_sum)
+print( max(mydict.items()))
 
 #for country in world:
 #    print(country["name"], country["population"])
