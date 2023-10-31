@@ -2852,8 +2852,8 @@ for lang in langs:
     #lang_pop_sum.append([counter,lang])
 
 lang_pop_sum.sort(key=lambda item:item[1], reverse=True)
-for i in range(0,10):
-    print(lang_pop_sum[i])
+for country in lang_pop_sum[:10]:
+    print(country)
 
 #4 Find the 10 most populated countries in the world
 myworld=world
