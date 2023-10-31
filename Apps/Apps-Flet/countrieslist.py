@@ -5,7 +5,7 @@ world = cd.World.countries
 def main(page: ft.Page):
     page.title = "Flet countries List"
     page.padding = 50
-    page.theme_mode = ft.ThemeMode.DARK
+    page.theme_mode = ft.ThemeMode.LIGHT
     page.update()
    # page.vertical_alignment=ft.MainAxisAlignment.CENTER
     # Agregando elementos a la pagina.
@@ -16,7 +16,8 @@ def main(page: ft.Page):
         fit=ft.ImageFit.CONTAIN,
     )
     images = ft.Row(expand=1,wrap=False,scroll="always")
-    page.add(img,images)
+    flags = ft.Row(expand=1,wrap=False,scroll="always")
+    page.add(img,images,flags)
 
     for country in world[:30]:
         images.controls.append(
@@ -28,6 +29,14 @@ def main(page: ft.Page):
                 repeat=ft.ImageRepeat.NO_REPEAT,
                 border_radius=ft.border_radius.all(10)
             )    
+        )
+        flags.controls.append(
+            ft.Text(
+                value=country["flag"],
+                height=200,
+                bgcolor="blue",
+                selectable=True
+            )
         )
     page.update()
 
