@@ -8,7 +8,7 @@ def half_triangle(num:int):
         print(my_str)
         my_str+="#"
 
-def area_of_circle (r:int):
+def area_of_circle (r):
     PI = 3.14
     area = PI * r ** 2
     return area
