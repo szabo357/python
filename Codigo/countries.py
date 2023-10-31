@@ -2833,7 +2833,6 @@ for country in world:
 #Excercise3 Find the ten most spoken languages from the data.
 #my_data = {}
 my_world = world.copy()
-topten_langs = list()
 lang_pop = list()
 lang_pop_sum = list()
 #langs = set()
@@ -2849,18 +2848,20 @@ for lang in langs:
     for language,pop in lang_pop:
         if lang == language:
             counter = counter + pop
-    #lang_pop_sum.append([lang,counter])
-    lang_pop_sum.append([counter,lang])
+    lang_pop_sum.append([lang,counter])
+    #lang_pop_sum.append([counter,lang])
 
-lang_pop_sum.sort(reverse=True)
+lang_pop_sum.sort(key=lambda item:item[1], reverse=True)
 for i in range(0,10):
     print(lang_pop_sum[i])
 
-print(lang_pop_sum)
-#mydict = dict(lang_pop_sum)
-#sorted(mydict)
-#print( max(mydict.items()))
+#4 Find the 10 most populated countries in the world
+myworld=world
+country_pop = list()
+for country in myworld:
+    country_pop.append([country["name"],country["population"]])
 
-#for country in world:
-#    print(country["name"], country["population"])
-#    print(country["languages"])
+country_pop.sort(key=lambda item:item[1], reverse=True)
+print(len(country_pop))
+for country in country_pop[:10]:
+    print(country)
