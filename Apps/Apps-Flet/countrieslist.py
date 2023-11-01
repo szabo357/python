@@ -41,6 +41,7 @@ def main(page: ft.Page):
             )
         )
     countries.controls.append(ft.Text(value=country["country"],height=20,weight="Bold"))
+    
     page.update()
 
     page.add(mycontainer)
