@@ -8,6 +8,7 @@ def main(page: ft.Page):
     page.padding = 50
     page.theme_mode = ft.ThemeMode.LIGHT
     page.vertical_alignment=ft.MainAxisAlignment.CENTER
+    page.bgcolor= ft.colors.INDIGO_100
     # definiendo contenedores
     # Agregando elementos a la pagina.
     images = ft.Row(expand=1,wrap=False,scroll="always")
@@ -19,14 +20,14 @@ def main(page: ft.Page):
         controls=[
             ft.Image(
                 src=honduras,
-                width=200,
+                width=100,
                 height=100,
                 fit=ft.ImageFit.CONTAIN,
                 repeat=ft.ImageRepeat.NO_REPEAT,
                 border_radius=ft.border_radius.all(10)
             ),
-            ft.Text(value="Honduras",height=20,weight="Bold")
-        ],width=200, height=200,
+            ft.Text(value="Honduras",height=25,weight="Bold")
+        ],width=200, height=200,horizontal_alignment=ft.alignment.center
      )])
     
     for country in flg[:30]:
