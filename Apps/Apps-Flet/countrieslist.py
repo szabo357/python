@@ -15,19 +15,19 @@ def main(page: ft.Page):
     countries = ft.Row(expand=1,wrap=False,scroll="always")
     page.add(images,countries)
     honduras ="https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/hn.svg"
-    mycontainer = ft.Column(
+    mycontainer =ft.Row([ ft.Column(
         controls=[
             ft.Image(
                 src=honduras,
                 width=200,
-                height=200,
+                height=100,
                 fit=ft.ImageFit.CONTAIN,
                 repeat=ft.ImageRepeat.NO_REPEAT,
                 border_radius=ft.border_radius.all(10)
             ),
             ft.Text(value="Honduras",height=20,weight="Bold")
-        ]
-    )
+        ],width=200, height=200,
+     )])
 
     for country in flg[:30]:
         images.controls.append(
