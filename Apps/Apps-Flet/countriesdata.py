@@ -2531,7 +2531,7 @@ class World:
                 "Russian"
             ],
             "population": 31576400,
-            "flag": "https://restcountries.eu/data/uzb.svg",
+            "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/uz.svg",
             "currency": "Uzbekistani so'm"
         },
         {
@@ -2543,7 +2543,7 @@ class World:
                 "French"
             ],
             "population": 277500,
-            "flag": "https://restcountries.eu/data/vut.svg",
+            "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/vu.svg",
             "currency": "Vanuatu vatu"
         },
         {
@@ -2553,7 +2553,7 @@ class World:
                 "Spanish"
             ],
             "population": 31028700,
-            "flag": "https://restcountries.eu/data/ven.svg",
+            "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/ve.svg",
             "currency": "Venezuelan bolívar"
         },
         {
@@ -2563,7 +2563,7 @@ class World:
                 "Vietnamese"
             ],
             "population": 92700000,
-            "flag": "https://restcountries.eu/data/vnm.svg",
+            "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/vn.svg",
             "currency": "Vietnamese đồng"
         },
         {
@@ -2573,7 +2573,7 @@ class World:
                 "French"
             ],
             "population": 11750,
-            "flag": "https://restcountries.eu/data/wlf.svg",
+            "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/wf.svg",
             "currency": "CFP franc"
         },
         {
@@ -2583,7 +2583,7 @@ class World:
                 "Spanish"
             ],
             "population": 510713,
-            "flag": "https://restcountries.eu/data/esh.svg",
+            "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/eh.svg",
             "currency": "Moroccan dirham"
         },
         {
@@ -2593,7 +2593,7 @@ class World:
                 "Arabic"
             ],
             "population": 27478000,
-            "flag": "https://restcountries.eu/data/yem.svg",
+            "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/ye.svg",
             "currency": "Yemeni rial"
         },
         {
@@ -2603,7 +2603,7 @@ class World:
                 "English"
             ],
             "population": 15933883,
-            "flag": "https://restcountries.eu/data/zmb.svg",
+            "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/zm.svg",
             "currency": "Zambian kwacha"
         },
         {
@@ -2615,7 +2615,7 @@ class World:
                 "Northern Ndebele"
             ],
             "population": 14240168,
-            "flag": "https://restcountries.eu/data/zwe.svg",
+            "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/zw.svg",
             "currency": "Botswana pula"
         }
     ]
@@ -2877,3 +2877,18 @@ class World:
         {"flag":"https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/zm.svg","country":"Zambia"},
         {"flag":"https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/zw.svg","country":"Zimbabwe"},
     ]
+
+    def updatecountries(self):
+        
+        c = self.countries
+        f = self.flags
+
+        for country in c:
+            for cont in f:
+                if country["name"] == cont["country"]:
+                    country["flag"] =cont["flag"]
+                    print(cont["country"])
+
+
+mw = World()
+mw.updatecountries()

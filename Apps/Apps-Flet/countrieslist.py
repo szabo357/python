@@ -11,7 +11,7 @@ def main(page: ft.Page):
     page.bgcolor= ft.colors.INDIGO_100
     # definiendo contenedores
     # Agregando elementos a la pagina.
-    images = ft.Row(expand=1,wrap=False,scroll="always")
+    images = ft.Column(expand=1,wrap=False,scroll="always")
     countries = ft.Row(expand=1,wrap=False,scroll="always")
     page.add(images,countries)
     
