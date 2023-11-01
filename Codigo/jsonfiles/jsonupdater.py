@@ -2,10 +2,12 @@
 # json file
 
 import json
+import os
 
+#print(os.getcwd)
 # Opening JSON file
-#f = open('worlddata.json')
-f = open('worldflags.json')
+f = open('worlddata.json')
+#f = open('worldflags.json')
 
 # returns JSON object as 
 # a dictionary
