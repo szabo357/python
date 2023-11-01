@@ -92,7 +92,7 @@ class TodoApp(ft.UserControl):
     def task_delete(self,task):
         self.tasks.controls.remove(task)
         self.update()
-
+    
 def main(page: ft.Page):
     page.title = "ToDo App"
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
