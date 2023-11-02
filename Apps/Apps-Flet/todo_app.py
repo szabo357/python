@@ -13,8 +13,6 @@ class Task(ft.UserControl):
         self.display_view = ft.Row(
             alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
             vertical_alignment=ft.CrossAxisAlignment.CENTER,
-            scroll=ft.ScrollMode.ADAPTIVE,
-            auto_scroll= True,
             controls=[
                 self.display_task,
                 ft.Row(
@@ -69,7 +67,7 @@ class Task(ft.UserControl):
 class TodoApp(ft.UserControl):
     def build(self):
         self.new_task = ft.TextField(hint_text="¿Qué tareas hay que hacer?",expand=True)
-        self.tasks = ft.Column()
+        self.tasks = ft.Column(scroll=ft.ScrollMode.AUTO)
 
         # application's root control (i.e "view") containing all other controls
         return ft.Column(
