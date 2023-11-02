@@ -66,7 +66,7 @@ class Task(ft.UserControl):
 
 class TodoApp(ft.UserControl):
     def build(self):
-        self.new_task = ft.TextField(hint_text="¿Qué tareas hay que hacer?",expand=True)
+        self.new_task = ft.TextField(hint_text="¿Qué tareas hay que hacer?",expand=True,on_submit=self.add_clicked)
         self.tasks = ft.Column(scroll=ft.ScrollMode.AUTO,auto_scroll=True)
 
         # application's root control (i.e "view") containing all other controls
@@ -77,11 +77,19 @@ class TodoApp(ft.UserControl):
                     controls=[
                         self.new_task,
                         ft.FloatingActionButton(icon=ft.icons.ADD, on_click=self.add_clicked),
+                        ft.FloatingActionButton(icon=ft.icons.ADD_CARD, on_click=self.add_tasks),
                     ],
                 ),
                 self.tasks,
             ],
         )        
+    
+    def add_tasks(self,e):
+        for i in range(1,20):
+            task = Task(f"Tarea{i}",self.task_delete)
+            self.tasks.controls.append(task)
+        self.new_task.value =""
+        self.update()
 
     def add_clicked(self,e):
         task = Task(self.new_task.value,self.task_delete)
