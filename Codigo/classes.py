@@ -189,6 +189,10 @@ print(dir(c2))
 print(setattr(c2,"speed",50)) #setattr() sets an attribute to an object.
 print(dir(c2))
 print(c2.speed)
+print(type(object)) #
+print(type(Car))    # type is <class 'type'> Car Class.
+print(type(c2))     # type is <class '__main__.Car'> Car class instance.
+print(type(rd))     # type is 'class module'
 print(dir(rd)) # prints random class object structure.
 #class
 #delattr
