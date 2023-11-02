@@ -160,7 +160,9 @@ print(f"car3 speed {c3.speed}")
 print(f"car4 speed {c4.speed}")
 
 print(dir(c2))
+print(c2.speed)
 print(delattr(c2,"speed")) # deletes an attribute from an object.
 print(dir(c2))
 print(setattr(c2,"speed",50)) #sets an attribute to an object.
 print(dir(c2))
+print(c2.speed)
