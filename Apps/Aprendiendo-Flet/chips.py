@@ -1,5 +1,6 @@
 import flet as ft
 # This is a chips example.
+# Very easy to follow. 
 def main(page: ft.Page):
     def amenity_selected(e):
         page.update()
