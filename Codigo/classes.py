@@ -169,7 +169,7 @@ c4 = Car(started=True, speed=100)
 m1 = Motorcycle(True)
 
 m1.increase_speed(30)
-print(f"Motorcycle speed is {m1}")
+print(f"Motorcycle speed is {m1.speed}")
 
 car.increase_speed(10)
 car.start()
