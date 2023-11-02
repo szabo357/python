@@ -101,9 +101,9 @@ class TodoApp(ft.UserControl):
     def task_delete(self,task):
         self.tasks.controls.remove(task)
         self.update()
-        
+
     def delete_tasks(self,e):
-        self.tasks.controls.clear
+        self.tasks.controls.clear()
         self.update()
 
 def main(page: ft.Page):
