@@ -115,7 +115,7 @@ class Car:
         self.speed = 0
         print("Halting")
     
-
+int()
 my_person = Person("Jose","Avila")
 print(my_person)
 print(my_person.get_fullname())
@@ -131,6 +131,7 @@ other_person.__name="Mike" # no es modificable desde afuera
 other_person.__surname="Avila"#no es modificable desde afuera
 print(other_person.fullname)#fullname es propiedad publica
 print(other_person.get_fullname())
+
 #Adding multiple instances of Car class.
 car= Car()
 c2 = Car(True)

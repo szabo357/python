@@ -13,6 +13,8 @@ class Task(ft.UserControl):
         self.display_view = ft.Row(
             alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
             vertical_alignment=ft.CrossAxisAlignment.CENTER,
+            scroll=ft.ScrollMode.ADAPTIVE,
+            auto_scroll= True,
             controls=[
                 self.display_task,
                 ft.Row(
@@ -20,12 +22,12 @@ class Task(ft.UserControl):
                     controls=[
                         ft.IconButton(
                             icon=ft.icons.CREATE_OUTLINED,
-                            tooltip="Edit To-Do",
+                            tooltip="Editar To-Do",
                             on_click=self.edit_clicked,
                         ),
                         ft.IconButton(
                             icon=ft.icons.DELETE_OUTLINED,
-                            tooltip="Delete To-Do",
+                            tooltip="Eliminar To-Do",
                             on_click=self.delete_clicked,
                         ),
                     ],
