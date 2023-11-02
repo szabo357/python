@@ -115,9 +115,19 @@ class Car:
         self.speed = 0
         print("Halting")
     
+class Usuario:
+    def __init__(self,name:str="",**kwargs):
+        self.name = name
+        self.datapack = kwargs
+
+    def introduce_yourself(self):
+        return f"Hello my name is {self.name}"
+    pass    
+
+
 # Below of this line instantiation of the classes will be done.
 # will be creating objects of our recently created classes.
-
+usr = Usuario()
 my_person = Person("Jose","Avila")
 print(my_person)
 print(my_person.get_fullname())
@@ -148,3 +158,9 @@ print(f"Car  speed {car.speed}")
 print(f"car2 speed {c2.speed}")
 print(f"car3 speed {c3.speed}")
 print(f"car4 speed {c4.speed}")
+
+print(dir(c2))
+print(delattr(c2,"speed")) # deletes an attribute from an object.
+print(dir(c2))
+print(setattr(c2,"speed",50)) #sets an attribute to an object.
+print(dir(c2))
