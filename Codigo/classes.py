@@ -94,27 +94,44 @@ class Person:
             raise ValueError("empty range for randrange()")
         return istart + istep * self._randbelow(n)
         """
-
-class Car:
-    def __init__(self, started=False, speed=0):
-        self.speed = speed
+# Main Class that will be inherited by Car and Motorcycle classes.
+class Vehicle:
+    def __init__(self, started = False, speed = 0):
         self.started = started
-
+        self.speed = speed
+    
     def start(self):
         self.started = True
-        print("Car started, let's ride!")
-
-    def increase_speed(self,delta):
-        if self.started:
-            self.speed+= delta
-            print("Vrooooom!")
-        else:
-            print("You need to start the car first")
-
+        print("Started, let's ride!")
+    
     def stop(self):
         self.speed = 0
-        print("Halting")
+        print("Halt!")
     
+    def increase_speed(self, delta):
+        if self.started:
+            self.speed = self.speed + delta
+            print("Vrooooom!")
+        else:
+            print("You need to start me first")
+
+
+class Car(Vehicle):
+    trunk_open = False
+    def open_trunk(self):
+        self.trunk_open = True
+    def close_trunk(self):
+        self.trunk_open = False
+
+
+class Motorcycle(Vehicle):
+    def __init__(self, center_stand_out = False): #overrides the vehicule constructor.
+        self.center_stand_out = center_stand_out
+        super().__init__()                        # calls the vehicule constructor with super()
+    def start(self):
+        print("Sorry, out of fuel!")    
+
+
 class Usuario:
     def __init__(self,name:str="",**kwargs):
         self.name = name
@@ -124,8 +141,6 @@ class Usuario:
         return f"Hello my name is {self.name}"
     pass   
 
-if 5>2 :
-    pass
 
 # Below of this line instantiation of the classes will be done.
 # will be creating objects of our recently created classes.
@@ -151,6 +166,8 @@ car= Car()
 c2 = Car(True)
 c3 = Car(True,50)
 c4 = Car(started=True, speed=100)
+m1 = Motorcycle(True)
+
 car.increase_speed(10)
 car.start()
 car.increase_speed(40)
