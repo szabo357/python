@@ -94,6 +94,26 @@ class Person:
             raise ValueError("empty range for randrange()")
         return istart + istep * self._randbelow(n)
         """
+
+class Car:
+    def __init__(self, started=False, speed=0):
+        self.speed = speed
+        self.started = started
+
+    def start(self):
+        self.started = True
+        print("Car started, let's ride!")
+
+    def increase_speed(self,delta):
+        if self.started:
+            self.speed+= delta
+            print("Vrooooom!")
+        else:
+            print("You need to start the car first")
+
+    def stop(self):
+        self.speed = 0
+        print("Halting")
     
 
 my_person = Person("Jose","Avila")
@@ -112,3 +132,8 @@ other_person.__surname="Avila"#no es modificable desde afuera
 print(other_person.fullname)#fullname es propiedad publica
 print(other_person.get_fullname())
 
+car= Car()
+car.increase_speed(10)
+car.start()
+car.increase_speed(40)
+car.stop()
