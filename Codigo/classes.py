@@ -122,8 +122,10 @@ class Usuario:
 
     def introduce_yourself(self):
         return f"Hello my name is {self.name}"
-    pass    
+    pass   
 
+if 5>2 :
+    pass
 
 # Below of this line instantiation of the classes will be done.
 # will be creating objects of our recently created classes.
@@ -159,10 +161,39 @@ print(f"car2 speed {c2.speed}")
 print(f"car3 speed {c3.speed}")
 print(f"car4 speed {c4.speed}")
 
+print(dir(object)) # dir() Returns a list of the specified object's properties and methods
 print(dir(c2))
 print(c2.speed)
-print(delattr(c2,"speed")) # deletes an attribute from an object.
+print(delattr(c2,"speed")) # delattr() deletes an attribute from an object.
 print(dir(c2))
-print(setattr(c2,"speed",50)) #sets an attribute to an object.
+print(setattr(c2,"speed",50)) #setattr() sets an attribute to an object.
 print(dir(c2))
 print(c2.speed)
+
+#class
+#delattr
+#dict  # Present in Car class, not in object.
+#dir
+#doc
+#eq
+#format
+#ge
+#getattribute
+#getstate
+#gt
+#hash
+#init
+#init_subclass
+#le
+#lt
+#module    "Is present in Car class, not in object."
+#ne
+#new
+#reduce
+#reduce_ex
+#repr
+#setattr
+#sizeof
+#str
+#subclasshook
+#weakref     "Is present in Car class, not in object"
