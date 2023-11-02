@@ -78,6 +78,7 @@ class TodoApp(ft.UserControl):
                         self.new_task,
                         ft.FloatingActionButton(icon=ft.icons.ADD, on_click=self.add_clicked),
                         ft.FloatingActionButton(icon=ft.icons.ADD_CARD, on_click=self.add_tasks),
+                        ft.FloatingActionButton(icon=ft.icons.DELETE_FOREVER, on_click=self.delete_tasks),
                     ],
                 ),
                 self.tasks,
@@ -100,7 +101,11 @@ class TodoApp(ft.UserControl):
     def task_delete(self,task):
         self.tasks.controls.remove(task)
         self.update()
-    
+        
+    def delete_tasks(self,e):
+        self.tasks.controls.clear
+        self.update()
+
 def main(page: ft.Page):
     page.title = "ToDo App"
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
