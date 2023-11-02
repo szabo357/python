@@ -67,11 +67,12 @@ class Task(ft.UserControl):
 class TodoApp(ft.UserControl):
     def build(self):
         self.new_task = ft.TextField(hint_text="¿Qué tareas hay que hacer?",expand=True)
-        self.tasks = ft.Column(scroll=ft.ScrollMode.AUTO)
+        self.tasks = ft.Column()
 
         # application's root control (i.e "view") containing all other controls
         return ft.Column(
             width=600,
+            scroll=ft.ScrollMode.AUTO,
             controls=[
                 ft.Row(
                     controls=[
