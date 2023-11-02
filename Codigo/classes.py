@@ -189,7 +189,7 @@ print(dir(c2))
 print(setattr(c2,"speed",50)) #setattr() sets an attribute to an object.
 print(dir(c2))
 print(c2.speed)
-
+print(dir(rd)) # prints random class object structure.
 #class
 #delattr
 #dict  # Present in Car class, not in object.
