@@ -30,6 +30,6 @@ def main(page: ft.Page):
         on_click=lambda _: date_picker.pick_date(),
     )
 
-    page.add(date_button)
+    page.add(date_button,mytext)
 
 ft.app(target=main)
