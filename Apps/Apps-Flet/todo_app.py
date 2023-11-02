@@ -73,6 +73,7 @@ class TodoApp(ft.UserControl):
         return ft.Column(
             width=600,
             scroll=ft.ScrollMode.AUTO,
+            auto_scroll=True,
             controls=[
                 ft.Row(
                     controls=[
