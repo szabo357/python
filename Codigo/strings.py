@@ -61,3 +61,20 @@ print(language.lower())
 print(language.lower().isupper())
 print(language.startswith("Py"))
 print("Py" == "py")  # No es lo mismo
+
+# Funciones de Strings
+prueba = "Hola"
+
+print(prueba.count("a"))
+print(prueba.isalnum())
+print(prueba.isalpha())
+print(prueba.isascii())
+print(prueba.isdecimal())
+print(prueba.isdigit())
+print(prueba.isidentifier())
+print(prueba.islower())
+print(prueba.isnumeric())
+print(prueba.isprintable())
+print(prueba.isspace())
+print(prueba.istitle())
+print(prueba.isupper())
