@@ -131,9 +131,17 @@ other_person.__name="Mike" # no es modificable desde afuera
 other_person.__surname="Avila"#no es modificable desde afuera
 print(other_person.fullname)#fullname es propiedad publica
 print(other_person.get_fullname())
-
+#Adding multiple instances of Car class.
 car= Car()
+c2 = Car(True)
+c3 = Car(True,50)
+c4 = Car(started=True, speed=100)
 car.increase_speed(10)
 car.start()
 car.increase_speed(40)
 car.stop()
+
+print(f"Car  speed {car.speed}")
+print(f"car2 speed {c2.speed}")
+print(f"car3 speed {c3.speed}")
+print(f"car4 speed {c4.speed}")
