@@ -125,9 +125,11 @@ class Car(Vehicle):
 
 
 class Motorcycle(Vehicle):
-    def __init__(self, center_stand_out = False): #overrides the vehicule constructor.
+    def __init__(self,started = False, speed = 0, center_stand_out = False): #overrides the vehicule constructor.
         self.center_stand_out = center_stand_out
-        super().__init__()                        # calls the vehicule constructor with super()
+        super().__init__(self,started = False, speed = 0) # calls the vehicule constructor with super()
+    def __len__(self):
+        return 60
     def start(self):
         print("Sorry, out of fuel!")    
 
@@ -166,12 +168,13 @@ car= Car()
 c2 = Car(True)
 c3 = Car(True,50)
 c4 = Car(started=True, speed=100)
-m1 = Motorcycle(True)
+m1 = Motorcycle(True,10,True)
 
 m1.increase_speed(30)
 print(f"Motorcycle speed is {m1.speed}")
 
 #print(f"Length of Motorcycle is {len(m1)}") #TypeError: object of type 'Motorcycle' has no len()
+print(f"Length of Motorcycle is {len(m1)}")
 
 car.increase_speed(10)
 car.start()

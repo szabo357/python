@@ -46,7 +46,6 @@ language_slice = language[0:6:2]
 print(language_slice)
 
 # Reverse
-
 reversed_language = language[::-1]
 print(reversed_language)
 
@@ -78,3 +77,29 @@ print(prueba.isprintable())
 print(prueba.isspace())
 print(prueba.istitle())
 print(prueba.isupper())
+
+
+#Ejercicios con strings
+
+fruta = "Banana"
+
+print("Recorrido cadena izquierda a derecha con while.")
+indice = 0
+while indice < len(fruta):
+    letra = fruta[indice]
+    print(letra)
+    indice = indice + 1
+
+print("Recorrido cadena derecha a izquierda con while.")
+indice = len(fruta)
+while indice > 0:
+    print(fruta[indice-1])
+    indice-=1
+
+print("Recorrido cadena izquierda a derecha con for.")
+for caracter in fruta:
+    print(caracter)
+
+print("Recorrido cadena derecha a izquierda con for.")
+for caracter in fruta[::-1]:
+    print(caracter)
