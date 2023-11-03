@@ -35,3 +35,14 @@ except ValueError:
     print("Se ha producido un ValueError")
 except TypeError:
     print("Se ha producido un TypeError")
+
+
+# Captura de la información de la excepción
+
+try:
+    print(numberOne + numberTwo)
+    print("No se ha producido un error")
+except ValueError as error:
+    print(error)
+except Exception as my_random_error_name:
+    print(my_random_error_name)
