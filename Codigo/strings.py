@@ -103,3 +103,11 @@ for caracter in fruta:
 print("Recorrido cadena derecha a izquierda con for.")
 for caracter in fruta[::-1]:
     print(caracter)
+
+# Rebanando cadenas ( slicing strings)
+print(fruta[:3])
+print(fruta[3:])
+print(fruta[3:3])
+print(fruta[:])
+print(fruta[::])
+print(fruta[::-1])    
