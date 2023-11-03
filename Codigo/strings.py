@@ -111,3 +111,22 @@ print(fruta[3:3])
 print(fruta[:])
 print(fruta[::])
 print(fruta[::-1])    
+
+# Contador de letras
+palabra = 'banana'
+contador = 0
+for letra in palabra:
+    if letra == 'a':
+        contador = contador + 1
+print(contador)
+
+
+#Ejercicio cuenta letras
+def cuenta(cadena,letra):
+    contador = 0
+    for letr in cadena:
+        if letr == letra:
+            contador = contador + 1
+    return contador
+
+print(cuenta("Esta es una cadena que contiene varias letras as.","a"))
