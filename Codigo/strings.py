@@ -130,3 +130,22 @@ def cuenta(cadena,letra):
     return contador
 
 print(cuenta("Esta es una cadena que contiene varias letras as.","a"))
+
+# Operador in. 
+# Es un operador booleano. retorna True si la primera cadena 
+# aparece como una subcadena de la segunda cadena.
+print('a' in 'banana')
+print("semilla" in "banana")
+
+#Comparando cadenas
+palabra = 'banana'
+if palabra == 'banana':
+    print('Muy bien, bananas.')
+
+palabra = "zanahoria"
+if palabra < 'banana':
+    print('Tu palabra, ' + palabra + ', está antes de banana.')
+elif palabra > 'banana':
+    print('Tu palabra, ' + palabra + ', está después de banana.')
+else:
+    print('Muy bien, bananas.')
