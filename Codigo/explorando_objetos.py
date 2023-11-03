@@ -9,9 +9,9 @@ Ellipsis
 __debug__
 
 # Este archivo fue creado para explorar los diferentes objetos de Python.
-print(abs(-9))
+print(abs(-9))  # Returns the absolute value of a Number.
 print(aiter([1,2,3]))
-all()
+all(True,False) # Return True if bool(x) is True for all values x in the iterable.
 anext()
 any(False)
 ascii("A")
