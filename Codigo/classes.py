@@ -171,6 +171,8 @@ m1 = Motorcycle(True)
 m1.increase_speed(30)
 print(f"Motorcycle speed is {m1.speed}")
 
+#print(f"Length of Motorcycle is {len(m1)}") #TypeError: object of type 'Motorcycle' has no len()
+
 car.increase_speed(10)
 car.start()
 car.increase_speed(40)
