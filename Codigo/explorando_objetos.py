@@ -63,22 +63,22 @@ complex()
 dict()
 enumerate()
 filter()
-float()
+#float() # convert a string or a number to a floating point number.
 frozenset()
-int()
-list()
+#int() # converts a number or a string to an integer
+#list() # creates a new empty list if no argument is given. Lists are Mutable and indexed collections.
 map()
 memoryview()
 object()
 property()
 range()
 reversed()
-set()
+#set() #Build an unordered collection of unique elements
 slice()
 staticmethod()
-str()
+#str()   # creates a string object.remember that strings are inmutable.
 #super()
-tuple()
-type()
+#tuple() # creates a tuple object. inmutable sequence.
+#type() # Returns the type of the object passed as argument. everything is an object in python.
 zip()
 
