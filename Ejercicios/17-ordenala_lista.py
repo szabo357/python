@@ -5,21 +5,20 @@
  #* - No se pueden utilizar funciones propias del lenguaje que lo resuelvan
  #*   automáticamente.
 
-def sortlist(args,order="Asc"):
+def sortlist(args,ascending=True):
     n= len(args)        
     for i in range(n):
         for j in range(0,n-i-1):
-            if order == "Asc":
+            if ascending:
                 if args[j] > args[j + 1] :
                     args[j], args[j + 1] = args[j + 1], args[j]
-            elif order =="Desc":
+            else:
                 if args[j] < args[j + 1] :
                     args[j], args[j + 1] = args[j + 1], args[j]
     return args
             
 
 
-        
 mylist = [20,4,10,5,8,15]
 print(sortlist(mylist,"Asc"))
 print(sortlist(mylist,"Desc"))
