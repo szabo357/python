@@ -9,10 +9,10 @@ Ellipsis
 __debug__
 
 # Este archivo fue creado para explorar los diferentes objetos de Python.
-print(abs(-9))  # Returns the absolute value of a Number.
-#print(aiter([1,2,3])) async iterator
-all(True,False) # Return True if bool(x) is True for all values x in the iterable.
-#anext() #async next iterator
+#abs()     # Returns the absolute value of a Number.
+#aiter()   # async iterator
+#all()     # Return True if bool(x) is True for all values x in the iterable.
+#anext()   #async next iterator
 any(False) #Return True if bool(x) is True for any x in the iterable.
 ascii("A")
 bin()
@@ -34,19 +34,19 @@ format()
 #hex()
 #id()  # Return the identity of an object.
 #input() # Gets user input from console.
-#isinstance()
+#isinstance() #Returns True whether an object is an instance of a class or of a subclass thereof.
 #issubclass()
 iter()
-len() # returns the number of items in a container.
+#len() # returns the number of items in a container.
 #locals()
-print(max([2,4,5])) #With a single iterable argument, return its biggest item.
-print(min([2,4,5])) #With a single iterable argument, return its smallest item.
-next() # Return the next item from an iterator.
+#max([2,4,5]) #With a single iterable argument, return its biggest item.
+#min([2,4,5]) #With a single iterable argument, return its smallest item.
+#next() # Return the next item from an iterator.
 #oct()
 #open()
 #ord()
 #pow()
-#print()
+#print() #Print objects to the text stream file, separated by sep and followed by end.
 #repr()
 #round()
 #setattr()
