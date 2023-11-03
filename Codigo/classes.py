@@ -196,7 +196,7 @@ print(type(rd))     # type is <class 'module'>
 print(type(dir))    # type is <class 'builtin_function_or_method'>
 print(type(type))   #<class 'type'>
 print(dir(rd)) # prints random class object structure.
-
+print(hasattr(c2,"speed")) # returns True if attribute exist.
 #class
 #delattr
 #dict  # Present in Car class, not in object.
