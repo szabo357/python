@@ -10,10 +10,10 @@ __debug__
 
 # Este archivo fue creado para explorar los diferentes objetos de Python.
 print(abs(-9))  # Returns the absolute value of a Number.
-print(aiter([1,2,3]))
+#print(aiter([1,2,3])) async iterator
 all(True,False) # Return True if bool(x) is True for all values x in the iterable.
-anext()
-any(False)
+#anext() #async next iterator
+any(False) #Return True if bool(x) is True for any x in the iterable.
 ascii("A")
 bin()
 breakpoint()

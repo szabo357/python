@@ -17,8 +17,7 @@ def sortlist(args,ascending=True):
                     args[j], args[j + 1] = args[j + 1], args[j]
     return args
             
-
-
+            
 mylist = [20,4,10,5,8,15]
 print(sortlist(mylist,"Asc"))
 print(sortlist(mylist,"Desc"))
