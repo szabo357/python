@@ -169,3 +169,12 @@ mystr = "%d" % camellos
 print(mystr, type(mystr))
 print('Yo he visto %d camellos.' % camellos) # se puede insertar un valor a la cadena.
 print('En %d años yo he visto %g %s.' % (3, 0.1, 'camellos'))# se pueden insertar diferentes valores a la cadena usando una tupla.
+
+#Ejercicio 5: Toma el siguiente código en Python que almacena una cadena:
+mystr = 'X-DSPAM-Confidence:0.8475'
+#Utiliza find y una parte de la cadena para extraer la porción de la cadena
+#después del carácter dos puntos y después utiliza la función float para
+#convertir la cadena extraída en un número de punto flotante.
+pos = mystr.find(":")
+myfloat = float(mystr[pos+1:])
+print(f"El tipo de dato es: {type(myfloat)} ", myfloat)
