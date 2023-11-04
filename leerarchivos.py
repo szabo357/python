@@ -64,3 +64,31 @@ for linea in man_a:
         print(linea)
         contador+=1
 print(f"Se encontraron {contador} coincidencias.")
+
+
+# Permitiendo que el usuario ingrese el nombre del archivo desde consola.
+# Este programa tiene un defecto. si el usuario ingresa un nombre de archivo 
+# que no existe. este fallara mostrando un error
+# FileNotFoundError: [Errno 2] No such file or directory: 'nothere.txt'
+narchivo = input('Ingresa un nombre de archivo: ')
+man_a = open(narchivo)
+contador = 0
+for linea in man_a:
+    if linea.startswith('Subject:'):
+        contador = contador + 1
+print('Hay', contador, 'líneas de asunto (subject) en', narchivo)
+
+
+# Una mejor manera de tratar de solventar el problema es agregando la estructura
+# try except que nos permite capturar excepciones. y evitar el fallo antes mencionado.m
+narchivo = input('Ingresa un nombre de archivo: ')
+try:
+    man_a = open(narchivo)
+except:
+    print('No se puede abrir el archivo:', narchivo)
+    exit()
+contador = 0
+for linea in man_a:
+    if linea.startswith('Subject:'):
+        contador = contador + 1
+print('Hay', contador, 'líneas de asunto (subject) en', narchivo)
