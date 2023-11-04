@@ -52,3 +52,15 @@ for linea in man_a:
         print(linea)
         contador+=1
 print(f"Se encontraron {contador} coincidencias.")
+
+
+# Simulando un buscador de un editor de texto.
+contador = 0
+man_a = open('mbox.txt')
+for linea in man_a:
+    linea = linea.rstrip()
+    if linea.find('@uct.ac.za') == -1: continue
+    else:
+        print(linea)
+        contador+=1
+print(f"Se encontraron {contador} coincidencias.")
