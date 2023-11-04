@@ -166,4 +166,4 @@ print(direccion)
 # Operador formato %.
 camello = 42
 mystr = "%d" % camello
-print(type(mystr))
+print(mystr, type(mystr))
