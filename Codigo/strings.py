@@ -162,3 +162,8 @@ print(f"Posicion espacio despues de @ {espos}")
 
 direccion = dato[arrobapos+1:espos] # rebanando la cadena para obtener 'uct.ac.za'
 print(direccion)
+
+# Operador formato %.
+camello = 42
+mystr = "%d" % camello
+print(type(mystr))
