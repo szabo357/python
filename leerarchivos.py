@@ -27,3 +27,28 @@ for linea in man_a:
         print(linea)
         contador+=1
 print(f"Se encontraron {contador} coincidencias.")
+
+# realizando busqueda de "From:" y eliminando el salto de linea \n al final de cada linea del archivo.
+# esto se hace usando .rstrip() que elimina los espacios vacios a la derecha de la cadena.
+contador = 0
+man_a = open('mbox.txt')
+for linea in man_a:
+    linea = linea.rstrip()
+    if linea.startswith('From:'): #Termino de busqueda.
+        print(linea)
+        contador+=1
+print(f"Se encontraron {contador} coincidencias.")
+
+# Ejercicio de busqueda #3. Estamos ignorando todas las lineas que no comienzan con "From"
+# usando continue dentro del for para saltar a la siguiente iteracion dentro del ciclo.
+contador = 0
+man_a = open('mbox.txt')
+for linea in man_a:
+    linea = linea.rstrip()
+    # Ignorar 'líneas que no nos interesan'
+    if not linea.startswith('From:'):
+        continue
+    else:# Procesar la línea que nos 'interesa'
+        print(linea)
+        contador+=1
+print(f"Se encontraron {contador} coincidencias.")
