@@ -92,3 +92,11 @@ for linea in man_a:
     if linea.startswith('Subject:'):
         contador = contador + 1
 print('Hay', contador, 'líneas de asunto (subject) en', narchivo)
+
+
+# Escribiendo en un archivo de texto. 
+escribe = open("salida.txt",'w')
+
+escribe.write("Esta es otra linea de texto en el archivo\n")
+escribe.write("Esta es una segunda linea de texto en el archivo\n")
+escribe.close()
