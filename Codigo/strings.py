@@ -149,3 +149,16 @@ elif palabra > 'banana':
     print('Tu palabra, ' + palabra + ', está después de banana.')
 else:
     print('Muy bien, bananas.')
+
+# Analizando cadenas
+# Se quiere obtener la parte de la direccion de correo electronico que está
+# despues de la @ 'uct.ac.za'
+dato = 'From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008'
+arrobapos = dato.find('@')
+print(f"Posicion @ {arrobapos}")
+
+espos = dato.find(' ',arrobapos)
+print(f"Posicion espacio despues de @ {espos}")
+
+direccion = dato[arrobapos+1:espos] # rebanando la cadena para obtener 'uct.ac.za'
+print(direccion)
