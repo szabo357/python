@@ -95,8 +95,25 @@ print('Hay', contador, 'líneas de asunto (subject) en', narchivo)
 
 
 # Escribiendo en un archivo de texto. 
-escribe = open("salida.txt",'w')
-
-escribe.write("Esta es otra linea de texto en el archivo\n")
-escribe.write("Esta es una segunda linea de texto en el archivo\n")
+# si el programa se ejecuta nuevamente el contenido del archivo se sobreescribe
+# debe buscarse la forma de agregar texto y conservar el que habia previamente.
+# 'w' como segundo argumento de open. sobrescribe la informacion contenida en el archivo.
+#escribe = open("salida.txt",'w')
+# 'a'como segundo argumento de open. agrega nueva informacion al archivo.
+escribe = open("salida.txt",'a')
+escribe.write("Este es nuevo contenido para el archivo\n")
+escribe.write("Esta es una nueva linea de texto en el archivo\n")
+escribe.write("sigue escribiendo en el archivo.\n")
 escribe.close()
+
+
+#Ejercicio 7.11.1
+narchivo = input('Ingresa un nombre de archivo: ')
+try:
+    man_a = open(narchivo)
+except:
+    print('No se puede abrir el archivo:', narchivo)
+    exit()
+for linea in man_a:
+    linea = linea.rstrip()
+    print(linea.upper())
