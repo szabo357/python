@@ -17,3 +17,13 @@ print(len(manejador.read()))
 
 print(len(manejador.read()))# el contenido de manejador.read() se vacía despues de cada llamada.
 # asi que es buena idea almacenar el contenido de manejador.read() en una variable.
+
+
+# realizando una busqueda sencilla en el archivo. se imprimen todas las lineas que comienzan con "From:"
+man_a = open('mbox.txt')
+contador = 0
+for linea in man_a:
+    if linea.startswith('From:'):
+        print(linea)
+        contador+=1
+print(f"Se encontraron {contador} coincidencias.")
