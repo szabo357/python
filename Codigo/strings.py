@@ -164,6 +164,8 @@ direccion = dato[arrobapos+1:espos] # rebanando la cadena para obtener 'uct.ac.z
 print(direccion)
 
 # Operador formato %.
-camello = 42
-mystr = "%d" % camello
+camellos = 42
+mystr = "%d" % camellos
 print(mystr, type(mystr))
+print('Yo he visto %d camellos.' % camellos) # se puede insertar un valor a la cadena.
+print('En %d años yo he visto %g %s.' % (3, 0.1, 'camellos'))# se pueden insertar diferentes valores a la cadena usando una tupla.
