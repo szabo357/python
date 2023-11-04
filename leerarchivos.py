@@ -4,3 +4,9 @@ contador = 0
 for linea in man_archivo:
     contador = contador + 1
 print('Contador de líneas:', contador)
+
+manejador_archivo = open('mbox.txt')
+inp = manejador_archivo.read()
+
+print(len(inp)) # 6687001 caracteres
+print(inp[:20]) # From stephen.marquar
