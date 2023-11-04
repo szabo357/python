@@ -107,7 +107,7 @@ escribe.write("sigue escribiendo en el archivo.\n")
 escribe.close()
 
 
-#Ejercicio 7.11.1
+# Solución Ejercicio 7.11.1
 narchivo = input('Ingresa un nombre de archivo: ')
 try:
     man_a = open(narchivo)
@@ -117,3 +117,39 @@ except:
 for linea in man_a:
     linea = linea.rstrip()
     print(linea.upper())
+
+
+# Solución Ejercicio 7.11.2
+narchivo = input('Ingresa un nombre de archivo: ')
+try:
+    man_a = open(narchivo)
+except:
+    print('No se puede abrir el archivo:', narchivo)
+    exit()
+contador = 0
+spamconf = float(0.0)
+for linea in man_a:
+    if linea.startswith('X-DSPAM-Confidence:'):
+        linea = linea.rstrip()
+        indicedp = linea.find(":")
+        spmconf = float(linea[indicedp+1:])
+        spamconf += spmconf
+        contador += 1
+        #print(linea.upper())
+print(f"Promedio spam confidence: {round(spamconf/contador,12)}")
+
+# Solución Ejercicio 7.11.3
+narchivo = input('Ingresa un nombre de archivo: ')
+try:
+    man_a = open(narchivo)
+except:
+    if narchivo =="na na boo boo":
+        print('NA NA BOO BOO PARA TI - Te he atrapado!')
+    else:
+        print('No se puede abrir el archivo:', narchivo)
+    exit()
+contador = 0
+for linea in man_a:
+    if linea.startswith('Subject:'):
+        contador = contador + 1
+print('Hay', contador, 'líneas de asunto (subject) en', narchivo)
