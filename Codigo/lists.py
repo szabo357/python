@@ -92,3 +92,7 @@ print(type(my_list))
 print([1,2,3,4])
 print(["A","B","C"])
 print(["spam",2.4,1,["A","B"]])
+# Las listas son mutables. es decir podemos actualizar los valores dentro de ellas.
+lista =[1,2,3,4]
+lista[1]=5   # asi como las cadenas los indices de las listas comienzan desde cero.
+print(lista)
