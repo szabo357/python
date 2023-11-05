@@ -96,3 +96,7 @@ print(["spam",2.4,1,["A","B"]])
 lista =[1,2,3,4]
 lista[1]=5   # asi como las cadenas los indices de las listas comienzan desde cero.
 print(lista)
+#El operador "in" funciona también en listas.
+quesos = ['Cheddar', 'Edam', 'Gouda']
+print('Edam' in quesos)
+print('Brie' in quesos)
