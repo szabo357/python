@@ -109,5 +109,5 @@ for queso in quesos:
 
 # Para actualizar el contenido de una lista
 for i in range(len(lista)):
-    lista = lista[i]*2
+    lista[i] = lista[i]*2
 print(lista)
