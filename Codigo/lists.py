@@ -18,7 +18,6 @@ print(type(my_list))
 print(type(my_other_list))
 
 # Acceso a elementos y búsqueda
-
 print(my_other_list[0])
 print(my_other_list[1])
 print(my_other_list[-1])
@@ -39,7 +38,6 @@ print(age)
 
 print(my_list + my_other_list)
 #print(my_list - my_other_list)
-
 
 # Creación, inserción, actualización y eliminación
 
@@ -83,11 +81,14 @@ my_new_list.sort()
 print(my_new_list)
 
 # Sublistas
-
 print(my_new_list[1:3])
 
 # Cambio de tipo
-
 my_list = "Hola Python"
 print(my_list)
 print(type(my_list))
+
+# creacion de listas
+print([1,2,3,4])
+print(["A","B","C"])
+print(["spam",2.4,1,["A","B"]])
