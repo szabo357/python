@@ -88,6 +88,7 @@ my_list = "Hola Python"
 print(my_list)
 print(type(my_list))
 
+
 # creacion de listas
 print([1,2,3,4])
 print(["A","B","C"])
@@ -100,3 +101,13 @@ print(lista)
 quesos = ['Cheddar', 'Edam', 'Gouda']
 print('Edam' in quesos)
 print('Brie' in quesos)
+
+#recorriendo listas.
+# Para leer el contenido de una lista.
+for queso in quesos:
+    print(queso)
+
+# Para actualizar el contenido de una lista
+for i in range(len(lista)):
+    lista = lista[i]*2
+print(lista)
