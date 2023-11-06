@@ -111,3 +111,25 @@ for queso in quesos:
 for i in range(len(lista)):
     lista[i] = lista[i]*2
 print(lista)
+
+#Ejercicios 
+
+def recortar(l):
+    del l[0]
+    del l[len(l)-1]
+    return None
+
+def medio(l):
+    my_list = []
+    my_list.extend(l)
+    del my_list[0]
+    del my_list[len(my_list) - 1]
+    return my_list
+
+fruits = ["Apple","Banana", "Carrot"]
+recortar(fruits)
+print(fruits)
+
+fruits = ["Apple","Banana", "Carrot","Grape","Orange","Watermelon"]
+n_list = medio(fruits)
+print(n_list)
