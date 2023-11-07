@@ -133,3 +133,8 @@ print(fruits)
 fruits = ["Apple","Banana", "Carrot","Grape","Orange","Watermelon"]
 n_list = medio(fruits)
 print(n_list)
+
+numeros = [42, 123]
+print(numeros)
+numeros[1]= 5
+print(numeros)
