@@ -1,6 +1,19 @@
 #### Classes ####
 import random as rd
 
+# python Style guidelines 
+# https://peps.python.org/pep-0008/#introduction
+
+# Classes Documentation.
+# https://docs.python.org/3/tutorial/classes.html
+# 
+# https://www.digitalocean.com/community/tutorials/python-str-repr-functions
+
+# Tutorials on Classes, constructors and inheritance.
+# https://python.land/objects-and-classes
+# https://python.land/objects-and-classes/python-constructors
+# https://python.land/objects-and-classes/python-inheritance
+
 class Person:
     def __init__(self,name,surname):
         self.__name    = name
