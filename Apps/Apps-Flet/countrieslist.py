@@ -29,12 +29,9 @@ def main(page: ft.Page):
         repeat=ft.ImageRepeat.NO_REPEAT,
         border_radius=ft.border_radius.all(10)
     )    
-
+#    ft.Text(country)
     mycontainer = ft.Container(
-        content=ft.Text(country),
-        image_src=honduras,
-        image_fit="fitheight",
-        image_repeat="norepeat",
+        content=image,
         margin = 10,
         padding= 10,
         alignment=ft.alignment.center,
