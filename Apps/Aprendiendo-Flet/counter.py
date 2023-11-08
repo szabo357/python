@@ -28,6 +28,6 @@ def main(page: ft.Page):
       )
 
     )       
-
+    
 ft.app(target=main) # Asi funciona como app de escritorio.
 #ft.app(target=main, view=ft.AppView.WEB_BROWSER) Asi funciona como App Web
