@@ -3,6 +3,58 @@ import countriesdata as cd
 world = cd.World.countries
 flg = cd.World.flags
 
+def main(page: ft.Page):
+    page.title="Countries list"
+    page.bgcolor=ft.colors.INDIGO_100
+    page.window_min_width  = 300
+    page.window_min_height = 400
+    page.window_max_width  = 500
+    page.window_max_height = 600
+    
+    lv = ft.ListView(
+        expand=1,  
+        padding=5,
+        spacing=10,
+        divider_thickness=10
+    )
+
+    honduras ="https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/hn.svg"    
+    country = "Honduras"
+    image = ft.Image(
+        src=honduras,
+        width=180,
+        height=150,
+#        fit=ft.ImageFit.CONTAIN,
+        fit=ft.ImageFit.FIT_HEIGHT,
+        repeat=ft.ImageRepeat.NO_REPEAT,
+        border_radius=ft.border_radius.all(10)
+    )    
+
+    mycontainer = ft.Container(
+        content=ft.Text(country),
+        image_src=honduras,
+        image_fit="fitheight",
+        image_repeat="norepeat",
+        margin = 10,
+        padding= 10,
+        alignment=ft.alignment.center,
+        bgcolor=ft.colors.AMBER,
+#        width=150,
+        height=150,
+        border_radius=10    
+    )
+    
+    lv.controls.append(mycontainer)
+    lv.controls.append(mycontainer)
+    lv.controls.append(mycontainer)
+    lv.controls.append(mycontainer)
+    page.add(lv)
+    
+    
+   
+    page.update()
+
+ft.app(target=main)
 # def main(page: ft.Page):
 #     page.title = "Flet countries List"
 #     page.padding = 50
