@@ -2878,17 +2878,18 @@ class World:
         {"flag":"https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/zw.svg","country":"Zimbabwe"},
     ]
 
-    def updatecountries(self):
+
+#     def updatecountries(self):
         
-        c = self.countries
-        f = self.flags
+#         c = self.countries
+#         f = self.flags
 
-        for country in c:
-            for cont in f:
-                if country["name"] == cont["country"]:
-                    country["flag"] =cont["flag"]
-                    print(cont["country"])
+#         for country in c:
+#             for cont in f:
+#                 if country["name"] == cont["country"]:
+#                     country["flag"] =cont["flag"]
+#                     print(cont["country"])
 
 
-mw = World()
-mw.updatecountries()
+# mw = World()
+# mw.updatecountries()
