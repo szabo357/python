@@ -41,11 +41,31 @@ def main(page: ft.Page):
                                         )
                                     ]),
                                     ft.Column([
-                                        ft.Text(value=f'Country: {country["name"]}'),
-                                        ft.Text(value=f'Capital: {country["capital"]}'),
-                                        ft.Text(value=f'Population: {country["population"]}'),
-                                        ft.Text(value=f'Currency: {country["currency"]}'),
-                                        ft.Text(value=f'Languages: {country["languages"]}')
+                                        ft.Text(value=f'Country: {country["name"]}',
+                                                weight="bold",
+                                                font_family="Roboto",
+                                                size=18
+                                        ),
+                                        ft.Text(value=f'Capital: {country["capital"]}',
+                                                weight="bold",
+                                                font_family="Roboto",
+                                                size=18
+                                        ),
+                                        ft.Text(value=f'Population: {country["population"]}',
+                                                weight="bold",
+                                                font_family="Roboto",
+                                                size=18
+                                        ),
+                                        ft.Text(value=f'Currency: {country["currency"]}',
+                                                weight="bold",
+                                                font_family="Roboto",
+                                                size=18
+                                        ),
+                                        ft.Text(value=f'Languages: {country["languages"]}',
+                                                weight="bold",
+                                                font_family="Roboto",
+                                                size=18
+                                        )
                                     ])
                                 ])                  
                             ]
