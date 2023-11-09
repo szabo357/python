@@ -10,7 +10,40 @@ def main(page: ft.Page):
     page.window_min_height = 400
     page.window_max_width  = 500
     page.window_max_height = 600
-    
+
+    def layout():
+        honduras ="https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/hn.svg"    
+        country = "Honduras"
+        return ft.Container(
+             padding=10,
+             margin=10,
+             bgcolor=ft.colors.BLUE_100,
+             content= ft.Column(
+                controls=[
+                    ft.Text("Pais: Honduras"),
+                    ft.Row([
+                        ft.Column([
+                            ft.Image(
+                                src=honduras,
+                                width=180,
+                                height=150,
+#                               fit=ft.ImageFit.CONTAIN,
+                                fit=ft.ImageFit.FIT_HEIGHT,
+                                repeat=ft.ImageRepeat.NO_REPEAT,
+                                border_radius=ft.border_radius.all(10)
+                            )
+                        ]),
+                        ft.Column([
+                            ft.Text("Capital:Tegucigalpa"),
+                            ft.Text("Población:8576532"),
+                            ft.Text("Moneda:Lempira"),
+                            ft.Text("Idiomas:Español")
+                        ])
+                    ])                  
+                ]
+             )
+        )
+
     lv = ft.ListView(
         expand=1,  
         padding=5,
@@ -45,10 +78,9 @@ def main(page: ft.Page):
     lv.controls.append(mycontainer)
     lv.controls.append(mycontainer)
     lv.controls.append(mycontainer)
+    lv.controls.append(layout())
     page.add(lv)
     
-    
-   
     page.update()
 
 ft.app(target=main)
