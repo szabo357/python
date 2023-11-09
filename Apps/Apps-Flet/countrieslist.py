@@ -1,7 +1,7 @@
 import flet as ft
 import countriesdata as cd
 world = cd.World.countries
-flg = cd.World.flags
+flag = cd.World.flags
 
 def main(page: ft.Page):
     page.title="Countries list"
@@ -11,76 +11,94 @@ def main(page: ft.Page):
     page.window_max_width  = 500
     page.window_max_height = 600
 
-    def layout():
-        honduras ="https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/hn.svg"    
-        country = "Honduras"
-        return ft.Container(
-             padding=10,
-             margin=10,
-             bgcolor=ft.colors.BLUE_100,
-             content= ft.Column(
-                controls=[
-                    ft.Text("Pais: Honduras"),
-                    ft.Row([
-                        ft.Column([
-                            ft.Image(
-                                src=honduras,
-                                width=180,
-                                height=150,
-#                               fit=ft.ImageFit.CONTAIN,
-                                fit=ft.ImageFit.FIT_HEIGHT,
-                                repeat=ft.ImageRepeat.NO_REPEAT,
-                                border_radius=ft.border_radius.all(10)
-                            )
-                        ]),
-                        ft.Column([
-                            ft.Text("Capital:Tegucigalpa"),
-                            ft.Text("Población:8576532"),
-                            ft.Text("Moneda:Lempira"),
-                            ft.Text("Idiomas:Español")
-                        ])
-                    ])                  
-                ]
-             )
+    def layout(countries,flags):    
+        lv = ft.ListView(
+            expand=1,  
+            padding=5,
+            spacing=10,
+            divider_thickness=10
         )
 
-    lv = ft.ListView(
-        expand=1,  
-        padding=5,
-        spacing=10,
-        divider_thickness=10
-    )
+        for country in countries:
+            for flag in flags :    
+                if country["name"] == flag["country"]:
+                    lv.controls.append(ft.Container(
+                        padding=10,
+                        margin=10,
+                        bgcolor=ft.colors.BLUE_100,
+                        content= ft.Column(
+                            controls=[
+                                ft.Row([
+                                    ft.Column([
+                                        ft.Image(
+                                            src=flag["flag"],
+                                            width=180,
+                                            height=150,
+            #                               fit=ft.ImageFit.CONTAIN,
+                                            fit=ft.ImageFit.FIT_HEIGHT,
+                                            repeat=ft.ImageRepeat.NO_REPEAT,
+                                            border_radius=ft.border_radius.all(10)
+                                        )
+                                    ]),
+                                    ft.Column([
+                                        ft.Text(value=f'Pais: {country["name"]}'),
+                                        ft.Text(value=f'Capital:{country["capital"]}'),
+                                        ft.Text(value=f'Población:{country["population"]}'),
+                                        ft.Text(value=f'Moneda:{country["currency"]}'),
+                                        ft.Text(value=f'Idiomas:{country["languages"]}')
+    #                                    ft.Text(value=f"Pais: Honduras"),
+    #                                    ft.Text(value=f"Capital:Tegucigalpa"),
+    #                                    ft.Text(value=f"Población:8576532"),
+    #                                    ft.Text(value=f"Moneda:Lempira"),
+    #                                    ft.Text(value=f"Idiomas:Español")
+                                    ])
+                                ])                  
+                            ]
+                        )
+                    ))
 
-    honduras ="https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/hn.svg"    
-    country = "Honduras"
-    image = ft.Image(
-        src=honduras,
-        width=180,
-        height=150,
+        return lv
+    
+    # lv = ft.ListView(
+    #     expand=1,  
+    #     padding=5,
+    #     spacing=10,
+    #     divider_thickness=10
+    # )
+
+#    honduras ="https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/hn.svg"    
+#    country = "Honduras"
+#    image = ft.Image(
+#        src=honduras,
+#        width=180,
+#        height=150,
 #        fit=ft.ImageFit.CONTAIN,
-        fit=ft.ImageFit.FIT_HEIGHT,
-        repeat=ft.ImageRepeat.NO_REPEAT,
-        border_radius=ft.border_radius.all(10)
-    )    
+#        fit=ft.ImageFit.FIT_HEIGHT,
+#        repeat=ft.ImageRepeat.NO_REPEAT,
+#        border_radius=ft.border_radius.all(10)
+#    )    
 #    ft.Text(country)
-    mycontainer = ft.Container(
-        content=image,
-        margin = 10,
-        padding= 10,
-        alignment=ft.alignment.center,
-        bgcolor=ft.colors.AMBER,
+#    mycontainer = ft.Container(
+#        content=image,
+#        margin = 10,
+#        padding= 10,
+#        alignment=ft.alignment.center,
+#        bgcolor=ft.colors.AMBER,
 #        width=150,
-        height=150,
-        border_radius=10    
-    )
+#        height=150,
+#        border_radius=10    
+#    )
     
-    lv.controls.append(mycontainer)
-    lv.controls.append(mycontainer)
-    lv.controls.append(mycontainer)
-    lv.controls.append(mycontainer)
-    lv.controls.append(layout())
-    page.add(lv)
+#    lv.controls.append(mycontainer)
+#    lv.controls.append(mycontainer)
+#    lv.controls.append(mycontainer)
+#    lv.controls.append(mycontainer)
+#    lv.controls.append(layout(world,flag))
     
+    page.add(layout(world,flag))
+    
+    print(f"World length: {len(world)}")
+    print(f"Flags length: {len(world)}")
     page.update()
 
 ft.app(target=main)
