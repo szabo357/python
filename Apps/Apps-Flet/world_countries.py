@@ -1,3 +1,5 @@
+# Flet examples.
+# https://github.com/flet-dev/examples/tree/main/python/apps
 import flet as ft
 import countriesdata as cd
 world = cd.World.countries
@@ -75,9 +77,6 @@ def main(page: ft.Page):
         return lv
         
     page.add(layout(world,flag))
-    
-    print(f"World length: {len(world)}")
-    print(f"Flags length: {len(world)}")
     page.update()
 
 ft.app(target=main)
