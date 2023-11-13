@@ -2829,7 +2829,7 @@ world =[
 # Exercise 2 with set comprenhension.
 #flattened_list = [ number for row in list_of_lists for number in row]
 langs ={language for country in world for language in country["languages"]}
- 
+
 print(f"there are {len(langs)} languages in data.")
 print(langs)
 
@@ -2846,12 +2846,11 @@ my_world = world.copy()
 lang_pop = list()
 lang_pop_sum = list()
 #langs = set()
-for country in my_world:
-    for lang in country["languages"]:
-        lang_pop.append([lang,country["population"]])
-            #{'language':lang,
-            # 'population':country["population"]
-            #})
+# for country in my_world:
+#     for lang in country["languages"]:
+#         lang_pop.append([lang,country["population"]])
+
+lang_pop =[[language,country["population"]] for country in world for language in country["languages"]]
 
 for lang in langs:
     counter = 0
@@ -2859,7 +2858,7 @@ for lang in langs:
         if lang == language:
             counter = counter + pop
     lang_pop_sum.append([lang,counter])
-    #lang_pop_sum.append([counter,lang])
+    
 
 lang_pop_sum.sort(key=lambda item:item[1], reverse=True)
 for country in lang_pop_sum[:10]:
