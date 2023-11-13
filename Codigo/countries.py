@@ -2820,14 +2820,24 @@ world =[
 #        print(country)
 
 #Exercise2 :What are the total number of languages in the data
-langs = set()
-for country in world:
-    for lang in country["languages"]:
-        langs.add(lang)
+# langs = set()
+# for country in world:
+#     for lang in country["languages"]:
+#         langs.add(lang)
 
+# Creating a set using python comprenhensions.
+# Exercise 2 with set comprenhension.
+#flattened_list = [ number for row in list_of_lists for number in row]
+langs ={language for country in world for language in country["languages"]}
+ 
+print(f"there are {len(langs)} languages in data.")
+print(langs)
+
+#arr=[random.randint(0,9) for _ in range(n)]
 #print(f"there are {len(langs)} languages in data.")
 #print(langs)
-
+# lista = [,1,2,3,...]
+# set = {1,2,3,4}
 
 
 #Excercise3 Find the ten most spoken languages from the data.
