@@ -2845,6 +2845,7 @@ print(langs)
 my_world = world.copy()
 lang_pop = list()
 lang_pop_sum = list()
+
 #langs = set()
 # for country in my_world:
 #     for lang in country["languages"]:
