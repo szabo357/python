@@ -73,10 +73,12 @@ for cntry in temp2:
 # Closing file
 f.close()
 f2.close()
+
 new_data = {"countries":temp1}
 
 write_json(new_data,"worlddata.json")
 
-
 os.chdir(saved_path)
 #print("Current Working Directory is " + saved_path)
+
+#"Bonaire, Sint Eustatius and Saba"

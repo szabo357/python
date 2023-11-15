@@ -51,7 +51,7 @@
             ],
             "population": 57100,
             "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/as.svg",
-            "currency": "United State Dollar"
+            "currency": "United States dollar"
         },
         {
             "name": "Andorra",
@@ -284,13 +284,13 @@
             "currency": "Bolivian boliviano"
         },
         {
-            "name": "Bonaire, Sint Eustatius and Saba",
+            "name": "Bonaire",
             "capital": "Kralendijk",
             "languages": [
                 "Dutch"
             ],
             "population": 17408,
-            "flag": "https://restcountries.eu/data/bes.svg",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Flag_of_Bonaire.svg",
             "currency": "United States dollar"
         },
         {
@@ -356,7 +356,7 @@
             ],
             "population": 300,
             "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/um.svg",
-            "currency": "United States Dollar"
+            "currency": "United States dollar"
         },
         {
             "name": "Virgin Islands, British",
@@ -366,7 +366,7 @@
             ],
             "population": 28514,
             "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/vg.svg",
-            "currency": "[D]"
+            "currency": "United States dollar"
         },
         {
             "name": "Virgin Islands, U.S.",
@@ -461,6 +461,18 @@
             "population": 531239,
             "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/cv.svg",
             "currency": "Cape Verdean escudo"
+        },
+        {
+            "name": "Caribbean Netherlands",
+            "capital": "Willemstad",
+            "languages": [
+                "English",
+                "Papiamento",
+                "Dutch"
+            ],
+            "population": 25987,
+            "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/bq.svg",
+            "currency": "Euro"
         },
         {
             "name": "Cayman Islands",
@@ -727,6 +739,16 @@
             "currency": "United States dollar"
         },
         {
+            "name": "England",
+            "capital": "London",
+            "languages": [
+                "English"
+            ],
+            "population": 56763000,
+            "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/gb-eng.svg",
+            "currency": "Pound sterling"
+        },
+        {
             "name": "Equatorial Guinea",
             "capital": "Malabo",
             "languages": [
@@ -835,7 +857,7 @@
         },
         {
             "name": "French Polynesia",
-            "capital": "Papeet\u0113",
+            "capital": "Papeete",
             "languages": [
                 "French"
             ],
@@ -845,7 +867,7 @@
         },
         {
             "name": "French Southern Territories",
-            "capital": "Port-aux-Fran\u00e7ais",
+            "capital": "Port-aux-Francais",
             "languages": [
                 "French"
             ],
@@ -984,7 +1006,7 @@
             ],
             "population": 62999,
             "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/gg.svg",
-            "currency": "British pound"
+            "currency": "Pound sterling"
         },
         {
             "name": "Guinea",
@@ -1090,7 +1112,7 @@
             ],
             "population": 334300,
             "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/is.svg",
-            "currency": "Icelandic kr\u00f3na"
+            "currency": "Icelandic Kr\u00f3na"
         },
         {
             "name": "India",
@@ -1164,7 +1186,7 @@
             ],
             "population": 84497,
             "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/im.svg",
-            "currency": "British pound"
+            "currency": "Pound sterling"
         },
         {
             "name": "Israel",
@@ -1216,7 +1238,7 @@
             ],
             "population": 100800,
             "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/je.svg",
-            "currency": "British pound"
+            "currency": "Pound sterling"
         },
         {
             "name": "Jordan",
@@ -1395,6 +1417,18 @@
             "population": 2058539,
             "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/mk.svg",
             "currency": "Macedonian denar"
+        },
+        {
+            "name": "Northern Ireland",
+            "capital": "Belfast",
+            "languages": [
+                "Irish",
+                "English",
+                "Ulster Scots"
+            ],
+            "population": 1885000,
+            "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/gb-nir.svg",
+            "currency": "Pound sterling"
         },
         {
             "name": "Madagascar",
@@ -1788,7 +1822,7 @@
             ],
             "population": 17950,
             "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/pw.svg",
-            "currency": "[E]"
+            "currency": "United States dollar"
         },
         {
             "name": "Palestine",
@@ -2004,7 +2038,7 @@
                 "Dutch"
             ],
             "population": 36979,
-            "flag": "https://restcountries.eu/data/maf.svg",
+            "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/mf.svg",
             "currency": "Euro"
         },
         {
@@ -2036,7 +2070,7 @@
             ],
             "population": 194899,
             "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/ws.svg",
-            "currency": "Samoan t\u0101l\u0101"
+            "currency": "Samoan Tala"
         },
         {
             "name": "San Marino",
@@ -2056,7 +2090,7 @@
             ],
             "population": 187356,
             "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/st.svg",
-            "currency": "S\u00e3o Tom\u00e9 and Pr\u00edncipe dobra"
+            "currency": "Sao Tome and Principe dobra"
         },
         {
             "name": "Saudi Arabia",
@@ -2067,6 +2101,19 @@
             "population": 32248200,
             "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/sa.svg",
             "currency": "Saudi riyal"
+        },
+        {
+            "name": "Scotland",
+            "capital": "Edinburgh",
+            "languages": [
+                "Scots",
+                "Scottish",
+                "Gaelic",
+                "English"
+            ],
+            "population": 5454000,
+            "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/gb-sct.svg",
+            "currency": "Pound sterling"
         },
         {
             "name": "Senegal",
@@ -2201,7 +2248,7 @@
             ],
             "population": 30,
             "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/gs.svg",
-            "currency": "British pound"
+            "currency": "Pound sterling"
         },
         {
             "name": "South Korea",
@@ -2399,7 +2446,7 @@
             ],
             "population": 103252,
             "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/to.svg",
-            "currency": "Tongan pa\u02bbanga"
+            "currency": "Tongan Pa\u02bbanga"
         },
         {
             "name": "Trinidad and Tobago",
@@ -2501,7 +2548,7 @@
             ],
             "population": 65110000,
             "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/gb.svg",
-            "currency": "British pound"
+            "currency": "Pound sterling"
         },
         {
             "name": "United States of America",
@@ -2565,6 +2612,19 @@
             "population": 92700000,
             "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/vn.svg",
             "currency": "Vietnamese dong"
+        },
+        {
+            "name": "Wales",
+            "capital": "Cardiff",
+            "languages": [
+                "English",
+                "Welsh",
+                "Welsh Romani",
+                "Welsh English"
+            ],
+            "population": 3288885,
+            "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/gb-wls.svg",
+            "currency": "Pound sterling"
         },
         {
             "name": "Wallis and Futuna Islands",
