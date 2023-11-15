@@ -5,7 +5,8 @@ import json
 import os
 
 def write_json(data,filename):
-	with open(filename,"w",encoding="utf8") as f:
+	#with open(filename,"w",encoding="utf8") as f:
+	with open(filename,"w") as f:	
 		json.dump(data,f,indent=4)
 	f.close()
 
@@ -58,8 +59,8 @@ for country in temp1:
 diff = list(s1.difference(s2))
 diff.sort()
 
-#print(diff)
-#print(len(diff))
+print(diff)
+print(len(diff))
 
 for cntry in temp2:
 	for country in temp1:
@@ -67,14 +68,15 @@ for cntry in temp2:
 			country["flag"] = cntry["flag"]
 			continue
 		
-print(temp1["flag"])		
-
+#print(temp1)		
 
 # Closing file
 f.close()
 f2.close()
+new_data = {"countries":temp1}
 
-write_json(temp1,"worldflags.json")
+write_json(new_data,"worlddata.json")
+
 
 os.chdir(saved_path)
 #print("Current Working Directory is " + saved_path)
