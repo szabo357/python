@@ -4,6 +4,9 @@
 import json
 import os
 
+def write_json(data,filename):
+	with open(filename,"w",encoding="utf8") as f:
+		json.dump(data,f,indent=4)
 
 saved_path = os.getcwd()
 #print("Current Working Directory is: " + saved_path)
@@ -34,7 +37,8 @@ wrld = json.load(f2) # dictionary
 #print(data)
 print(type(world["countries"]), len(world["countries"]))
 print(type(wrld["countries"]), len(wrld["countries"]))
-
+temp1 = world["countries"]
+temp2 = wrld["countries"]
 # Iterating through the json list
 #nwrld = dict()
 
@@ -42,10 +46,10 @@ print(type(wrld["countries"]), len(wrld["countries"]))
 s1 = set()
 s2 = set()
 
-for country in wrld["countries"]:
+for country in temp2:
     s1.add(country["country"])
     
-for country in world["countries"]:
+for country in temp1:
     s2.add(country["name"])
 
 # get countries sets differences and then 
@@ -53,15 +57,18 @@ for country in world["countries"]:
 diff = list(s1.difference(s2))
 diff.sort()
 
-print(diff)
-print(len(diff))
+#print(diff)
+#print(len(diff))
 
-# for cntry in wrld["countries"]:
-# 	for country in world["countries"]:
-# 		if cntry["country"] not in country["name"]:
-# 			print(cntry["country"])
-# 			break
+for cntry in temp2:
+	for country in temp1:
+		if cntry["country"] == country["name"]:
+			country["flag"]= cntry["flag"]
+			continue
 		
+print(temp1["flag"])		
+
+
 # Closing file
 f.close()
 f2.close()
