@@ -41,14 +41,18 @@ print(type(wrld["countries"]), len(wrld["countries"]))
 # difference between the two dictionaries.
 s1 = set()
 s2 = set()
-diff = set()
+
 for country in wrld["countries"]:
     s1.add(country["country"])
     
 for country in world["countries"]:
     s2.add(country["name"])
 
-diff = s1.difference(s2)
+# get countries sets differences and then 
+# convert it to a list and sort it in alphabetical order.
+diff = list(s1.difference(s2))
+diff.sort()
+
 print(diff)
 print(len(diff))
 
