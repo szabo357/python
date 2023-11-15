@@ -7,6 +7,7 @@ import os
 def write_json(data,filename):
 	with open(filename,"w",encoding="utf8") as f:
 		json.dump(data,f,indent=4)
+	f.close()
 
 saved_path = os.getcwd()
 #print("Current Working Directory is: " + saved_path)
@@ -23,8 +24,8 @@ os.chdir(r"C:\Users\jmsa3\Documents\Curso Python\python\Codigo\jsonfiles")
 
 # Opening JSON file
 
-#f = open("worlddata.json",encoding="utf8")
-f = open("wrlddata.json",encoding="utf8")
+f = open("worlddata.json",encoding="utf8")
+#f = open("wrlddata.json",encoding="utf8")
 # without passing the encoding to the open function. python returned
 #UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 
 # in position 44223: character maps to <undefined>
@@ -63,7 +64,7 @@ diff.sort()
 for cntry in temp2:
 	for country in temp1:
 		if cntry["country"] == country["name"]:
-			country["flag"]= cntry["flag"]
+			country["flag"] = cntry["flag"]
 			continue
 		
 print(temp1["flag"])		
@@ -72,6 +73,8 @@ print(temp1["flag"])
 # Closing file
 f.close()
 f2.close()
+
+write_json(temp1,"worldflags.json")
 
 os.chdir(saved_path)
 #print("Current Working Directory is " + saved_path)
