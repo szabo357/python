@@ -20,7 +20,8 @@ os.chdir(r"C:\Users\jmsa3\Documents\Curso Python\python\Codigo\jsonfiles")
 
 # Opening JSON file
 
-f = open("worlddata.json",encoding="utf8")
+#f = open("worlddata.json",encoding="utf8")
+f = open("wrlddata.json",encoding="utf8")
 # without passing the encoding to the open function. python returned
 #UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 
 # in position 44223: character maps to <undefined>
@@ -31,17 +32,31 @@ f2 = open("worldflags.json",encoding="utf8")
 world = json.load(f) # dictionary
 wrld = json.load(f2) # dictionary
 #print(data)
-print(type(world), len(world["countries"]))
-print(type(wrld), len(wrld["countries"]))
+print(type(world["countries"]), len(world["countries"]))
+print(type(wrld["countries"]), len(wrld["countries"]))
 
-# Iterating through the json
-# list
-nwrld = dict()
+# Iterating through the json list
+#nwrld = dict()
 
+# difference between the two dictionaries.
+s1 = set()
+s2 = set()
+diff = set()
+for country in wrld["countries"]:
+    s1.add(country["country"])
+    
 for country in world["countries"]:
-	for cntry in wrld["countries"]:
-		if country["name"] != cntry["country"]:
-			print(country)
+    s2.add(country["name"])
+
+diff = s1.difference(s2)
+print(diff)
+print(len(diff))
+
+# for cntry in wrld["countries"]:
+# 	for country in world["countries"]:
+# 		if cntry["country"] not in country["name"]:
+# 			print(cntry["country"])
+# 			break
 		
 # Closing file
 f.close()
