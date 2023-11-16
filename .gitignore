@@ -179,9 +179,7 @@ cython_debug/
 
 pruebas.py
 rd.py
-mbox.txt
-salida.txt
-leerarchivos.py
+
 .vscode
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
