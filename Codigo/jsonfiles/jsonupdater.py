@@ -21,6 +21,11 @@
 #3- An 'r' before a string tells the Python interpreter to treat backslashes 
 # 	as a literal (raw) character. Normally, Python uses backslashes as
 #  	escape characters.
+# References
+# https://www.geeksforgeeks.org/reading-and-writing-json-to-a-file-in-python/
+# https://stackoverflow.com/questions/35582528/python-encoding-and-json-dumps
+# https://docs.python.org/3/library/json.html#basic-usage
+# https://docs.python.org/3/howto/unicode.html
 
 import json
 import os
