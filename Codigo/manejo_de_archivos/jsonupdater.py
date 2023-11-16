@@ -44,7 +44,8 @@ def update_json_file(filename:str,data:dict):
 
 saved_cwd = os.getcwd() #Save the current working directory..
 #print("Current Working Directory is: " + saved_cwd)
-os.chdir(r"C:\Users\jmsa3\Documents\Curso Python\python\Codigo\manejo_de_archivos")
+WORKING_DIR = str(saved_cwd+"\Codigo\manejo_de_archivos")
+os.chdir(WORKING_DIR)
 #print("Current Working Directory is: " + os.getcwd())
 #file_list = os.listdir(os.getcwd())
 #print(file_list)
