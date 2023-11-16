@@ -6,8 +6,8 @@
 # 'a'como segundo argumento de open. agrega nueva informacion al archivo.
 import os
 saved_cwd=os.getcwd()
-LIT = str(saved_cwd+"\Codigo\manejo_de_archivos")
-os.chdir(LIT)
+WORKING_DIR = str(saved_cwd+"\Codigo\manejo_de_archivos")
+os.chdir(WORKING_DIR)
 
 with open("salida.txt","a") as escribe:    
     escribe.write("Este es nuevo contenido para el archivo\n")

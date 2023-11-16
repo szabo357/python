@@ -1,8 +1,8 @@
 import os
 
 saved_cwd=os.getcwd()
-LIT = str(saved_cwd+"\Codigo\manejo_de_archivos")
-os.chdir(LIT)
+WORKING_DIR = str(saved_cwd+"\Codigo\manejo_de_archivos")
+os.chdir(WORKING_DIR)
 
 man_archivo = open('mbox.txt')
 contador = 0
