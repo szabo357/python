@@ -1,14 +1,16 @@
 # Python program to read
 # json file
+# \u to search unicode characters encoded/decoded by the json library.
 
 import json
 import os
 
 def write_json(data,filename):
-	#with open(filename,"w",encoding="utf8") as f:
-	with open(filename,"w") as f:	
-		json.dump(data,f,indent=4)
-	f.close()
+	with open(filename,"w",encoding="utf8") as f:
+	#with open(filename,"w") as f:	
+		#json.dump(data,f,indent=4)
+		json.dump(data,f,indent=4,ensure_ascii=False)
+	
 
 saved_path = os.getcwd()
 #print("Current Working Directory is: " + saved_path)
@@ -41,8 +43,9 @@ print(type(world["countries"]), len(world["countries"]))
 print(type(wrld["countries"]), len(wrld["countries"]))
 temp1 = world["countries"]
 temp2 = wrld["countries"]
+
 # Iterating through the json list
-#nwrld = dict()
+
 
 # difference between the two dictionaries.
 s1 = set()
@@ -80,5 +83,3 @@ write_json(new_data,"worlddata.json")
 
 os.chdir(saved_path)
 #print("Current Working Directory is " + saved_path)
-
-#"Bonaire, Sint Eustatius and Saba"

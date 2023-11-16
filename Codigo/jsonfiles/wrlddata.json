@@ -1462,7 +1462,7 @@
         },
         {
             "name": "Maldives",
-            "capital": "Mal\u00e9",
+            "capital": "Malé",
             "languages": [
                 "Divehi"
             ],
@@ -1560,11 +1560,11 @@
             ],
             "population": 102800,
             "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/fm.svg",
-            "currency": "[D]"
+            "currency": "United States dollar"
         },
         {
             "name": "Moldova, Republic of",
-            "capital": "Chi\u0219in\u0103u",
+            "capital": "Chişinău",
             "languages": [
                 "Romanian"
             ],
@@ -1689,7 +1689,7 @@
         },
         {
             "name": "New Caledonia",
-            "capital": "Noum\u00e9a",
+            "capital": "Nouméa",
             "languages": [
                 "French"
             ],
@@ -1702,7 +1702,7 @@
             "capital": "Wellington",
             "languages": [
                 "English",
-                "M\u0101ori"
+                "Māori"
             ],
             "population": 4697854,
             "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/nz.svg",
@@ -1716,7 +1716,7 @@
             ],
             "population": 6262703,
             "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/ni.svg",
-            "currency": "Nicaraguan C\u00f3rdoba"
+            "currency": "Nicaraguan Córdoba"
         },
         {
             "name": "Niger",
@@ -1784,7 +1784,7 @@
             "capital": "Oslo",
             "languages": [
                 "Norwegian",
-                "Norwegian Bokm\u00e5l",
+                "Norwegian Bokmål",
                 "Norwegian Nynorsk"
             ],
             "population": 5223256,
@@ -1861,7 +1861,7 @@
             ],
             "population": 6854536,
             "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/py.svg",
-            "currency": "Paraguayan guaran\u00ed"
+            "currency": "Paraguayan guaraní"
         },
         {
             "name": "Peru",
@@ -1901,7 +1901,7 @@
             ],
             "population": 38437239,
             "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/pl.svg",
-            "currency": "Polish z\u0142oty"
+            "currency": "Polski złoty"
         },
         {
             "name": "Portugal",
@@ -2036,7 +2036,7 @@
                 "Dutch"
             ],
             "population": 36979,
-            "flag": "https://restcountries.eu/data/maf.svg",
+            "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/mf.svg",
             "currency": "Euro"
         },
         {
@@ -2596,7 +2596,7 @@
             ],
             "population": 31028700,
             "flag": "https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/ve.svg",
-            "currency": "Venezuelan bol\u00edvar"
+            "currency": "Venezuelan bolívar"
         },
         {
             "name": "Vietnam",
