@@ -95,3 +95,12 @@ Crea un programa que invierta el orden de una cadena de texto
 sin usar funciones propias del lenguaje que lo hagan de forma automática.
 - Si le pasamos "Hola mundo" nos retornaría "odnum aloH"
 """
+def reversing_string(my_word):
+    l = len(my_word)
+    rev_word = ""
+    for i in range(0,l):
+        rev_word+= my_word[l-i-1]
+
+    return rev_word
+
+print(reversing_string("Hola mundo321"))
