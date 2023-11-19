@@ -1,8 +1,11 @@
 from datetime import datetime
 from datetime import date
 from datetime import time
+from datetime import timedelta
+
 
 now = datetime.now()
+
 
 def print_date(date):
     print(date.year)
@@ -54,3 +57,11 @@ print(diff)
 
 diff = year_2023.date() - current_date
 print(diff)
+
+# Timedelta
+
+start_timedelta = timedelta(200, 100, 100, weeks=10)
+end_timedelta = timedelta(300, 100, 100, weeks=13)
+
+print(end_timedelta - start_timedelta)
+print(end_timedelta + start_timedelta)
