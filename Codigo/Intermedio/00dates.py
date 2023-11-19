@@ -1,5 +1,6 @@
 from datetime import datetime
 from datetime import date
+from datetime import time
 
 now = datetime.now()
 
@@ -21,3 +22,8 @@ print_date(year_2023)
 print(datetime.now())
 
 # time
+current_time = time(21, 6, 0)
+
+print(current_time.hour)
+print(current_time.minute)
+print(current_time.second)
