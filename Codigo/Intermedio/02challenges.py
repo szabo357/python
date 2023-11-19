@@ -103,4 +103,4 @@ def reversing_string(my_word):
 
     return rev_word
 
-print(reversing_string("Hola mundo321"))
+print(reversing_string("Hola mundo"))
