@@ -47,4 +47,3 @@ Note:if you are using visual studio code editor you may follow this [tutorial](h
 ```shell
 > pip uninstall --yes -r uninstall.txt
 ```
-
