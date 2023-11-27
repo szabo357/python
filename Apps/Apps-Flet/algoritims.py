@@ -69,9 +69,24 @@ def main(page: ft.Page):
     # Sorting Algoritms to implement.
     #       
     def quick_sort(arr):
-        page.update()
+        
+        if len(arr) < 2:
+            return arr
+        pivot_index = random.randrange(len(arr))  # Use random element as pivot
+        pivot = arr[pivot_index]
+    
+        greater: list[int] = []  # All elements greater than pivot
+        lesser: list[int] = []  # All elements less than or equal to pivot
+        
+        for element in arr[:pivot_index]:
+            (greater if element > pivot else lesser).append(element)
 
+        for element in arr[pivot_index + 1 :]:
+            (greater if element > pivot else lesser).append(element)
 
+        return [*quick_sort(lesser), pivot, *quick_sort(greater)]
+    
+    
     def double_sort(arr):
         page.update()
 
@@ -112,7 +127,20 @@ def main(page: ft.Page):
         elif algoritms.value == "Selection Sort":
             selection_sort(balls)
         elif algoritms.value == "Quick Sort":
-            quick_sort(balls)
+            
+            arr = []
+            
+            for i in range(len(balls)):
+                arr.append(balls[i].content.value)
+            
+            print(arr)
+
+            arr2 = quick_sort(arr) 
+            
+            for i in range(len(balls)):
+                balls[i].content.value = arr2[i]    
+                balls[i].bgcolor = ft.colors.GREEN
+        
         elif algoritms.value == "Double Sort":
             double_sort(balls)
         elif algoritms.value == "Merge Sort":
