@@ -40,6 +40,7 @@ def main(page: ft.Page):
                 arr[j].bgcolor=ft.colors.ORANGE
                 arr[j + 1].bgcolor=ft.colors.ORANGE
             arr[n-i-1].bgcolor=ft.colors.GREEN
+
         page.update()
 
 
@@ -88,6 +89,33 @@ def main(page: ft.Page):
     
     
     def double_sort(arr):
+        
+        arrlen = len(arr)
+        for _ in range(int(((arrlen - 1) / 2) + 1)):  
+            # we don't need to traverse to end of list as
+            for j in range(arrlen - 1):
+                arr[j].bgcolor=ft.colors.YELLOW
+                arr[j + 1].bgcolor=ft.colors.YELLOW
+                time.sleep(2)
+                page.update()
+            # apply the bubble sort algorithm from left to right (or forwards)
+                if arr[j + 1].content.value < arr[j].content.value:
+                    arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                arr[j].bgcolor=ft.colors.GREEN
+                arr[j + 1].bgcolor=ft.colors.GREEN
+                # apply the bubble sort algorithm from right to left (or backwards)
+                if arr[arrlen - 1 - j].content.value < arr[arrlen - 2 - j].content.value:
+                    (
+                        arr[arrlen - 1 - j],
+                        arr[arrlen - 2 - j],
+                    ) = (
+                        arr[arrlen - 2 - j],
+                        arr[arrlen - 1 - j],
+                    )
+                arr[arrlen - 2 - j].bgcolor=ft.colors.GREEN
+                arr[arrlen - 1 - j].bgcolor=ft.colors.GREEN
+            arr[arrlen - 1].bgcolor=ft.colors.GREEN
+        #return collection
         page.update()
 
 
