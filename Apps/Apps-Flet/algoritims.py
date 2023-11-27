@@ -24,6 +24,8 @@ def main(page: ft.Page):
                 )
             )
         return items
+
+
 # Sorting Algoritms
     def bubble_sort(arr):
         n = len(arr)
@@ -39,6 +41,7 @@ def main(page: ft.Page):
                 arr[j + 1].bgcolor=ft.colors.ORANGE
             arr[n-i-1].bgcolor=ft.colors.GREEN
         page.update()
+
 
     def selection_sort(arr):
         n = len(arr)
@@ -68,14 +71,18 @@ def main(page: ft.Page):
     def quick_sort(arr):
         page.update()
 
+
     def double_sort(arr):
         page.update()
 
+
     def merge_sort(arr):
         page.update
-    
+
+
     def insertion_sort(arr):
         page.update()
+
 
 # Event Listeners
     def list_size_change(e):
@@ -84,15 +91,18 @@ def main(page: ft.Page):
         list_row.controls = balls 
         page.update()
 
+
     def algoritms_change(e):
         title.value = "Sorting Algorithm: "  + algoritms.value
         page.update()
+
 
     def reset_click(e):
         list_row.clean()
         balls = containers(int(list_size.value))
         list_row.controls = balls 
         page.update()
+
 
     def start_click(e):
         balls = list_row.controls
@@ -111,6 +121,7 @@ def main(page: ft.Page):
             insertion_sort(balls)
         page.update()
 
+
     def bgcolor_dropdown_change(e):
         if bgcolor.value == "Blue":
             page.bgcolor = ft.colors.BLUE_100
@@ -125,6 +136,7 @@ def main(page: ft.Page):
         divider1.color = bgcolor.value
         divider2.color = bgcolor.value
         page.update()
+
 
     list_size = ft.Dropdown(
         label= "List Size",
@@ -185,9 +197,11 @@ def main(page: ft.Page):
     btn_reset = ft.OutlinedButton("Reset",on_click=reset_click,icon=ft.icons.LOCK_RESET,
                               style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=10)))
     
+
     page.add(
         ft.Row([title],alignment=ft.MainAxisAlignment.CENTER),divider1, list_row, divider2,
         ft.Row([algoritms,list_size , bgcolor,btn_start,btn_reset],alignment= ft.MainAxisAlignment.CENTER)
     )
+
 
 ft.app(target=main)
