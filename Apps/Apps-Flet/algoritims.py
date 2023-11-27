@@ -127,13 +127,11 @@ def main(page: ft.Page):
         elif algoritms.value == "Selection Sort":
             selection_sort(balls)
         elif algoritms.value == "Quick Sort":
-            
+
             arr = []
             
             for i in range(len(balls)):
                 arr.append(balls[i].content.value)
-            
-            print(arr)
 
             arr2 = quick_sort(arr) 
             
