@@ -25,7 +25,8 @@ match user:
 values = 100
 
 match values:
-
+    case 100 :
+        print(values)
     case values if range(0,101):
         print(f'Result is { values }') 
 
