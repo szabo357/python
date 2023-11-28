@@ -387,5 +387,6 @@ break               for                 not
 # **=                 <<                  ^=                  ~
 # *=                  <<=                 _
 
-#help('topics')
+help('topics')
+
 #help('modules spam')
