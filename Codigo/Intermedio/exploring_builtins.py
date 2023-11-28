@@ -47,7 +47,6 @@ funclist:[str] = ['__bool__',
                   '__str__', 
                   '__subclasshook__']
 
-
 class Animal:
     pass
 
