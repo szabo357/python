@@ -27,8 +27,8 @@
 # https://docs.python.org/3/library/json.html#basic-usage
 # https://docs.python.org/3/howto/unicode.html
 
-import json
-import os
+from json import load, dump
+from os import chdir, getcwd
 
 #JSON file names stored as constants.
 WORLDDATA_JSON_FILE = "worlddata.json"
@@ -36,16 +36,16 @@ WORLDFLAGS_JSON_FILE = "worldflags.json"
 
 def open_json_file(filename:str):
 	with open(filename,encoding="utf8") as f:
-		return json.load(f)
+		return load(f)
 
-def update_json_file(filename:str,data:dict):
+def update_json_file(filename:str,data):
 	with open(filename,"w",encoding="utf8") as f:
-		json.dump(data,f,indent=4,ensure_ascii=False)
+		dump(data,f,indent=4,ensure_ascii=False)
 
-saved_cwd = os.getcwd() #Save the current working directory..
+saved_cwd = getcwd() #Save the current working directory..
 #print("Current Working Directory is: " + saved_cwd)
-WORKING_DIR = str(saved_cwd+"\Codigo\manejo_de_archivos")
-os.chdir(WORKING_DIR)
+WORKING_DIR = str(saved_cwd + "\Codigo\manejo_de_archivos")
+chdir(WORKING_DIR)
 #print("Current Working Directory is: " + os.getcwd())
 #file_list = os.listdir(os.getcwd())
 #print(file_list)
@@ -81,4 +81,4 @@ for cntry in temp2:
 
 countries_data = {"countries":temp1} #creates dicitiony to update JSON file.
 update_json_file(WORLDDATA_JSON_FILE,countries_data)
-os.chdir(saved_cwd) # change current working directory to the original one.
+chdir(saved_cwd) # change current working directory to the original one.
