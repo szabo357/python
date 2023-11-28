@@ -3,9 +3,10 @@
 # https://www.w3schools.com/python/python_ref_functions.asp
 # https://docs.python.org/3/library/functions.html
 # https://mathspp.com/blog/pydonts/dunder-methods
+ 
+#**PEP 3107** - Function Annotations
+#     The original specification for function annotations.
 
-# pep 343 - The with statement. The specification, background, 
-# and examples for the python with statement.
 
 #import _03lambdas
 #import os
