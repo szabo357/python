@@ -412,4 +412,15 @@ CONVERSIONS         LISTS               SEQUENCEMETHODS
 DEBUGGING           LITERALS            SEQUENCES
 """
 
-help('modules spam')
+#help('modules spam')
+"""
+Here is a list of modules whose name or summary contains 'spam'.
+If there are any, enter a module name to get more help.
+
+__phello__.spam 
+test_sqlite3: testing with SQLite version 3.42.0
+"""
+
+
+help('BASICMETHODS')
+help('CLASSES')
