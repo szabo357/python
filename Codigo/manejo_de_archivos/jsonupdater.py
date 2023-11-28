@@ -27,23 +27,29 @@
 # https://docs.python.org/3/library/json.html#basic-usage
 # https://docs.python.org/3/howto/unicode.html
 
+
 from json import load, dump
 from os import chdir, getcwd
+
 
 #JSON file names stored as constants.
 WORLDDATA_JSON_FILE = "worlddata.json"
 WORLDFLAGS_JSON_FILE = "worldflags.json"
 
+
 def open_json_file(filename:str):
 	with open(filename,encoding="utf8") as f:
 		return load(f)
+
 
 def update_json_file(filename:str,data):
 	with open(filename,"w",encoding="utf8") as f:
 		dump(data,f,indent=4,ensure_ascii=False)
 
+
 saved_cwd = getcwd() #Save the current working directory..
 #print("Current Working Directory is: " + saved_cwd)
+
 WORKING_DIR = str(saved_cwd + "\Codigo\manejo_de_archivos")
 chdir(WORKING_DIR)
 #print("Current Working Directory is: " + os.getcwd())
