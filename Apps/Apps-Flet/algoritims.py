@@ -115,7 +115,7 @@ def main(page: ft.Page):
                 arr[arrlen - 2 - j].bgcolor=ft.colors.GREEN
                 arr[arrlen - 1 - j].bgcolor=ft.colors.GREEN
             arr[arrlen - 1].bgcolor=ft.colors.GREEN
-        #return collection
+            
         page.update()
 
 
