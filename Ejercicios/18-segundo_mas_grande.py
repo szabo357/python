@@ -8,6 +8,9 @@ def segundo_mas_grande(lista:list):
     lista1 = []
     lista1 = lista.copy()
     lista1.sort()
+    # remove duplicates: convert list to set then convert back set to list.
+    lista1 = set(lista1) 
+    lista1 = list(lista1)
 
     return lista1[-2], lista1
 
