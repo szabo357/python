@@ -1,5 +1,11 @@
 # match-case Tutorial
-#https://www.geeksforgeeks.org/python-match-case-statement/
+# https://www.geeksforgeeks.org/python-match-case-statement/
+
+# The match statement is use for pattern matching.
+# PEP 634 Structural Pattern Matching: Specification
+# https://peps.python.org/pep-0634/
+# PEP 636 Structural Pattern Matching: Tutorial
+#https://peps.python.org/pep-0636/
 
 user = 'Marco'    
 
