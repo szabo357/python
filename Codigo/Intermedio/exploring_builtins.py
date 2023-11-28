@@ -3,7 +3,8 @@
 # https://docs.python.org/3/library/functions.html
 # 
 #import _03lambdas
-import os
+#import os
+
 def test():
     """
     This is a short description of the functionality in this method
@@ -255,7 +256,7 @@ listOs:[str] = ['DirEntry',
 
 # using the help function to get more information.
 help('modules')
-help('keywords')
-help('symbols')
-help('topics')
-help('modules spam')
+#help('keywords')
+#help('symbols')
+#help('topics')
+#help('modules spam')
