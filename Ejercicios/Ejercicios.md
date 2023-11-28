@@ -217,3 +217,24 @@ e imprima otras dos cadenas como salida (out1, out2).
     Solución: :hash: :one: :six:  -> [Eliminando Caracteres](./16-eliminando_caracteres.py)
 
   --- 
+
+  ### 17 Ordena la lista
+
+  Crea una función que ordene y retorne una matriz de números.
+  - La función recibirá un listado (por ejemplo [2, 4, 6, 8, 9]) y un parámetro
+    adicional "Asc" o "Desc" para indicar si debe ordenarse de menor a mayor
+    o de mayor a menor.
+  - No se pueden utilizar funciones propias del lenguaje que lo resuelvan
+    automáticamente.
+
+   Solución: :hash: :one: :seven:  -> [Ordena la lista](./17-ordena_la_lista.py)
+
+  --- 
+
+  ### 18 Segundo más grande
+
+  Dado un listado de números, encuentra el SEGUNDO más grande.
+   
+    Solución: :hash: :one: :eight:  -> [Segundo más grande](./18-segundo_mas_grande.py)
+
+  --- 
