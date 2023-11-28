@@ -77,8 +77,8 @@ reversed()
 slice()
 staticmethod()
 #str()   # creates a string object.remember that strings are inmutable.
-#super()
-#tuple() # creates a tuple object. inmutable sequence.
-#type() # Returns the type of the object passed as argument. everything is an object in python.
+#super() # returns an object that represents the parent class
+tuple() # creates a tuple object. inmutable sequence.
+type() # Returns the type of the object passed as argument. everything is an object in python.
 zip()
 
