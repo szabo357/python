@@ -350,8 +350,8 @@ _tokenize           getopt              rich
 _tracemalloc        getpass             rlcompleter
 """
 #help('keywords')
-help('yield')
-help('class')
+#help('yield')
+#help('class')
 """
 Here is a list of the Python keywords.  Enter any keyword to get more help.
 
@@ -367,5 +367,25 @@ break               for                 not
 """
 
 #help('symbols')
+
+#Here is a list of the punctuation symbols which Python assigns special meaning
+#to. Enter any symbol to get more help.
+
+# !=                  +                   <=                  __
+# "                   +=                  <>                  `
+# """                 ,                   ==                  b"
+# %                   -                   >                   b'
+# %=                  -=                  >=                  f"
+# &                   .                   >>                  f'
+# &=                  ...                 >>=                 j
+# '                   /                   @                   r"
+# '''                 //                  J                   r'
+# (                   //=                 [                   u"
+# )                   /=                  \                   u'
+# *                   :                   ]                   |
+# **                  <                   ^                   |=
+# **=                 <<                  ^=                  ~
+# *=                  <<=                 _
+
 #help('topics')
 #help('modules spam')
