@@ -1,7 +1,8 @@
 # references
 # https://www.w3schools.com/python/python_ref_functions.asp
 # https://docs.python.org/3/library/functions.html
-# 
+# https://mathspp.com/blog/pydonts/dunder-methods
+
 #import _03lambdas
 #import os
 
@@ -255,8 +256,116 @@ listOs:[str] = ['DirEntry',
 #print(dir(os))
 
 # using the help function to get more information.
-help('modules')
+
+#help('modules')
+"""
+Please wait a moment while I gather a list of all available modules...
+
+test_sqlite3: testing with SQLite version 3.42.0
+00dates             _typing             gettext             runpy
+01list_comprenhension _uuid               glob                sched
+02challenges        _warnings           graphlib            secrets
+_03lambdas          _weakref            gzip                select
+__future__          _weakrefset         h11                 selectors
+__hello__           _winapi             hashlib             shelve
+__phello__          _wmi                heapq               shlex
+_abc                _xxinterpchannels   hmac                shutil
+_aix_support        _xxsubinterpreters  html                signal
+_ast                _yaml               http                site
+_asyncio            _zoneinfo           httpcore            six
+_bisect             abc                 httpx               slugify
+_blake2             aifc                idlelib             smtplib
+_bz2                antigravity         idna                sndhdr
+_codecs             anyio               imaplib             sniffio
+_codecs_cn          argparse            imghdr              socket
+_codecs_hk          array               importlib           socketserver
+_codecs_iso2022     arrow               inspect             sqlite3
+_codecs_jp          ast                 io                  sre_compile
+_codecs_kr          asyncio             ipaddress           sre_constants
+_codecs_tw          atexit              itertools           sre_parse
+_collections        audioop             jinja2              ssl
+_collections_abc    base64              json                stat
+_compat_pickle      bdb                 keyword             statistics
+_compression        binaryornot         lib2to3             string
+_contextvars        binascii            linecache           stringprep
+_csv                bisect              locale              struct
+_ctypes             builtins            logging             subprocess
+_ctypes_test        bz2                 lzma                sunau
+_datetime           cProfile            mailbox             symtable
+_decimal            calendar            mailcap             sys
+_elementtree        certifi             markdown_it         sysconfig
+_functools          cgi                 markupsafe          tabnanny
+_hashlib            cgitb               marshal             tarfile
+_heapq              chardet             math                telnetlib
+_imp                charset_normalizer  mdurl               tempfile
+_io                 chunk               mimetypes           test
+_json               click               mmap                text_unidecode
+_locale             cmath               modulefinder        textwrap
+_lsprof             cmd                 msilib              this
+_lzma               code                msvcrt              threading
+_markupbase         codecs              multiprocessing     time
+_md5                codeop              netrc               timeit
+_msi                collections         nntplib             tkinter
+_multibytecodec     colorama            nt                  token
+_multiprocessing    colorsys            ntpath              tokenize
+_opcode             compileall          nturl2path          tomllib
+_operator           concurrent          numbers             trace
+_osx_support        configparser        oauthlib            traceback
+_overlapped         contextlib          opcode              tracemalloc
+_pickle             contextvars         operator            tty
+_py_abc             cookiecutter        optparse            turtle
+_pydatetime         copy                os                  turtledemo
+_pydecimal          copyreg             packaging           types
+_pyio               crypt               pathlib             typing
+_pylong             csv                 pdb                 typing_extensions
+_queue              ctypes              pickle              unicodedata
+_random             curses              pickletools         unittest
+_sha1               dataclasses         pip                 urllib
+_sha2               datetime            pipes               urllib3
+_sha3               dateutil            pkgutil             uu
+_signal             dbm                 platform            uuid
+_sitebuiltins       decimal             plistlib            venv
+_socket             difflib             png                 warnings
+_sqlite3            dis                 poplib              watchdog
+_sre                doctest             posixpath           wave
+_ssl                email               pprint              weakref
+_stat               encodings           profile             webbrowser
+_statistics         ensurepip           pstats              websocket
+_string             enum                pty                 websockets
+_strptime           errno               py_compile          winreg
+_struct             exploring_builtins  pyclbr              winsound
+_symtable           faulthandler        pydoc               wsgiref
+_testbuffer         filecmp             pydoc_data          xdrlib
+_testcapi           fileinput           pyexpat             xml
+_testclinic         flet                pygments            xmlrpc
+_testconsole        flet_core           qrcode              xxsubtype
+_testimportmultiple flet_runtime        queue               yaml
+_testinternalcapi   fnmatch             quopri              zipapp
+_testmultiphase     fractions           random              zipfile
+_testsinglephase    ftplib              re                  zipimport
+_thread             functools           repath              zlib
+_threading_local    gc                  reprlib             zoneinfo
+_tkinter            genericpath         requests
+_tokenize           getopt              rich
+_tracemalloc        getpass             rlcompleter
+"""
 #help('keywords')
+help('yield')
+help('class')
+"""
+Here is a list of the Python keywords.  Enter any keyword to get more help.
+
+False               class               from                or
+None                continue            global              pass
+True                def                 if                  raise
+and                 del                 import              return
+as                  elif                in                  try
+assert              else                is                  while
+async               except              lambda              with
+await               finally             nonlocal            yield
+break               for                 not
+"""
+
 #help('symbols')
 #help('topics')
 #help('modules spam')
