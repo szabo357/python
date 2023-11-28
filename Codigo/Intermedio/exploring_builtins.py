@@ -718,7 +718,7 @@ object.__bool__(self)
 Related help topics: hash, repr, str, SPECIALMETHODS
 """
 
-help('CLASSES')
+#help('CLASSES') 
 
 """
 The standard type hierarchy
