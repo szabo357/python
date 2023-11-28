@@ -1634,3 +1634,96 @@ defined methods\u201d. Class method objects are created by the built-in
 
 Related help topics: class, SPECIALMETHODS, PRIVATENAMES
 """
+#help('class')
+
+"""
+Class definitions
+*****************
+
+A class definition defines a class object (see section The standard
+type hierarchy):
+
+   classdef    ::= [decorators] "class" classname [type_params] [inheritance] ":" suite
+   inheritance ::= "(" [argument_list] ")"
+   classname   ::= identifier
+
+A class definition is an executable statement.  The inheritance list
+usually gives a list of base classes (see Metaclasses for more
+advanced uses), so each item in the list should evaluate to a class
+object which allows subclassing.  Classes without an inheritance list
+inherit, by default, from the base class "object"; hence,
+
+   class Foo:
+       pass
+
+is equivalent to
+
+   class Foo(object):
+       pass
+
+The class\u2019s suite is then executed in a new execution frame (see
+Naming and binding), using a newly created local namespace and the
+original global namespace. (Usually, the suite contains mostly
+function definitions.)  When the class\u2019s suite finishes execution, its
+execution frame is discarded but its local namespace is saved. [5] A
+class object is then created using the inheritance list for the base
+classes and the saved local namespace for the attribute dictionary.
+The class name is bound to this class object in the original local
+namespace.
+
+The order in which attributes are defined in the class body is
+preserved in the new class\u2019s "__dict__".  Note that this is reliable
+only right after the class is created and only for classes that were
+defined using the definition syntax.
+
+Class creation can be customized heavily using metaclasses.
+
+Classes can also be decorated: just like when decorating functions,
+
+   @f1(arg)
+   @f2
+   class Foo: pass
+
+is roughly equivalent to
+
+   class Foo: pass
+   Foo = f1(arg)(f2(Foo))
+
+The evaluation rules for the decorator expressions are the same as for
+function decorators.  The result is then bound to the class name.
+
+Changed in version 3.9: Classes may be decorated with any valid
+"assignment_expression". Previously, the grammar was much more
+restrictive; see **PEP 614** for details.
+
+A list of type parameters may be given in square brackets immediately
+after the class\u2019s name. This indicates to static type checkers that
+the class is generic. At runtime, the type parameters can be retrieved
+from the class\u2019s "__type_params__" attribute. See Generic classes for
+more.
+
+Changed in version 3.12: Type parameter lists are new in Python 3.12.
+
+**Programmer\u2019s note:** Variables defined in the class definition are
+class attributes; they are shared by instances.  Instance attributes
+can be set in a method with "self.name = value".  Both class and
+instance attributes are accessible through the notation \u201c"self.name"\u201d,
+and an instance attribute hides a class attribute with the same name
+when accessed in this way.  Class attributes can be used as defaults
+for instance attributes, but using mutable values there can lead to
+unexpected results.  Descriptors can be used to create instance
+variables with different implementation details.
+
+See also:
+
+  **PEP 3115** - Metaclasses in Python 3000
+     The proposal that changed the declaration of metaclasses to the
+     current syntax, and the semantics for how classes with
+     metaclasses are constructed.
+
+  **PEP 3129** - Class Decorators
+     The proposal that added class decorators.  Function and method
+     decorators were introduced in **PEP 318**.
+
+Related help topics: CLASSES, SPECIALMETHODS
+"""
