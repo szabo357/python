@@ -251,4 +251,11 @@ listOs:[str] = ['DirEntry',
 
 #print(dir(Animal()))
 #print(dir(_03lambdas))
-print(dir(os))
+#print(dir(os))
+
+# using the help function to get more information.
+help('modules')
+help('keywords')
+help('symbols')
+help('topics')
+help('modules spam')
