@@ -3,6 +3,9 @@
 # https://docs.python.org/3/library/functions.html
 # https://mathspp.com/blog/pydonts/dunder-methods
 
+# pep 343 - The with statement. The specification, background, 
+# and examples for the python with statement.
+
 #import _03lambdas
 #import os
 
