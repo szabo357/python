@@ -12,7 +12,7 @@ imagen = b""
 while True:
     datos = misocket.recv(5120)
     if len(datos) < 1: break
-    #time.sleep(0.25)
+    time.sleep(0.25)
     contador= contador + len(datos)
     print(len(datos), contador)
     imagen = imagen + datos
