@@ -11,11 +11,12 @@ newcwd = getcwd()
 print(newcwd)
 
 def ffm_conversion(video_file:str, audio_file:str):
+    """Concatenation of Audio and Video using ffmpeg codecs """
     ffm.input(video_file)
     ffm.input(audio_file)
     ffm.concat(video_file,audio_file)
-    ffm.output("")
-    
+    #ffm.output("",)
+
     print(video_file)
 
 def cb_dl_progress(stream, chunk:bytes, progress:int):
