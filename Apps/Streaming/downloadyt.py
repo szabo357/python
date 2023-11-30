@@ -21,7 +21,7 @@ def ffm_conversion(video_file:str, audio_file:str):
     print(audio_file)
 
 
-def cb_dl_progress(stream, chunk:bytes, progress:int):
+def cb_dl_progress(chunk:bytes, stream, progress:int):
     
     #with open("stream.txt","wb") as file:
     #    file.write(stream)
@@ -29,8 +29,8 @@ def cb_dl_progress(stream, chunk:bytes, progress:int):
     #with open("chunk.txt","wb") as file:
     #    file.write(chunk)
     #print("Stream: ", stream)
-    print("Chunk", chunk)
-    #print("Progress: ", progress)
+    #print("Chunk", chunk)
+    print("Progress: ", progress)
 
 
 def cb_dl_finished(stream, path:str):
@@ -73,9 +73,11 @@ def my_hq_download(url :str, savepath:str,cb_progress,cb_finished):
     stream.download(filename_prefix="audio-")
 
 
-    stream = yt.streams.get_by_itag(313) # Audio mp4 128kbps
-    print(stream.filesize_mb)
-    stream.download(filename_prefix="video-")
+
+#    stream = yt.streams.get_by_itag(313) # Audio mp4 128kbps
+#    print(stream.filesize_mb)
+#    stream.download(filename_prefix="video-")
+
 
     #stream = yt.streams.get_highest_resolution()
     #print(stream.filesize_mb)
