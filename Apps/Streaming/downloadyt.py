@@ -55,12 +55,14 @@ def my_hq_download(url :str, savepath:str,cb_progress,cb_finished):
     #stream = yt.streams.get_audio_only()
     #stream = yt.streams.get_by_itag(18) #  video mp4
     #stream = yt.streams.get_lowest_resolution()
+    
+    stream = yt.streams.get_by_itag(251)
+    print(stream.filesize_mb)
+    stream.download(filename_prefix="audio-")
+
     stream = yt.streams.get_by_itag(313) # Audio mp4 128kbps
     print(stream.filesize_mb)
-    stream.download()
-    print(stream.filesize_mb)
-    stream = yt.streams.get_by_itag(251)
-    stream.download()
+    stream.download(filename_prefix="video-")
 
     #stream = yt.streams.get_highest_resolution()
     #print(stream.filesize_mb)
