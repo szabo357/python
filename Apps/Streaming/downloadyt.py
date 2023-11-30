@@ -1,5 +1,7 @@
 from os import getcwd,chdir
 from pytube import YouTube
+import ffmpeg as ffm
+
 
 # change current working directory
 savecwd  = getcwd()
@@ -8,8 +10,15 @@ newcwd = getcwd()
 
 print(newcwd)
 
+def ffm_conversion(video_file:str, audio_file:str):
+    ffm.input(video_file)
+    ffm.input(audio_file)
+    ffm.concat(video_file,audio_file)
+    ffm.output("")
+    
+    print(video_file)
 
-def cb_dl_progress(stream, chunk:bytes, progress: int):
+def cb_dl_progress(stream, chunk:bytes, progress:int):
     
     #with open("stream.txt","wb") as file:
     #    file.write(stream)
