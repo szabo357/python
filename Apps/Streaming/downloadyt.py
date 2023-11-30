@@ -18,6 +18,8 @@ def ffm_conversion(video_file:str, audio_file:str):
     #ffm.output("",)
 
     print(video_file)
+    print(audio_file)
+
 
 def cb_dl_progress(stream, chunk:bytes, progress:int):
     
