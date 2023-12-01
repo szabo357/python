@@ -12,32 +12,23 @@ print(newcwd)
 
 def ffm_conversion(video_file:str, audio_file:str):
     """Concatenation of Audio and Video using ffmpeg codecs """
-    ffm.input(video_file)
-    ffm.input(audio_file)
-    ffm.concat(video_file,audio_file)
-    #ffm.output("",)
 
-    print(video_file)
-    print(audio_file)
+    video = ffm.input(video_file,)
+    audio = ffm.input(audio_file)
+    joined = ffm.concat(video,audio,v=1, a=1).node
+    v2 = joined[0]
+    a2 = joined[1]
+    out = ffm.output(v2, a2,"Misericordia.mp4")
+    out.run()
 
 
 def cb_dl_progress(chunk:bytes, stream, progress:int):
-    
-    #with open("stream.txt","wb") as file:
-    #    file.write(stream)
-    
-    #with open("chunk.txt","wb") as file:
-    #    file.write(chunk)
-    #print("Stream: ", stream)
-    #print("Chunk", chunk)
+
     print("Progress: ", progress)
 
 
 def cb_dl_finished(stream, path:str):
     print(type(stream))
-    #print("Stream: ", stream)
-    #print("Path: ", path)
-    #print("download has finished")
 
 
 def mydownload(url :str, savepath:str, cb_progress, cb_finished):
@@ -54,6 +45,7 @@ def mydownload(url :str, savepath:str, cb_progress, cb_finished):
     #stream = yt.streams.get_by_itag(140) # Audio mp4 128kbps
     print(stream.filesize_mb)
     stream.download(savepath, trackname)
+
 
 def my_hq_download(url :str, savepath:str,cb_progress,cb_finished):
     yt = YouTube(url,cb_progress,cb_finished)
@@ -72,17 +64,10 @@ def my_hq_download(url :str, savepath:str,cb_progress,cb_finished):
     print(stream.filesize_mb)
     stream.download(filename_prefix="audio-")
 
+    stream = yt.streams.get_by_itag(313) # Audio mp4 128kbps
+    print(stream.filesize_mb)
+    stream.download(filename_prefix="video-")
 
-
-#    stream = yt.streams.get_by_itag(313) # Audio mp4 128kbps
-#    print(stream.filesize_mb)
-#    stream.download(filename_prefix="video-")
-
-
-    #stream = yt.streams.get_highest_resolution()
-    #print(stream.filesize_mb)
-    #stream.download()
-    #stream.download(savepath,trackname)
 
 
 # Bonito 
@@ -93,7 +78,20 @@ url1 = 'https://www.youtube.com/watch?v=t5IK2Tu7ZmI'
 
 
 #mydownload(url,newcwd,cb_dl_progress,cb_dl_finished)
-my_hq_download(url1,newcwd,cb_dl_progress,cb_dl_finished)
+#my_hq_download(url1,newcwd,cb_dl_progress,cb_dl_finished)
+
+audiofn = "audio-Misericordia (Official Video).webm"
+videofn = "video-Misericordia (Official Video).webm"
+
+ffm_conversion(videofn, audiofn)
+
+chdir(savecwd)
+print(getcwd())
+
+    #stream = yt.streams.get_highest_resolution()
+    #print(stream.filesize_mb)
+    #stream.download()
+    #stream.download(savepath,trackname)
 
 '''
 [<Stream: itag="17" mime_type="video/3gpp" res="144p" fps="12fps" vcodec="mp4v.20.3" acodec="mp4a.40.2" progressive="True" type="video">, 
@@ -142,6 +140,7 @@ my_hq_download(url1,newcwd,cb_dl_progress,cb_dl_finished)
 # Progressive Downloads ( Progressive Streams) have lowes quality but audio and video comes in one track.
 # No post processing after download is needed.
 #print(yt.streams.filter(progressive=True))
+
 '''
 2 progressive streams are available to be downloaded
 [<Stream: itag="17" mime_type="video/3gpp" res="144p" fps="6fps" vcodec="mp4v.20.3" acodec="mp4a.40.2" progressive="True" type="video">,
@@ -175,6 +174,3 @@ my_hq_download(url1,newcwd,cb_dl_progress,cb_dl_finished)
 
 # Initiate stream download
 #stream.download()
-
-chdir(savecwd)
-print(getcwd())
