@@ -1,3 +1,3 @@
 import fastapi as fa
 
-fa.FastAPI()
+print('hello world')
