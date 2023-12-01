@@ -10,6 +10,7 @@ newcwd = getcwd()
 
 print(newcwd)
 
+
 def ffm_conversion(video_file:str, audio_file:str):
     """Concatenation of Audio and Video using ffmpeg codecs """
 
@@ -166,11 +167,3 @@ print(getcwd())
  <Stream: itag="250" mime_type="audio/webm" abr="70kbps" acodec="opus" progressive="False" type="audio">, 
  <Stream: itag="251" mime_type="audio/webm" abr="160kbps" acodec="opus" progressive="False" type="audio">]
 '''
-
-# Select a stream to be downloaded
-#stream = yt.streams.get_audio_only()
-#stream = yt.streams.get_by_itag(18) #  video mp4
-#stream = yt.streams.get_by_itag(140) # Audio mp4 128kbps
-
-# Initiate stream download
-#stream.download()
