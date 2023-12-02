@@ -18,7 +18,7 @@ def read_item(item_id: int, q: Union[str, None] = None):
 To run the server
 
 enter the following command in the terminal:
-uvicorn first-api --reloaad
+uvicorn first-api:app --reloaad
 
 Open your browser at http://127.0.0.1:8000/items/5?q=somequery.
 
