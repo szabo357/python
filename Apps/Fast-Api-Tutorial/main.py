@@ -6,4 +6,6 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
+    """Root endpoint of out API
+    it returns "Hello World!" """
     return {"message": "Hello World!"}
