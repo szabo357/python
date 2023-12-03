@@ -30,7 +30,7 @@ And then you can also have a path /users/{user_id} to get data about a specific 
 Because path operations are evaluated in order, you need to make sure that the path 
 for /users/me is declared before the one for /users/{user_id}:"""
 
-@app.get("users/me")
+@app.get("/users/me")
 async def read_user_me():
     return {"user_id": "the current user"}
 
