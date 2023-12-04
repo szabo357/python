@@ -38,3 +38,18 @@ async def read_user_me():
 @app.get("/users/{user_id}")
 async def read_user(user_id: str):
     return {"user_id": user_id}
+
+# you cannot redefine a path operation
+# you cannot have two get operations
+# to the same path with different methods
+
+@app.get("/users")
+async def read_users():
+    return ["Rick", "Morty"]
+
+# In this case only the first "/users"
+# method will function. 
+
+@app.get("/users")
+async def read_users2():
+    return ["Bean", "Elfo"]
