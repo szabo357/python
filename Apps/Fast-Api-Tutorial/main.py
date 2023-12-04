@@ -47,8 +47,10 @@ async def read_user(user_id: str):
 async def read_users():
     return ["Rick", "Morty"]
 
+
 # In this case only the first "/users"
 # method will function. 
+
 
 @app.get("/users")
 async def read_users2():
