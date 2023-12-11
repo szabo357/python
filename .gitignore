@@ -179,6 +179,7 @@ cython_debug/
 
 pruebas.py
 rd.py
+tutorial.db
 
 .vscode
 # PyCharm

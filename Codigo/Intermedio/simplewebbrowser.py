@@ -1,3 +1,7 @@
+#
+# PEP-3333 WSGI Python Web Server Gateway Interface 
+# https://peps.python.org/pep-3333/
+#
 import socket
 
 misocket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
