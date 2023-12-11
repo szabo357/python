@@ -180,7 +180,7 @@ cython_debug/
 pruebas.py
 rd.py
 tutorial.db
-
+notas.txt
 .vscode
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
