@@ -11,6 +11,7 @@ class Task(ft.UserControl):
         self.task_status_change = task_status_change
         self.task_delete = task_delete
 
+
     def build(self):
         self.display_task = ft.Checkbox(value=False,label=self.task_name,on_change=self.status_changed)
         self.edit_name = ft.TextField(expand=1)
@@ -55,24 +56,29 @@ class Task(ft.UserControl):
 
         return ft.Column(controls=[self.display_view,self.edit_view])
     
+
     def edit_clicked(self,e):
         self.edit_name.value = self.display_task.label
         self.display_view.visible = False
         self.edit_view.visible = True
         self.update()
     
+
     def save_clicked(self,e):
         self.display_task.label= self.edit_name.value
         self.display_view.visible = True
         self.edit_view.visible = False
         self.update()
-        
+
+
     def delete_clicked(self,e):
         self.task_delete(self)
     
+
     def status_changed(self,e):
         self.completed = self.display_task.value
         self.task_status_change(self)
+
 
 class TodoApp(ft.UserControl):
     def build(self):
@@ -84,6 +90,7 @@ class TodoApp(ft.UserControl):
             selected_index=0,
             on_change=self.tabs_changed,
             tabs=[ft.Tab(text="Todas"),ft.Tab(text="Activas"),ft.Tab(text="Completadas")],
+
         )
 
         self.items_left = ft.Text("0 Tareas Pendientes")
@@ -123,7 +130,8 @@ class TodoApp(ft.UserControl):
                 ),
             ],
         )   
-    
+
+
     def add_clicked(self,e):
         #validates that Textbox is not empty
         if  ( self.new_task.value != "" ) :
@@ -131,16 +139,20 @@ class TodoApp(ft.UserControl):
             self.tasks.controls.append(task)
             self.new_task.value =""
             self.update()
-    
+
+
     def task_status_change(self,task):
         self.update()
+
 
     def task_delete(self,task):
         self.tasks.controls.remove(task)
         self.update()
     
+
     def tabs_changed(self,e):
         self.update()
+
 
     def clear_clicked(self,e):
         for task in self.tasks.controls[:]:
