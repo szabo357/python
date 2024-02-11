@@ -25,6 +25,7 @@ name, surname, alias, age = "Jose", "Avila", 'Joseav', 35
 print("Me llamo:", name, surname, ". Mi edad es:",
       age, ". Y mi alias es:", alias)
 
+
 # Inputs
 name = input('¿Cuál es tu nombre? ')
 age = input('¿Cuántos años tienes? ')

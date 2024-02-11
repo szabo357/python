@@ -5,6 +5,7 @@ print('Hola Mundo!') # Imprime en consola el mensaje "Hola Mundo!"
 # Los comentarios se usan para documentar ideas, desactivar líneas de código al momento de hacer pruebas 
 # El intérprete de Python omite 
 
+
 """ Este es un comentario 
 de múltiples líneas y se puede usar para 
 documentar de manera más amplia
